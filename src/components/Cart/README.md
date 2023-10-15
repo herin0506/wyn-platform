@@ -1,0 +1,1 @@
+# Different component(s) required for cart page

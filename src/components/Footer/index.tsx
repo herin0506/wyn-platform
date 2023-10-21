@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import { Typography } from '@mui/material';
+import { getCurrentYear } from '@wyn/utils/utils';
 
 const useStyles = makeStyles(() => ({
   footer: {
@@ -13,15 +14,12 @@ const useStyles = makeStyles(() => ({
    right:0,
    bottom:0
   },
-  footerText:{
-  }
 }));
-interface Props {}
 
-function Footer(props: Props) {
+function Footer() {
   const classes = useStyles()
   return <div className={classes.footer}>
-    <Typography className={classes.footerText} variant='caption'>@2023 Bodyblend Wellness Pvt Ltd</Typography>
+    <Typography  variant='caption'>@{getCurrentYear()} Bodyblend Wellness Pvt Ltd</Typography>
   </div>;
 }
 

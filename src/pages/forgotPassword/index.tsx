@@ -57,30 +57,12 @@ export default function SignUp() {
         <div className={classes.container}>
           <div className={classes.card}>
             <Typography variant="h4" className={classes.title}>
-              Login
+              Forgot Password
             </Typography>
             <TextField
               fullWidth
               id="outlined-basic"
-              label="Firstname"
-              variant="outlined"
-            />
-            <TextField
-              fullWidth
-              id="outlined-basic"
-              label="Lastname"
-              variant="outlined"
-            />
-            <TextField
-              fullWidth
-              id="outlined-basic"
               label="Email"
-              variant="outlined"
-            />
-            <TextField
-              fullWidth
-              id="outlined-basic"
-              label="Password"
               variant="outlined"
             />
             <Typography
@@ -96,7 +78,7 @@ export default function SignUp() {
               size="large"
               color="primary"
             >
-              Create
+              Get a reset password link
             </Button>
           </div>
         </div>

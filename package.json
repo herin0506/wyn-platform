@@ -12,7 +12,13 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.14",
+    "@mui/material": "^5.14.14",
+    "@mui/styles": "^5.14.14",
     "next": "13.5.4",
+    "next-auth": "^4.24.3",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -39,8 +45,7 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": ">=8.0.0",
-    "npm": "please-use-npm"
+    "node": ">=8.0.0"
   },
   "resolutions": {
     "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"

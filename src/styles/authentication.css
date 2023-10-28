@@ -1,0 +1,41 @@
+/* Forgot Password / Login / Signup */
+.sectionOne {
+    margin-bottom: '24px';
+}
+.container {
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    min-height: '100%';
+    box-shadow: 'none !important';
+    margin: '0';
+}
+.card {
+    display: 'flex';
+    flex-direction: 'column';
+    row-gap: '20px';
+    width: '30%';
+}
+.forgotText {
+    text-decoration: 'underline';
+    text-align: 'left';
+}
+.signinButton {
+    background: '#000000';
+    color: '#ffffff';
+}
+.title {
+    text-align: 'center';
+    padding-top: 24;
+}
+.discoveries {
+    background: '#EFF9FF';
+    text-align: 'center';
+    padding: '24px 24px 50px 24px';
+}
+.categoriesButton {
+    border-radius: '30px !important';
+    background: '#000000';
+    color: '#ffffff';
+    margin-top: 24;
+}

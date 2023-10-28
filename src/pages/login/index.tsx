@@ -1,52 +1,9 @@
 import React from 'react';
 import { Typography, TextField, Button } from '@mui/material';
-import { makeStyles } from '@mui/styles';
 import { useRouter } from 'next/router';
+import styles from '../../styles/authentication.css';
 
-const useStyles = makeStyles(() => ({
-  sectionOne: {
-    marginBottom: '24px',
-  },
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    minHeight: '100%',
-    boxShadow: 'none !important',
-    margin: '0',
-  },
-  card: {
-    display: 'flex',
-    flexDirection: 'column',
-    rowGap: '20px',
-    width: '30%',
-  },
-  forgotText: {
-    textDecoration: 'underline',
-    textAlign: 'left',
-  },
-  signinButton: {
-    background: '#000000',
-    color: '#ffffff',
-  },
-  title: {
-    textAlign: 'center',
-    paddingTop: 24,
-  },
-  discoveries: {
-    background: '#EFF9FF',
-    textAlign: 'center',
-    padding: '24px 24px 50px 24px',
-  },
-  categoriesButton: {
-    borderRadius: '30px !important',
-    background: '#000000',
-    color: '#ffffff',
-    marginTop: 24,
-  },
-}));
 export default function Login() {
-  const classes = useStyles();
   const router = useRouter();
 
   const handleClick = () => {
@@ -62,10 +19,10 @@ export default function Login() {
   }
   return (
     <>
-      <section className={classes.sectionOne}>
-        <div className={classes.container}>
-          <div className={classes.card}>
-            <Typography variant="h4" className={classes.title}>
+      <section className={styles.sectionOne}>
+        <div className={styles.container}>
+          <div className={styles.card}>
+            <Typography variant="h4" className={styles.title}>
               Login
             </Typography>
             <TextField
@@ -82,13 +39,13 @@ export default function Login() {
             />
             <Typography
               onClick={handleNaviagte}
-              className={classes.forgotText}
+              className={styles.forgotText}
               variant="subtitle2"
             >
               Forgot your password?
             </Typography>
             <Button
-              classes={{ root: classes.signinButton }}
+              classes={{ root: styles.signinButton }}
               variant="contained"
               size="large"
               color="primary"
@@ -98,7 +55,7 @@ export default function Login() {
             </Button>
             <Typography
               onClick={handleClick}
-              className={classes.forgotText}
+              className={styles.forgotText}
               variant="subtitle2"
             >
               Create account?
@@ -106,16 +63,16 @@ export default function Login() {
           </div>
         </div>
       </section>
-      <section className={classes.discoveries}>
+      <section className={styles.discoveries}>
         <div>
-          <Typography variant="h4" className={classes.title}>
+          <Typography variant="h4" className={styles.title}>
             We are dependable ally in your hourney to
           </Typography>
-          <Typography variant="h4" className={classes.title}>
+          <Typography variant="h4" className={styles.title}>
             better health & wellness{' '}
           </Typography>
           <Button
-            classes={{ root: classes.categoriesButton }}
+            classes={{ root: styles.categoriesButton }}
             variant="contained"
             size="large"
             color="primary"
@@ -126,4 +83,4 @@ export default function Login() {
       </section>
     </>
   );
-}
+};

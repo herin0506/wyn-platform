@@ -1,0 +1,10 @@
+.sectionOne {
+    margin: '24px';
+    height: '100%';
+    text-align: 'center';
+}
+.signinButton {
+    background: '#000000';
+    color: '#ffffff';
+    margin-top:'24px';
+}

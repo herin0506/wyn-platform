@@ -1,6 +1,6 @@
 import { Typography, Button } from '@mui/material';
 import { useRouter } from 'next/router';
-import styles from '../../styles/authentication.css';
+import styles from '../../styles/authentication.module.css';
 
 export default function Home() {
   const router = useRouter();
@@ -14,7 +14,7 @@ export default function Home() {
         <div>
           <Typography variant="h2">Welcome !</Typography>
           <Button
-          classes="signinButton"
+            classes="signinButton"
             variant="contained"
             size="large"
             color="primary"
@@ -26,4 +26,4 @@ export default function Home() {
       </section>
     </>
   );
-};
+}

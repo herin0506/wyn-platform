@@ -1,0 +1,90 @@
+/* Forgot Password / Login / Signup */
+.mainBoxButton{
+    background-color:black !important;
+    border-radius: 0;
+}
+.mainRoundButton{
+    background-color:black !important;
+    border-radius: 30px;
+    padding:10px 25px 10px 25px
+} 
+
+.container{
+    background-color: #EFF9FF !important;
+}
+
+/* Custom text size class */
+.customTextSize {
+  font-size: 18px !important; /* Default font size for small screens (e.g., mobile) */
+}
+
+@media (min-width: 576px) {
+  /* Medium screens (e.g., tablets) */
+  .customTextSize {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Large screens (e.g., desktop) */
+  .customTextSize {
+    font-size: 30px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Extra-large screens (e.g., large desktop) */
+  .customTextSize {
+    font-size: 40px !important;
+  }
+}
+
+.inputFieldStyles{
+  color: 'black';
+  border-color: 'red';
+  border-radius: 0 !important;
+}
+
+
+
+/* old */
+.sectionOne {
+    margin-bottom: '24px';
+}
+.container {
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    min-height: '100%';
+    box-shadow: 'none !important';
+    margin: '0';
+}
+.card {
+    display: 'flex';
+    flex-direction: 'column';
+    row-gap: '20px';
+    width: '30%';
+}
+.forgotText {
+    text-decoration: 'underline';
+    text-align: 'left';
+}
+.signinButton {
+    background: '#000000';
+    color: '#ffffff';
+}
+.title {
+    text-align: 'center';
+    padding-top: 24;
+}
+.discoveries {
+    background: '#EFF9FF';
+    text-align: 'center';
+    padding: '24px 24px 50px 24px';
+}
+.categoriesButton {
+    border-radius: '30px !important';
+    background: '#000000';
+    color: '#ffffff';
+    margin-top: 24;
+}

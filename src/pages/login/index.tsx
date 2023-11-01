@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, TextField, Button } from '@mui/material';
 import { useRouter } from 'next/router';
-import styles from '../../styles/authentication.css';
+import styles from '../../styles/authentication.module.css';
 
 export default function Login() {
   const router = useRouter();

@@ -75,7 +75,7 @@
 }
 .title {
     text-align: 'center';
-    padding-top: 24;
+    padding-top: 24px;
 }
 .discoveries {
     background: '#EFF9FF';
@@ -83,7 +83,7 @@
     padding: '24px 24px 50px 24px';
 }
 .categoriesButton {
-    border-radius: '30px !important';
+    border-radius: 30px !important;
     background: '#000000';
     color: '#ffffff';
     margin-top: 24;

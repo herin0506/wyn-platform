@@ -1,49 +1,78 @@
-// import { Roboto } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
-import { Poppins } from 'next/font/google';
-
-// import { red } from '@mui/material/colors';
-
-// export const roboto = Roboto({
-//   weight: ['300', '400', '500', '700'],
-//   subsets: ['latin'],
-//   display: 'swap',
-// });
-
-const poppins = Poppins({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
+import { appFonts, fontFamilies } from './fonts/fonts';
+import { APP_COLORS } from './colors/colors';
+const defaultTheme = createTheme({});
 const theme = createTheme({
   typography: {
-    fontFamily: [poppins.style.fontFamily].join(','),
+    fontFamily: [...appFonts].join(','),
+    h1: {
+      fontSize: 50,
+      lineHeight: 'normal',
+      letterSpacing: -1,
+      fontWeight: 300,
+      fontFamily: fontFamilies.workSans,
+      [defaultTheme.breakpoints.only('xs')]: {
+        fontSize: 32,
+      },
+    },
     h3: {
-      fontSize: 40,
-      lineHeight: '55px',
+      fontFamily: fontFamilies.kameron,
     },
     h4: {
       fontSize: 30,
       lineHeight: '45px',
     },
+    body1: {
+      fontSize: 25,
+      lineHeight: '166.2%',
+      fontFamily: fontFamilies.dmSans,
+    },
     body2: {
-      fontSize: 13,
+      fontSize: 20,
     },
   },
   palette: {
     primary: {
-      main: '#212121',
+      main: APP_COLORS.PRIMARY_COLOR,
     },
     secondary: {
-      main: '#19857b',
+      main: APP_COLORS.SECONDARY_COLOR,
     },
   },
   components: {
+    MuiAppBar: {
+      defaultProps: {
+        elevation: 0,
+      },
+      styleOverrides:{
+        root:{
+          backgroundColor:"transparent"
+        }
+      }
+    },
     MuiButton: {
       defaultProps: {
         disableElevation: true,
+      },
+      styleOverrides: {
+        containedSizeLarge: {
+          minHeight: 52,
+        },
+      },
+    },
+    MuiListSubheader: {
+      styleOverrides: {
+        root: {
+          fontFamily: fontFamilies.dmSans,
+          fontWeight: 400,
+        },
+      },
+    },
+    MuiListItemText: {
+      styleOverrides: {
+        root: {
+          fontFamily: fontFamilies.dmSans,
+        },
       },
     },
   },

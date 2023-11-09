@@ -8,6 +8,8 @@ import TestimonialsSliderComponent from '@wyn/components/Home/TestimonialsSlider
 import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
 import MintsScienceComponent from '@wyn/components/Home/MintsScience/MintsScience';
 import NaturalHerbsContainer from '@wyn/components/Home/NaturalHerbs/NaturalHerbs';
+import GeneralHealthIssuesComponent from '@wyn/components/Home/WomenGeneralHealthIssues/WomenGeneralHealthIssues';
+import WomenWellnessComponent from '@wyn/components/Home/WomenWellness/WomenWellness';
 
 const HomePage = () => {
   return (
@@ -18,16 +20,16 @@ const HomePage = () => {
       </Container>
       <Container maxWidth="xl">
         <NaturalHerbsContainer />
-      </Container>
-      <MintsScienceComponent />
-      <Container maxWidth="lg">
+        <MintsScienceComponent />
         <ProductsSliderComponent />
+        <WynIngProductsComponent />
+        <TestimonialsSliderComponent />
       </Container>
       <Container maxWidth="lg">
-        <WynIngProductsComponent />
+        <GeneralHealthIssuesComponent />
       </Container>
       <Container maxWidth="xl">
-        <TestimonialsSliderComponent />
+        <WomenWellnessComponent />
       </Container>
       <DiscoverCategoriesComponent />
     </Fragment>

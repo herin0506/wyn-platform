@@ -1,3 +1,6 @@
+import { APP_COLORS } from '@wyn/styles/colors/colors';
+import { APP_ROUTES } from './routes';
+
 export const STEPS = [
   { step: 'Step 1', info: 'Fill out our simple form', labelColor: '#E13F6A' },
   {
@@ -23,23 +26,23 @@ export const footerMenuList = [
     categories: [
       {
         title: 'Menstrual Wellness',
-        url: '/',
+        url: APP_ROUTES.MENSTRUAL_WELNESS,
       },
       {
         title: 'Sensual Wellness',
-        url: '/',
+        url: APP_ROUTES.SENSUAL_WELNESS,
       },
       {
         title: 'Pregnancy Prepare & Care',
-        url: '/',
+        url: APP_ROUTES.PREGNANCY_WELNESS,
       },
       {
         title: 'Menopausal Wellness',
-        url: '/',
+        url: APP_ROUTES.MENOPAUSAL_WELNESS,
       },
       {
         title: 'Daily Wellness',
-        url: '/',
+        url: APP_ROUTES.DAILY_HEALTH,
       },
     ],
   },
@@ -144,29 +147,34 @@ export const naturalHerbs = [
 
 export const productCategories = [
   {
-    colorCode: '#dd2155',
+    colorCode: APP_COLORS.AMARANATH,
     title: 'Menstrual Wellness',
     imgUrl: '/images/category_1.svg',
+    route: APP_ROUTES.MENSTRUAL_WELNESS,
   },
   {
-    colorCode: '#13465c',
+    colorCode: APP_COLORS.MID_NIGHT_GREEN,
     title: 'Sensual Wellness',
     imgUrl: '/images/category_2.svg',
+    route: APP_ROUTES.SENSUAL_WELNESS,
   },
   {
-    colorCode: '#ecb436',
+    colorCode: APP_COLORS.META_BROWN,
     title: 'Pregnancy Care',
     imgUrl: '/images/category_3.svg',
+    route: APP_ROUTES.PREGNANCY_WELNESS,
   },
   {
-    colorCode: '#912A89',
+    colorCode: APP_COLORS.VIOLET,
     title: 'Menopausal Wellness',
     imgUrl: '/images/category_4.svg',
+    route: APP_ROUTES.MENOPAUSAL_WELNESS,
   },
   {
-    colorCode: '#8F89C2',
+    colorCode: APP_COLORS.VIOLET,
     title: 'Daily Wellness',
     imgUrl: '/images/category_5.svg',
+    route: APP_ROUTES.DAILY_HEALTH,
   },
 ];
 
@@ -198,5 +206,18 @@ export const products = [
     brand: 'Tried & Trusted',
     rating: 5,
     price: '849',
+  },
+];
+
+export const womenHealthIssues = [
+  {
+    _id: 1,
+    imgUrl: '/images/women_chest_pain.svg',
+    content: 'How your protein intake affects your breast health',
+  },
+  {
+    _id: 2,
+    imgUrl: '/images/women_hormone_pain.svg',
+    content: 'How to balance female hormones for a healthy menstruation',
   },
 ];

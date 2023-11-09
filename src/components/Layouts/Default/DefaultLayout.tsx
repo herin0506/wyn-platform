@@ -15,9 +15,9 @@ const DefaultLayoutComponent = ({ children }: DefaultLayoutComponentProps) => {
     <StyledMainRootBox>
       <HeaderNavigationComponent />
       <StyledMainRenderedSection>{children}</StyledMainRenderedSection>
-      {/* <StyledFooterSection>
+      <StyledFooterSection>
         <FooterComponent />
-      </StyledFooterSection> */}
+      </StyledFooterSection>
     </StyledMainRootBox>
   );
 };

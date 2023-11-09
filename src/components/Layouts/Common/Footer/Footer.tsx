@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -10,8 +10,10 @@ import { footerMenuList } from '@wyn/utils/constants';
 import { StyledFooterNavList } from './styled';
 import SubscribeComponent from './Subscribe';
 import { Typography } from '@mui/material';
+import {useRouter} from "next/navigation";
 
 const FooterComponent = () => {
+  const router = useRouter();
   return (
     <Container maxWidth="lg">
       <SubscribeComponent />
@@ -39,7 +41,7 @@ const FooterComponent = () => {
                 <ListItemButton
                   disableGutters
                   key={category.title}
-                  onClick={() => {}}
+                  onClick={() => router.push(category.url)}
                 >
                   <ListItemText primary={category.title} />
                 </ListItemButton>

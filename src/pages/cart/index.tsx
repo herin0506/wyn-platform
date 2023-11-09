@@ -1,7 +1,8 @@
-export default function Cart(){
-    return (
-        <>
-        <div>This is Cart Page</div>
-        </>
-    )
-}
+import React from 'react';
+import PlaceHolderComponent from '@wyn/components/Common/PlaceHolder/PlaceHolder';
+
+const CartPage = () => {
+  return <PlaceHolderComponent content="Cart Page - Coming Soon..." />;
+};
+
+export default CartPage;

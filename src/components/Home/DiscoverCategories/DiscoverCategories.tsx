@@ -16,7 +16,7 @@ const DiscoverCategoriesContainer = () => {
           to better health & wellness.
         </SectionHeadingComponent>
         <Box mt={4} textAlign="center">
-          <Button size="large" variant="contained">
+          <Button sx={{borderRadius:100}} size="large" variant="contained">
             DISCOVER CATEGORIES
           </Button>
         </Box>

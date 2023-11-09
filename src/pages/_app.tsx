@@ -5,6 +5,7 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Head from 'next/head';
 import theme from '../styles/theme';
+import '../styles/globals.scss';
 import createEmotionCache from '../styles/createEmotionCache';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';

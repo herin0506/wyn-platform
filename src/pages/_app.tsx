@@ -7,9 +7,8 @@ import Head from 'next/head';
 import theme from '../styles/theme';
 import '../styles/globals.scss';
 import createEmotionCache from '../styles/createEmotionCache';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
+import DefaultLayoutComponent from '@wyn/components/Layouts/Default/DefaultLayout';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -28,9 +27,9 @@ export default function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Navbar />
-        <Component {...pageProps} />
-        <Footer />
+        <DefaultLayoutComponent>
+          <Component {...pageProps} />
+        </DefaultLayoutComponent>
       </ThemeProvider>
     </CacheProvider>
   );

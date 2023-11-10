@@ -14,12 +14,29 @@ export const StyledFooterNavList = styled(List)(({ theme }) => ({
     fontSize: 30,
     lineHeight: '48.239px',
     letterSpacing: -0.6,
+    [theme.breakpoints.only('xs')]: {
+      fontSize: 20,
+      lineHeight: '25.239px',
+    },
   },
   '& .MuiListItemButton-root': {
     color: theme.palette.common.white,
+    [theme.breakpoints.only('xs')]: {
+      fontSize: 20,
+    },
 
     '& .MuiListItemText-root': {
       fontSize: 30,
+
+      [theme.breakpoints.only('xs')]: {
+        margin: 0,
+      },
+
+      '& span': {
+        [theme.breakpoints.only('xs')]: {
+          fontSize: 14,
+        },
+      },
     },
   },
 }));
@@ -32,6 +49,9 @@ export const StyledInputField = styled(InputBase)(({ theme }) => ({
     fontSize: 16,
     minWidth: 300,
     color: theme.palette.common.white,
+    [theme.breakpoints.only('xs')]: {
+      minWidth: 255,
+    },
     '&::placeholder': {
       color: theme.palette.grey[100],
       fontSize: 16,
@@ -40,11 +60,11 @@ export const StyledInputField = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export const StyledButton=styled(Button)(({theme})=>({
-  height:47,
-  backgroundColor:theme.palette.grey[200],
-  borderRadius:0,
-  color:theme.palette.primary.main,
-  fontFamily:fontFamilies.workSans,
-  fontWeight:400
-}))
+export const StyledButton = styled(Button)(({ theme }) => ({
+  height: 47,
+  backgroundColor: theme.palette.grey[200],
+  borderRadius: 0,
+  color: theme.palette.primary.main,
+  fontFamily: fontFamilies.workSans,
+  fontWeight: 400,
+}));

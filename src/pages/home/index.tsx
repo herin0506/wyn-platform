@@ -18,9 +18,11 @@ const HomePage = () => {
       <Container maxWidth="lg">
         <FinestNutrientsComponent />
       </Container>
-      <Container maxWidth="xl">
+      <Container disableGutters maxWidth="xl">
         <NaturalHerbsContainer />
         <MintsScienceComponent />
+      </Container>
+      <Container maxWidth="xl">
         <ProductsSliderComponent />
         <WynIngProductsComponent />
         <TestimonialsSliderComponent />

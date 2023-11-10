@@ -16,7 +16,7 @@ export const thumbnailSliderConfig: SwiperProps = {
       slidesPerView: 1,
     },
     400: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     639: {
       slidesPerView: 3,

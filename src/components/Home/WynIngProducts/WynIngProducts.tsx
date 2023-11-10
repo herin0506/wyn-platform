@@ -19,7 +19,7 @@ const WynIngProductsContainer = () => {
           <ThumbnailSliderComponent
             sliderProps={{
               ...thumbnailSliderConfig,
-              navigation: false,
+              navigation: true,
               spaceBetween: 50,
             }}
           >

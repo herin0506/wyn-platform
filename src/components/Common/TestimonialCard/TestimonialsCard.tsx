@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
+import { StyledTestimonialImageBox } from './styled';
 
 const TestimonialsCardComponent = () => {
   return (
@@ -42,16 +43,12 @@ const TestimonialsCardComponent = () => {
             alignItems="stretch"
             container
             style={{ height: '100%' }}
+            sx={(theme) => ({
+
+            })}
           >
             <Grid item>
-              <Box
-                sx={{
-                  width: 500,
-                  minHeight: 320,
-                  height: '100%',
-                  backgroundColor: 'gainsboro',
-                }}
-              ></Box>
+              <StyledTestimonialImageBox></StyledTestimonialImageBox>
             </Grid>
           </Grid>
         </Box>

@@ -28,7 +28,9 @@ const PlaceHolderComponent = ({ content }: PlaceHolderComponentProps) => {
         />
       </Box>
       <Box>
-        <Typography variant="h5">{content}</Typography>
+        <Typography textAlign="center" variant="h5">
+          {content}
+        </Typography>
       </Box>
     </StyledPlaceHolderComponent>
   );

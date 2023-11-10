@@ -9,6 +9,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Popper from '@mui/material/Popper';
 import Paper from '@mui/material/Paper';
 import ListItemButton from '@mui/material/ListItemButton';
+import { Dialog } from '@mui/material';
 
 export const StyledHeaderNavigation = styled(AppBar, {
   shouldForwardProp: (props) =>
@@ -134,7 +135,7 @@ export const StyledListItemButton = styled(ListItemButton)(({ theme }) => ({
   wordbreak: 'break-all',
   borderBottom: `1px solid ${theme.palette.divider}`,
   height: 45,
-  fontFamily:fontFamilies.dmSans,
+  fontFamily: fontFamilies.dmSans,
   marginBottom: 10,
   '&:hover': {
     backgroundColor: 'transparent',
@@ -148,3 +149,17 @@ export const StyledListItemButton = styled(ListItemButton)(({ theme }) => ({
     },
   },
 }));
+
+export const StyledDialog = styled(Dialog)(() => ({
+  position: 'relative',
+  '& .MuiDialogContent-root': {
+    position: 'relative',
+    backgroundColor: "red",
+  },
+}));
+
+export const StyledDialogCloseIcon = styled(Box)(() => ({
+  position: 'absolute',
+  top: 20,
+  right: 20,
+}))

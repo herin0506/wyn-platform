@@ -209,6 +209,19 @@ export const products = [
   },
 ];
 
+export const product = {
+  category: 'Menstrual Wellness',
+  rating: 4,
+  title:'Nutritional Mints for Heavy Periods.',
+  subTitle:'Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
+  price: 849,
+};
+
+export const infoContent = {
+  title:'How to balance female hormones for a healthy menstruation',
+  subTitle:'The menstrual cycle functions under the control of coordinated, synchronized and balanced release of female hormones such as FSH, LH, Estrogens & Progesterones in each menstrual cycle...',
+};
+
 export const womenHealthIssues = [
   {
     _id: 1,

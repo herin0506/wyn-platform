@@ -3,4 +3,6 @@ export const APP_COLORS = {
   SECONDARY_COLOR: '#FCF1D3',
   ALICEBLUE: '#F0F9FF',
   PAPAYA_WHIP: '#FCF1D3',
+  BLACK: '#000000',
+  PINK: '#DD2155'
 };

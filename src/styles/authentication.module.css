@@ -39,3 +39,9 @@
     color: '#ffffff';
     margin-top: 24;
 }
+.roundButton {
+    border-radius: 30px !important;
+    background: '#000000';
+    color: '#ffffff';
+    margin-top: 24;
+}

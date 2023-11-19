@@ -8,7 +8,7 @@ import theme from '../styles/theme';
 import '../styles/globals.scss';
 import createEmotionCache from '../styles/createEmotionCache';
 import DefaultLayoutComponent from '@wyn/components/Layouts/Default/DefaultLayout';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 

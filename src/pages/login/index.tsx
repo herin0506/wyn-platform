@@ -14,9 +14,10 @@ export default function Login() {
     router.push('/forgotPassword');
   };
 
-  const handleLogin = () =>{
-    router.push('/home')
-  }
+  const handleLogin = () => {
+    //router.push('/home')
+    router.push('/productDetails');
+  };
   return (
     <>
       <section className={styles.sectionOne}>
@@ -83,4 +84,4 @@ export default function Login() {
       </section>
     </>
   );
-};
+}

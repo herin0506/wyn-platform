@@ -6,6 +6,8 @@ import {
 } from './styled';
 import FooterComponent from '../Common/Footer/Footer';
 import HeaderNavigationComponent from '../Common/Navigation/Navigation';
+import { Hidden } from '@mui/material';
+import MobileFooterComponent from '../Common/Footer/MobileFooter';
 interface DefaultLayoutComponentProps {
   children: React.ReactNode;
 }
@@ -15,9 +17,14 @@ const DefaultLayoutComponent = ({ children }: DefaultLayoutComponentProps) => {
     <StyledMainRootBox>
       <HeaderNavigationComponent />
       <StyledMainRenderedSection>{children}</StyledMainRenderedSection>
-      {/* <StyledFooterSection>
-        <FooterComponent />
-      </StyledFooterSection> */}
+      <StyledFooterSection>
+        <Hidden only={['xs']}>
+          <FooterComponent />
+        </Hidden>
+        <Hidden only={['sm','md','lg','xl']}>
+          <MobileFooterComponent />
+        </Hidden>
+      </StyledFooterSection>
     </StyledMainRootBox>
   );
 };

@@ -6,8 +6,15 @@ import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import Image from 'next/image';
 import Hidden from '@mui/material/Hidden';
+import { useRouter } from 'next/navigation';
+import { APP_ROUTES } from '@wyn/utils/routes';
 
 const NavigationCartAndSearchComponent = () => {
+  const router = useRouter();
+  const handleNavigation = (route: string) => {
+    router.push(route);
+  };
+
   return (
     <Grid
       container
@@ -17,7 +24,7 @@ const NavigationCartAndSearchComponent = () => {
     >
       <Hidden only={['xs', 'sm']}>
         <Grid item>
-          <Link className="__link" href="/">
+          <Link className="__link" href={APP_ROUTES.SIGN_UP}>
             Sign Up
           </Link>
         </Grid>
@@ -50,7 +57,7 @@ const NavigationCartAndSearchComponent = () => {
         </Grid>
       </Hidden>
       <Grid item>
-        <IconButton>
+        <IconButton onClick={()=>handleNavigation(APP_ROUTES.CART)}>
           <Image
             src="/icons/cartIcon.svg"
             width={25}

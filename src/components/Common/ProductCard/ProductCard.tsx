@@ -42,7 +42,7 @@ const ProductCardComponent = ({
       <Box>
         <Typography variant="body2">Rs. {price}</Typography>
       </Box>
-      <Grid container alignItems="center" justifyContent="space-between">
+      <Grid mt={2} container alignItems="center" justifyContent="space-between">
         <Grid item>
           <Button variant="contained" size="small">
             ADD TO CART

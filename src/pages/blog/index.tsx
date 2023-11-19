@@ -1,7 +1,10 @@
-export default function Blog(){
-    return (
-        <>
-        <div>This is Blog Page</div>
-        </>
-    )
-}
+import React from 'react';
+import PlaceHolderComponent from '@wyn/components/Common/PlaceHolder/PlaceHolder';
+
+const BlogPage = () => {
+  return (
+    <PlaceHolderComponent content='Blog Page - Coming Soon...'/> 
+  );
+};
+
+export default BlogPage;

@@ -234,3 +234,88 @@ export const womenHealthIssues = [
     content: 'How to balance female hormones for a healthy menstruation',
   },
 ];
+
+export const whyWYNContent = {
+  title: 'India’s 1st Nutritional Mints.',
+  subTitle:
+    "Discover India’s pioneering Nutritive Mints, a game-changing innovation that transforms convenience while delivering precise nutrition. At WYN, we've condensed customized well-being into a format seamlessly adaptable to your lifestyle. Whether you're on the move or seeking a quick energy boost, WYN mints are your ultimate solution. Every mint is the result of thorough formulation, featuring meticulously selected nutrients designed to target your specific needs. Welcome to a fresh era of feminine well-being, where you're in command, and WYN is your trusted companion, guiding you every step of the way.",
+};
+
+export const whatWeOfferContent = {
+  title: 'What we offer',
+  subTitle: "The story of What You Need - WYN products are of focused vision and in-depth understanding of scientific advances, combined with a strong foothold in Ayurveda. We've cultivated a diverse range of products that can be easily incorporated into your daily routine. Our product range includes Nutraceuticals, Cosmeceuticals, Nutra-Cosmeceutical Health Care & Wellness products.. READ MORE"
+};
+
+export const BenefitsData = [
+  {
+    title: 'Steroid Hormone Free',
+    subTitle:
+      'Rest easy knowing that our mints are entirely free from hormones and steroids, ensuring your well-being is our top priority.',
+    src: '/icons/hormone.svg',
+  },
+  {
+    title: 'Science Backed',
+    subTitle:
+      'Each mint is meticulously crafted based on scientific research and designed to effectively address specific feminine concerns.',
+    src: '/icons/science.svg',
+  },
+  {
+    title: 'Vegetarian',
+    subTitle:
+    "We're proud to say that our mints are completely vegetarian, making them a consumable for ALL and sustainable choice.",
+    src: '/icons/vegetarian.svg',
+  },
+  {
+    title: 'Cruelty Free',
+    subTitle:
+      "At WYN, we hold a strong stance against animal testing. Our products are developed with compassion and without causing harm to any living beings.",
+    src: '/icons/cruelt.svg',
+  },
+  {
+    title: 'Sugar Free',
+    subTitle:
+      'Our mints are sugar-free, promoting a healthier approach to wellness without unnecessary additives.',
+    src: '/icons/sugar.svg',
+  },
+  {
+    title: 'Plant Derived Compounds',
+    subTitle:
+      "Harnessing the power of nature, our mints are enriched with plant-derived compounds, bringing you the best of botanical goodness.",
+    src:'/icons/derived.svg',
+  },
+];
+
+export const questionsAnswers = [
+  {
+    question: 'What does Hormone-Steroid free mean?',
+    answer: 'Some answer needs to be added in this area',
+  },
+  {
+    question: 'What does Hormone-Steroid free mean?',
+    answer: 'Some answer needs to be added in this area',
+  },
+  {
+    question: 'What does Hormone-Steroid free mean?',
+    answer: 'Some answer needs to be added in this area',
+  },
+  {
+    question: 'What does Hormone-Steroid free mean?',
+    answer: 'Some answer needs to be added in this area',
+  },
+  {
+    question: 'What does Hormone-Steroid free mean?',
+    answer: 'Some answer needs to be added in this area',
+  },
+  {
+    question: 'What does Hormone-Steroid free mean?',
+    answer: 'Some answer needs to be added in this area',
+  },
+  {
+    question: 'What does Hormone-Steroid free mean?',
+    answer: 'Some answer needs to be added in this area',
+  },
+  {
+    question: 'What does Hormone-Steroid free mean?',
+    answer: 'Some answer needs to be added in this area',
+  },
+];

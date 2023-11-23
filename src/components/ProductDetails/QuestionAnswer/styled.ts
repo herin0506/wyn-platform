@@ -1,9 +1,7 @@
-import Container from '@mui/material/Container';
-import { styled } from '@mui/material/styles';
-import { APP_COLORS } from '@wyn/styles/colors/colors';
 import Box from '@mui/material/Box';
+import { styled } from '@mui/material/styles';
 
-export const StyledQuestionAnswerComponent = styled(Box)(() => ({
+export const StyledQuestionAnswer = styled(Box)(() => ({
   //backgroundColor: APP_COLORS.PAPAYA_WHIP,
   '& .__image_wrapper': {
     width: "100%",

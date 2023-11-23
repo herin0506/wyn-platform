@@ -1,59 +1,17 @@
-import React from 'react';
-import { StyledQuestionAnswerComponent } from './styled';
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import SectionHeadingComponent from '@wyn/components/Common/SectionHeading/SectionHeading';
-import SectionSpanComponent from '@wyn/components/Common/SectionHeading/SectionSpan';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
-  Button,
-  Rating,
   Typography,
 } from '@mui/material';
-import Image from 'next/image';
-import styles from '../../../styles/authentication.module.css';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Container from '@mui/material/Container';
+import { StyledQuestionAnswer } from './styled';
+import { questionsAnswers } from '@wyn/utils/constants';
 
-const questionsAnswers = [
-  {
-    question: 'What does Hormone-Steroid free mean?',
-    answer: 'Some answer needs to be added in this area',
-  },
-  {
-    question: 'What does Hormone-Steroid free mean?',
-    answer: 'Some answer needs to be added in this area',
-  },
-  {
-    question: 'What does Hormone-Steroid free mean?',
-    answer: 'Some answer needs to be added in this area',
-  },
-  {
-    question: 'What does Hormone-Steroid free mean?',
-    answer: 'Some answer needs to be added in this area',
-  },
-  {
-    question: 'What does Hormone-Steroid free mean?',
-    answer: 'Some answer needs to be added in this area',
-  },
-  {
-    question: 'What does Hormone-Steroid free mean?',
-    answer: 'Some answer needs to be added in this area',
-  },
-  {
-    question: 'What does Hormone-Steroid free mean?',
-    answer: 'Some answer needs to be added in this area',
-  },
-  {
-    question: 'What does Hormone-Steroid free mean?',
-    answer: 'Some answer needs to be added in this area',
-  },
-];
 const QuestionAnswerComponent = () => {
   return (
-    <StyledQuestionAnswerComponent>
+    <StyledQuestionAnswer>
       <Container maxWidth="lg">
         <Typography variant="h4" pt={7} mb={2} className="text-center">
           We want you to ask questions, because we have what you need.
@@ -74,7 +32,7 @@ const QuestionAnswerComponent = () => {
           </Accordion>
         ))}
       </Container>
-    </StyledQuestionAnswerComponent>
+    </StyledQuestionAnswer>
   );
 };
 

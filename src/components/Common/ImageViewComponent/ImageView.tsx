@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 interface ImageViewProps {
   src: string;
   alt: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 const ImageView = ({ src, alt, width, height }: ImageViewProps) => {
@@ -27,8 +27,8 @@ const ImageView = ({ src, alt, width, height }: ImageViewProps) => {
 ImageView.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  width: PropTypes.string, // Custom width (optional)
-  height: PropTypes.string, // Custom height (optional)
+  width: PropTypes.number,
+  height: PropTypes.number,
 };
 
 export default ImageView;

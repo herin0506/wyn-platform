@@ -1,15 +1,8 @@
-import React from 'react';
-import { StyledProductDetailsComponent } from './styled';
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import SectionHeadingComponent from '@wyn/components/Common/SectionHeading/SectionHeading';
-import SectionSpanComponent from '@wyn/components/Common/SectionHeading/SectionSpan';
-import { Button, Paper, Rating, Typography } from '@mui/material';
-import Image from 'next/image';
-import styles from '../../../styles/authentication.module.css';
+import { Button, Rating, Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
 import { APP_COLORS } from '@wyn/styles/colors/colors';
+import { StyledProductDetails } from './styled';
 
 interface ProductDetailsComponentProps {
   category: string;
@@ -27,7 +20,7 @@ const ProductDetailsComponent = ({
   price,
 }: ProductDetailsComponentProps) => {
   return (
-    <StyledProductDetailsComponent maxWidth="xl">
+    <StyledProductDetails maxWidth="xl">
       <Grid container justifyContent="space-between">
         <Grid pt={2} item lg={6}>
           <Typography variant="h6" sx={{ color: APP_COLORS.PINK }}>
@@ -49,7 +42,7 @@ const ProductDetailsComponent = ({
       </Typography>
       <Divider />
       <Typography pt={3} variant="h6" mb={2}>
-        {subTitle}  
+        {subTitle}
       </Typography>
 
       <Grid container spacing={2}>
@@ -69,7 +62,7 @@ const ProductDetailsComponent = ({
           </Button>
         </Grid>
       </Grid>
-    </StyledProductDetailsComponent>
+    </StyledProductDetails>
   );
 };
 

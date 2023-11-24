@@ -1,18 +1,18 @@
 import { Button, Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
-import { StyledWhatWeOfferDetails } from './styled';
+import { StyledHorizontalContentSection } from './styled';
 
-interface WhatWeOfferDetailsComponentProps {
+interface HorizontalContentSectionComponentProps {
   title: string;
   subTitle: string;
 }
 
-const WhatWeOfferDetailsComponent = ({
+const HorizontalContentSectionComponent = ({
   title,
   subTitle,
-}: WhatWeOfferDetailsComponentProps) => {
+}: HorizontalContentSectionComponentProps) => {
   return (
-    <StyledWhatWeOfferDetails maxWidth="xl">
+    <StyledHorizontalContentSection maxWidth="xl">
       <Typography pb={3} variant="h4">
         {title}
       </Typography>
@@ -23,8 +23,8 @@ const WhatWeOfferDetailsComponent = ({
       <Button variant="contained" size="small">
         Read More
       </Button>
-    </StyledWhatWeOfferDetails>
+    </StyledHorizontalContentSection>
   );
 };
 
-export default WhatWeOfferDetailsComponent;
+export default HorizontalContentSectionComponent;

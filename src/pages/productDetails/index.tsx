@@ -3,12 +3,12 @@ import HorizontalSplitComponent from '@wyn/components/Common/HorizontalSplit/Hor
 import { Fragment } from 'react';
 //import styles from '../../styles/authentication.css';
 import NaturalHerbsContainer from '@wyn/components/Home/NaturalHerbs/NaturalHerbs';
-import InfoDetails from '@wyn/components/ProductDetails/InfoDetails/InfoDetails';
-import InfoImage from '@wyn/components/ProductDetails/InfoImage/InfoImage';
 import ProductDetails from '@wyn/components/ProductDetails/ProductDetails/ProductDetails';
 import ProductImage from '@wyn/components/ProductDetails/ProductImage/ProductImage';
 import QuestionAnswer from '@wyn/components/ProductDetails/QuestionAnswer/QuestionAnswer';
 import { infoContent, product } from '@wyn/utils/constants';
+import HorizontalImageSectionComponent from '@wyn/components/Common/HorizontalImageSection/HorizontalImageSection';
+import HorizontalContentSectionComponent from '@wyn/components/Common/HorizontalContentSection/HorizontalContentSection';
 
 export default function Home() {
   return (
@@ -24,8 +24,15 @@ export default function Home() {
       </Container>
       <Container maxWidth="xl">
         <HorizontalSplitComponent
-          leftComponent={<InfoImage />}
-          rightComponent={<InfoDetails {...infoContent} />}
+          leftComponent={
+            <HorizontalImageSectionComponent
+              src="/images/group.png"
+              alt="Your Image"
+            />
+          }
+          rightComponent={
+            <HorizontalContentSectionComponent {...infoContent} />
+          }
         />
       </Container>
       <QuestionAnswer />

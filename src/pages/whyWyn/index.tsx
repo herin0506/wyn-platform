@@ -1,12 +1,10 @@
 import { Container } from '@mui/material';
 import BannerComponent from '@wyn/components/Common/Banner/Banner';
+import HorizontalContentSectionComponent from '@wyn/components/Common/HorizontalContentSection/HorizontalContentSection';
+import HorizontalImageSectionComponent from '@wyn/components/Common/HorizontalImageSection/HorizontalImageSection';
 import HorizontalSplitComponent from '@wyn/components/Common/HorizontalSplit/HorizontalSplit';
 import NaturalHerbsContainer from '@wyn/components/Home/NaturalHerbs/NaturalHerbs';
 import Benefits from '@wyn/components/WhyWyn/Benefits/Benefits';
-import NutrientsDetails from '@wyn/components/WhyWyn/NutrientsDetails/NutrientsDetails';
-import NutrientsImage from '@wyn/components/WhyWyn/NutrientsImage/NutrientsImage';
-import WhatWeOfferDetails from '@wyn/components/WhyWyn/WhatWeOfferDetails/WhatWeOfferDetails';
-import WhatWeOfferImage from '@wyn/components/WhyWyn/WhatWeOfferImage/WhatWeOfferImage';
 import { whatWeOfferContent, whyWYNContent } from '@wyn/utils/constants';
 import { Fragment } from 'react';
 
@@ -20,8 +18,13 @@ const WhyWynPage = () => {
       />
       <Container maxWidth="xl">
         <HorizontalSplitComponent
-          leftComponent={<NutrientsImage />}
-          rightComponent={<NutrientsDetails {...whyWYNContent} />}
+          leftComponent={
+            <HorizontalImageSectionComponent
+              src="/images/frame.png"
+              alt="Nutrients Details Image"
+            />
+          }
+          rightComponent={<HorizontalContentSectionComponent {...whyWYNContent} />}
         />
       </Container>
       <Container maxWidth="xl">
@@ -32,10 +35,13 @@ const WhyWynPage = () => {
       </Container>
       <Container maxWidth="xl">
         <HorizontalSplitComponent
-          leftComponent={<WhatWeOfferImage />}
-          rightComponent={
-            <WhatWeOfferDetails {...whatWeOfferContent} />
+          leftComponent={
+            <HorizontalImageSectionComponent
+              src="/images/image7.png"
+              alt="what we offer details"
+            />
           }
+          rightComponent={<HorizontalContentSectionComponent {...whatWeOfferContent} />}
         />
       </Container>
     </Fragment>

@@ -1,14 +1,7 @@
-import React, { ReactNode } from 'react';
-import { StyledHorizontalSplitComponent } from './styled';
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import SectionHeadingComponent from '@wyn/components/Common/SectionHeading/SectionHeading';
-import SectionSpanComponent from '@wyn/components/Common/SectionHeading/SectionSpan';
-import { Button, Paper, Rating, Typography } from '@mui/material';
-import Image from 'next/image';
-import styles from '../../../styles/authentication.module.css';
-import Divider from '@mui/material/Divider';
+import { ReactNode } from 'react';
+import { StyledHorizontalSplitComponent } from './styled';
 
 interface HorizontalSplitComponentProps {
   leftComponent: ReactNode;

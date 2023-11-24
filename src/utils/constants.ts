@@ -319,3 +319,13 @@ export const questionsAnswers = [
     answer: 'Some answer needs to be added in this area',
   },
 ];
+
+export const birthOfWYN = {
+  title: 'The Birth of WYN',
+  subTitle: "Dr. Shefali Tungare's groundbreaking initiative, 'WYN- What You Need,' has rapidly gained prominence since its inception in 2023. She embarked on this journey after identifying a significant gap in the intimate care market, where many products lacked transparency about their ingredients or failed to meet the safety standards that women rightfully deserve.... READ MORE"
+};
+
+export const empoweringWomen = {
+  title: 'Empowering Women at Every Stage of Life',
+  subTitle: "Welcome to WYN - What You Need, your gateway to holistic women's wellness. We're dedicated to redefining the approach to women's health, offering natural, effective, and natural solutions. In the year 2022, Dr. Shefali Tungare initiated a ground breaking venture that would come to be known as 'WYN.... READ MORE'"
+};

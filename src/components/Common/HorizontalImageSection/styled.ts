@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 
-export const StyledNutrientsImage = styled(Box)(() => ({
+export const StyledHorizontalImageSection = styled(Box)(() => ({
   //backgroundColor: APP_COLORS.PAPAYA_WHIP,
   '& .__image_wrapper': {
     width: "100%",

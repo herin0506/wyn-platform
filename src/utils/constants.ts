@@ -246,44 +246,95 @@ export const whatWeOfferContent = {
   subTitle: "The story of What You Need - WYN products are of focused vision and in-depth understanding of scientific advances, combined with a strong foothold in Ayurveda. We've cultivated a diverse range of products that can be easily incorporated into your daily routine. Our product range includes Nutraceuticals, Cosmeceuticals, Nutra-Cosmeceutical Health Care & Wellness products.. READ MORE"
 };
 
-export const BenefitsData = [
-  {
-    title: 'Steroid Hormone Free',
-    subTitle:
-      'Rest easy knowing that our mints are entirely free from hormones and steroids, ensuring your well-being is our top priority.',
-    src: '/icons/hormone.svg',
-  },
-  {
-    title: 'Science Backed',
-    subTitle:
-      'Each mint is meticulously crafted based on scientific research and designed to effectively address specific feminine concerns.',
-    src: '/icons/science.svg',
-  },
-  {
-    title: 'Vegetarian',
-    subTitle:
-    "We're proud to say that our mints are completely vegetarian, making them a consumable for ALL and sustainable choice.",
-    src: '/icons/vegetarian.svg',
-  },
-  {
-    title: 'Cruelty Free',
-    subTitle:
-      "At WYN, we hold a strong stance against animal testing. Our products are developed with compassion and without causing harm to any living beings.",
-    src: '/icons/cruelt.svg',
-  },
-  {
-    title: 'Sugar Free',
-    subTitle:
-      'Our mints are sugar-free, promoting a healthier approach to wellness without unnecessary additives.',
-    src: '/icons/sugar.svg',
-  },
-  {
-    title: 'Plant Derived Compounds',
-    subTitle:
-      "Harnessing the power of nature, our mints are enriched with plant-derived compounds, bringing you the best of botanical goodness.",
-    src:'/icons/derived.svg',
-  },
-];
+export const benefitsData ={
+  heading: "A Treasure Trove of Benefits",
+  itemList: [
+    {
+      title: 'Steroid Hormone Free',
+      subTitle:
+        'Rest easy knowing that our mints are entirely free from hormones and steroids, ensuring your well-being is our top priority.',
+      src: '/icons/hormone.svg',
+    },
+    {
+      title: 'Science Backed',
+      subTitle:
+        'Each mint is meticulously crafted based on scientific research and designed to effectively address specific feminine concerns.',
+      src: '/icons/science.svg',
+    },
+    {
+      title: 'Vegetarian',
+      subTitle:
+      "We're proud to say that our mints are completely vegetarian, making them a consumable for ALL and sustainable choice.",
+      src: '/icons/vegetarian.svg',
+    },
+    {
+      title: 'Cruelty Free',
+      subTitle:
+        "At WYN, we hold a strong stance against animal testing. Our products are developed with compassion and without causing harm to any living beings.",
+      src: '/icons/cruelt.svg',
+    },
+    {
+      title: 'Sugar Free',
+      subTitle:
+        'Our mints are sugar-free, promoting a healthier approach to wellness without unnecessary additives.',
+      src: '/icons/sugar.svg',
+    },
+    {
+      title: 'Plant Derived Compounds',
+      subTitle:
+        "Harnessing the power of nature, our mints are enriched with plant-derived compounds, bringing you the best of botanical goodness.",
+      src:'/icons/derived.svg',
+    },
+  ]
+}
+
+export const guidingPrinciples = {
+  heading: "Our Guiding Principles",
+  itemList: [
+    {
+      title: 'Nature Centric Approach',
+      subTitle:
+        'We draw inspiration from nature, crafting pure and safe products free from synthetic interference.',
+      src: '/icons/nature.png',
+    },
+    {
+      title: 'Holistic Healing',
+      subTitle:
+        'Rooted in Ayurveda, our products blend traditional wisdom with modern science, catering to women at every life stage.',
+      src: '/icons/holistic.png',
+    },
+    {
+      title: 'Accessibility and Empowerment',
+      subTitle:
+      "Our non-prescription nutraceuticals make holistic wellness accessible, fitting right in your pocket.",
+      src: '/icons/accessbility.png',
+    },
+    {
+      title: 'Integrity and Transparency',
+      subTitle:
+        "We guarantee the highest standards through tried, tested, and peer-reviewed procedures.",
+      src: '/icons/integrity.png',
+    },
+    {
+      title: 'Steroid Hormone Free',
+      subTitle:
+        'Our products prioritize purity and safety, free from hormones and steroids.',
+      src: '/icons/hormone.svg',
+    },
+    {
+      title: 'Cruelty-Free',
+      subTitle:
+        "We create with compassion, ensuring no harm to any living being.",
+      src:'/icons/cruelt.svg',
+    },
+    {
+      title: 'Botanical Excellence',
+      subTitle:
+        "Our solutions brim with botanical goodness, delivering nature's best in the form of delectable mints.",
+      src:'/icons/botanical.png',
+    },
+  ]
+}
 
 export const questionsAnswers = [
   {

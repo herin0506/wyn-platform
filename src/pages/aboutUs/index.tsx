@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import { Container, Divider, Typography } from '@mui/material';
 import BannerComponent from '@wyn/components/Common/Banner/Banner';
 import HorizontalContentSectionComponent from '@wyn/components/Common/HorizontalContentSection/HorizontalContentSection';
 import HorizontalImageSectionComponent from '@wyn/components/Common/HorizontalImageSection/HorizontalImageSection';
@@ -7,6 +7,12 @@ import {
   birthOfWYN,
   whatWeOfferContent,
   empoweringWomen,
+  ayurveda,
+  menstrualWellness,
+  sensualWellness,
+  pregnancyPrepareAndCare,
+  menopausalWellness,
+  dailyWellness,
 } from '@wyn/utils/constants';
 import { Fragment } from 'react';
 
@@ -48,6 +54,75 @@ const AboutUsPage = () => {
           }
           rightComponent={
             <HorizontalContentSectionComponent {...whatWeOfferContent} />
+          }
+        />
+        {/* NEW CODE */}
+        <HorizontalSplitComponent
+          leftComponent={<HorizontalContentSectionComponent {...ayurveda} />}
+          rightComponent={
+            <HorizontalImageSectionComponent
+              src="/images/ayurveda.png"
+              alt="Your Image"
+            />
+          }
+        />
+        <Typography pb={3} variant="h4" className="text-center">
+          {'Discover Your Personal Wellness Journey with WYN'}
+        </Typography>
+        <Divider />
+        <HorizontalSplitComponent
+          leftComponent={
+            <HorizontalImageSectionComponent
+              src="/images/menstrual-wellness.png"
+              alt="Your Image"
+            />
+          }
+          rightComponent={
+            <HorizontalContentSectionComponent {...menstrualWellness} />
+          }
+        />
+        <HorizontalSplitComponent
+          leftComponent={
+            <HorizontalContentSectionComponent {...sensualWellness} />
+          }
+          rightComponent={
+            <HorizontalImageSectionComponent
+              src="/images/sensual-wellness.png"
+              alt="Your Image"
+            />
+          }
+        />
+        <HorizontalSplitComponent
+          leftComponent={
+            <HorizontalImageSectionComponent
+              src="/images/pregnancy-prepare-care.png"
+              alt="Your Image"
+            />
+          }
+          rightComponent={
+            <HorizontalContentSectionComponent {...pregnancyPrepareAndCare} />
+          }
+        />
+        <HorizontalSplitComponent
+          leftComponent={
+            <HorizontalContentSectionComponent {...menopausalWellness} />
+          }
+          rightComponent={
+            <HorizontalImageSectionComponent
+              src="/images/menopause-wellness.png"
+              alt="Your Image"
+            />
+          }
+        />
+        <HorizontalSplitComponent
+          leftComponent={
+            <HorizontalImageSectionComponent
+              src="/images/everyday-wellness.png"
+              alt="Your Image"
+            />
+          }
+          rightComponent={
+            <HorizontalContentSectionComponent {...dailyWellness} />
           }
         />
       </Container>

@@ -4,19 +4,30 @@ import Container from '@mui/material/Container';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import ImageView from '@wyn/components/Common/ImageViewComponent/ImageView';
-import { BenefitsData } from '@wyn/utils/constants';
-import { StyledBenefits } from './styled';
+import { StyledThumbnailDescriptionList } from './styled';
 
-const BenefitsComponent = () => {
+interface dataValidation {
+  title: string;
+  subTitle: string;
+  src: string;
+}
+interface ThumbnailDescriptionListComponentProps {
+  heading: string;
+  itemList: dataValidation[];
+}
+const ThumbnailDescriptionListComponent = ({
+  heading,
+  itemList,
+}: ThumbnailDescriptionListComponentProps) => {
   return (
-    <StyledBenefits>
+    <StyledThumbnailDescriptionList>
       <Container disableGutters maxWidth="lg">
         <Typography pb={3} variant="h4">
-          {'A Treasure Trove of Benefits'}
+          {heading}
         </Typography>
         <Divider />
         <Box>
-          {BenefitsData.map((item) => (
+          {itemList.map((item) => (
             <Grid container my={2}>
               <Grid item xs={2} md={1} p={1}>
                 <ImageView alt="image" src={item.src} />
@@ -33,8 +44,8 @@ const BenefitsComponent = () => {
           ;
         </Box>
       </Container>
-    </StyledBenefits>
+    </StyledThumbnailDescriptionList>
   );
 };
 
-export default BenefitsComponent;
+export default ThumbnailDescriptionListComponent;

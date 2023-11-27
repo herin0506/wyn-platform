@@ -19,8 +19,8 @@ const HorizontalSplitComponent = ({
           container
           rowSpacing={{ xs: 1 }}
           columnSpacing={{ xs: 0, md: 6 }}
-          pt={16}
-          pb={10}
+          pt={8}
+          pb={8}
         >
           <Grid item xs={12} md={6}>
             {leftComponent}

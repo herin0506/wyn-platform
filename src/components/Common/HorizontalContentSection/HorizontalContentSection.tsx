@@ -11,15 +11,18 @@ const HorizontalContentSectionComponent = ({
   title,
   subTitle,
 }: HorizontalContentSectionComponentProps) => {
+  const subTitleLines = subTitle.split('\n');
   return (
     <StyledHorizontalContentSection maxWidth="xl">
-      <Typography pb={3} variant="h4">
+      <Typography pb={1} pt={2} variant="h4" borderBottom={"1px solid black"}>
         {title}
       </Typography>
       <Divider />
-      <Typography variant="h6" mb={5}>
-        {subTitle}
+      {subTitleLines.map((line) => (
+        <Typography variant="h6" mt={2} mb={2} >
+        {line}
       </Typography>
+      ))}
       <Button variant="contained" size="small">
         Read More
       </Button>

@@ -17,8 +17,11 @@ import {
   guidingPrinciples,
 } from '@wyn/utils/constants';
 import { Fragment } from 'react';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
 
 const AboutUsPage = () => {
+  const isMobileTabletView = useMediaQuery('(max-width:959px)');
   return (
     <Fragment>
       <Box mt={0}>
@@ -39,17 +42,25 @@ const AboutUsPage = () => {
               />
             }
           />
+        </Container>
+        <Container maxWidth="xl" disableGutters={!isMobileTabletView}>
           <HorizontalSplitComponent
             leftComponent={
               <HorizontalImageSectionComponent
-                src="/logos/logo_big.png"
+                desktopSrc="/logos/logo_big.png"
+                mobileSrc="/logos/logo.png"
                 alt="Your Image"
+                mobileBackgroundImage="/images/background_light.png"
               />
             }
             rightComponent={
               <HorizontalContentSectionComponent {...empoweringWomen} />
             }
+            desktopBackgroundImage="/images/background_light.png"
+            //mobileBackgroundImage="/images/background_light.png"
           />
+        </Container>
+        <Container maxWidth="xl">
           <HorizontalSplitComponent
             leftComponent={
               <HorizontalImageSectionComponent
@@ -132,6 +143,7 @@ const AboutUsPage = () => {
             }
           />
         </Container>
+        <DiscoverCategoriesComponent />
       </Box>
     </Fragment>
   );

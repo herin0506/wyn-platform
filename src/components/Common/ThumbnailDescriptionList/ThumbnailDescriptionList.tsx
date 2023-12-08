@@ -27,8 +27,8 @@ const ThumbnailDescriptionListComponent = ({
         </Typography>
         <Divider />
         <Box>
-          {itemList.map((item) => (
-            <Grid container my={2}>
+          {itemList.map((item, index) => (
+            <Grid container my={2} key={index}>
               <Grid item xs={2} md={1} p={1}>
                 <ImageView alt="image" src={item.src} />
               </Grid>

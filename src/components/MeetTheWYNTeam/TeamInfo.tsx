@@ -32,7 +32,8 @@ const TeamInfo = () => {
                         />
                         </Hidden>
                     </Container>
-                ))}
+                ))
+            }
         </Container>     
     )
 }

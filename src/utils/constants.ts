@@ -330,8 +330,7 @@ export const empoweringWomen = {
   subTitle: "Welcome to WYN - What You Need, your gateway to holistic women's wellness. We're dedicated to redefining the approach to women's health, offering natural, effective, and natural solutions. In the year 2022, Dr. Shefali Tungare initiated a ground breaking venture that would come to be known as 'WYN.... READ MORE'"
 };
 
-export const meetTheWynTeam =[
-  {
+export const ShefaliTungareInfo ={
     title:"Dr. Shefali Tungare, Founder",
     subTitle:`She has emerged as a visionary in women's health empowerment. In 2023, she founded "WYN - What You Need," a brand dedicated to transparency, safety, and natural well-being.
 
@@ -340,21 +339,39 @@ export const meetTheWynTeam =[
     \nHer philosophy of "Mints not Medicines" has reshaped the industry, emphasizing natural healing methods. Beyond products, "WYN" has become a multifaceted wellness entity, offering menstrual care, sexual wellness, and pregnancy care products. Dr. Tungare's mission is clear: empower women globally to make informed decisions about their intimate health.
     
     \nWith a blend of Ayurvedic wisdom and modern medicine, Dr. Shefali Tungare's commitment to enhancing women's well-being is transforming the approach to women's health. "WYN - What You Need" stands as a beacon of empowerment, where passion meets purpose, leading to transformative change in women's lives worldwide.`,
+  };
+
+export const teamMembers = [
+  {
+    contentProps:{
+      title:"Mr. Snehal Gersappa, CEO",
+      subTitle:`Mr. Snehal Gersappa's extensive experience and remarkable expertise in running the organizations define his crucial role the company. With an impressive track record spanning over 19 years of dedicated service, he brings a wealth of knowledge to the table.
+      He plays a multifaceted role that significantly impacts our company's trajectory. His depth of experience in sales, marketing & financial modelling which enables him to identify and seize growth opportunities with precision.`
+    },
+    imgProps:{
+      src:'/images/snehal-gersappa.png',
+      alt:'Mr. Snehal Gersappa'
+    }
   },
   {
-    title:'Mr. Snehal Gersappa, CEO',
-  
-    subTitle:`Mr. Snehal Gersappa's extensive experience and remarkable expertise in running the organizations define his crucial role the company. With an impressive track record spanning over 19 years of dedicated service, he brings a wealth of knowledge to the table.
-    He plays a multifaceted role that significantly impacts our company's trajectory. His depth of experience in sales, marketing & financial modelling which enables him to identify and seize growth opportunities with precision.`
+    contentProps:{
+      title:"Dr. Satish Vaidya, Mentor & Chief Research Officer",
+      subTitle:"With over four decades of unwavering dedication and a profound commitment to merging ancient wisdom with cutting-edge science, Dr. Vaidya stands as a beacon in the field of holistic health for women. \n He is not merely a researcher; he is a pioneer in the exploration of transformative possibilities within herbal and nutraceutical therapies."
+    },
+    imgProps:{
+      src:'/images/satish-vaidya.png',
+      alt:'Dr. Satish Vaidya'
+    }
   },
   {
-    title:"Dr. Satish Vaidya, Mentor & Chief Research Officer",
-   
-    subTitle:`With over four decades of unwavering dedication and a profound commitment to merging ancient wisdom with cutting-edge science, Dr. Vaidya stands as a beacon in the field of holistic health for women. \n He is not merely a researcher; he is a pioneer in the exploration of transformative possibilities within herbal and nutraceutical therapies.`
-  },
-  {
-    title:"Mr. Sagar Tungare, COO",
-    
-    subTitle:`Sagar Tungare, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. \n His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement.`
+    contentProps:{
+      title:"Mr. Sagar Tungare, COO",
+      subTitle:"Sagar Tungare, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. \n His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement."
+    },
+    imgProps:{
+      src:'/images/sagar-tungare.png',
+      alt:'Mr. Sagar Tungare'
+    }
   }
+  // add other team members here
 ];

@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import HorizontalImageSectionComponent from '../Common/HorizontalImageSection/HorizontalImageSection'
 import HorizontalContentSectionComponent from '../Common/HorizontalContentSection/HorizontalContentSection'
-import { meetTheWynTeam } from '@wyn/utils/constants'
+import { ShefaliTungareInfo } from '@wyn/utils/constants'
 import { Container, Hidden } from '@mui/material'
 
 const MainBlog = () => {
@@ -16,11 +16,10 @@ const MainBlog = () => {
       <HorizontalImageSectionComponent
       alt='Dr. Shefali Tungare' 
       src='/images/shefali-tungare-desktop.png' />
-
     </Hidden>
-    <HorizontalContentSectionComponent {...meetTheWynTeam[0]}/>
+    <HorizontalContentSectionComponent {...ShefaliTungareInfo}/>
    </Container>
   )
 }
 
-export default MainBlog
+export default MainBlog;

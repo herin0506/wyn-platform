@@ -23,7 +23,7 @@ const HorizontalContentSectionComponent = ({
         {line}
       </Typography>
       ))}
-      <Button variant="contained" size="small">
+      <Button variant="contained" size="small" sx={{margin:"0 0 10px 0"}}>
         Read More
       </Button>
     </StyledHorizontalContentSection>

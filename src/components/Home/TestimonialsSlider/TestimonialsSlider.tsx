@@ -5,9 +5,9 @@ import { Autoplay, Navigation } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import TestimonialsCardComponent from '@wyn/components/Common/TestimonialCard/TestimonialsCard';
-import Container  from '@mui/material/Container';
-import Box  from '@mui/material/Box';
-
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import { testimonials } from '@wyn/utils/constants';
 
 const TestimonialsSliderContainer = () => {
   return (
@@ -22,31 +22,13 @@ const TestimonialsSliderContainer = () => {
         }}
         className="tesimonials-slider"
       >
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
+        {testimonials.map((item) => (
+          <SwiperSlide key={item._id}>
+            <Container maxWidth="lg">
+              <TestimonialsCardComponent data={item} />
+            </Container>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Box>
   );

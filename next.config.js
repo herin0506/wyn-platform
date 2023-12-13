@@ -3,14 +3,21 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
-    async redirects() {
-      return [
-        {
-          source: '/',
-          destination: '/login',
-          permanent: true,
-        }
-      ]
-    }
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/login',
+        permanent: true,
+      },
+    ];
+  },
 };
-  

@@ -8,6 +8,7 @@ import TestimonialsCardComponent from '@wyn/components/Common/TestimonialCard/Te
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import SectionHeadingComponent from '@wyn/components/Common/SectionHeading/SectionHeading';
+import { coFounders } from '@wyn/utils/constants';
 
 const WomenWellnessComponent = () => {
   return (
@@ -29,31 +30,12 @@ const WomenWellnessComponent = () => {
         }}
         className="tesimonials-slider"
       >
-        <SwiperSlide>
+        {coFounders.map((item)=> <SwiperSlide key={item._id}>
           <Container maxWidth="lg">
-            <TestimonialsCardComponent />
+            <TestimonialsCardComponent data={item} />
           </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Container maxWidth="lg">
-            <TestimonialsCardComponent />
-          </Container>
-        </SwiperSlide>
+        </SwiperSlide>)}
+       
       </Swiper>
     </Box>
   );

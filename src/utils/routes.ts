@@ -5,7 +5,7 @@ export const APP_ROUTES = {
   BLOG: '/blog',
   SIGN_UP: '/signUp',
   CART: '/cart',
-  DAILY_HEALTH: '/collections/daily-health',
+  DAILY_HEALTH: '/collections/daily-wellness',
   MENOPAUSAL_WELNESS: '/collections/menopausal-wellness',
   MENSTRUAL_WELNESS: '/collections/menstrual-wellness',
   PREGNANCY_WELNESS: '/collections/pregnancy-prepare',

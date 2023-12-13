@@ -1,28 +1,29 @@
 import React from 'react';
 import CollectionInfoComponent from '@wyn/components/Common/CollectionInfo/CollectionInfo';
-import { styled } from '@mui/material/styles';
-import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { menstrualWellnessProducts } from '@wyn/utils/constants';
 import ProductCardComponent from '@wyn/components/Common/ProductCard/ProductCard';
+import { dailyWellnessProduct } from '@wyn/utils/constants';
+import Container from '@mui/material/Container';
+import { styled } from '@mui/material/styles';
+
 const StyledCollectionPageContainer = styled(Container)(() => ({
   paddingTop: 150,
   paddingBottom: 150,
 }));
 
-const MenstrualWellness = () => {
+const DailyHealth = () => {
   return (
     <StyledCollectionPageContainer maxWidth="xl">
       <CollectionInfoComponent
-        title="Menstrual wellness"
-        subTitle="Discover WYN's Ayurvedic Medicine for Irregular Periods"
-        infoContent="Ayurvedic Medicine for Irregular Periods by WYN"
+        title="Everyday Wellness"
+        subTitle="We ensure affordability: WYN's Menstrual Hygiene Products"
+        infoContent="Empowering Women's Health: Menstrual Hygiene Products"
       />
       <Box mt={4}>
         <Grid container spacing={5}>
-          {menstrualWellnessProducts.map((product) => (
-            <Grid key={product?._id} item md={3} xs={6} sm={4} lg={3}>
+          {dailyWellnessProduct.map((product) => (
+            <Grid key={product?._id} item md={3}>
               <ProductCardComponent {...product} />
             </Grid>
           ))}
@@ -32,4 +33,4 @@ const MenstrualWellness = () => {
   );
 };
 
-export default MenstrualWellness;
+export default DailyHealth;

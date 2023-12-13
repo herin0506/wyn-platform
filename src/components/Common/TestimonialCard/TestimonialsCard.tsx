@@ -4,7 +4,13 @@ import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import { StyledTestimonialImageBox } from './styled';
 
-const TestimonialsCardComponent = () => {
+interface TestimonialsCardComponentProps {
+  data: any;
+}
+
+const TestimonialsCardComponent = ({
+  data,
+}: TestimonialsCardComponentProps) => {
   return (
     <Grid container direction="row" alignItems="stretch">
       <Grid item md={6} lg={6} xl={6} sm={6}>
@@ -17,19 +23,15 @@ const TestimonialsCardComponent = () => {
             alignItems="stretch"
           >
             <Grid item>
-              <Typography variant="body1">
-                Chewable mints are easy to consume anywhere at home, work or in
-                travel. After 15-20 days I can see results that no hot flashes
-                even in summer. I feel energetic throughout the day.
-              </Typography>
+              <Typography variant="body1">{data?.description}</Typography>
             </Grid>
             <Grid item>
               <Box mt={2}>
                 <Typography sx={{ fontSize: 40 }} variant="h1">
-                  -Mitashree Lobo
+                  -{data?.name}
                 </Typography>
                 <Typography variant="body2" sx={{ fontStyle: 'italic' }}>
-                  Homemaker
+                  {data?.designnation}
                 </Typography>
               </Box>
             </Grid>
@@ -43,10 +45,10 @@ const TestimonialsCardComponent = () => {
             alignItems="stretch"
             container
             style={{ height: '100%' }}
-            sx={(theme) => ({})}
+            sx={() => ({})}
           >
             <Grid item>
-              <StyledTestimonialImageBox></StyledTestimonialImageBox>
+              <StyledTestimonialImageBox sx={{ backgroundImage: `url(${data?.imgUrl})` }} />
             </Grid>
           </Grid>
         </Box>

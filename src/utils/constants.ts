@@ -323,18 +323,6 @@ export const questionsAnswers = [
   },
 ];
 
-export const birthOfWYN = {
-  title: 'The Birth of WYN',
-  subTitle:
-    "Dr. Shefali Tungare's groundbreaking initiative, 'WYN- What You Need,' has rapidly gained prominence since its inception in 2023. She embarked on this journey after identifying a significant gap in the intimate care market, where many products lacked transparency about their ingredients or failed to meet the safety standards that women rightfully deserve.... READ MORE",
-};
-
-export const empoweringWomen = {
-  title: 'Empowering Women at Every Stage of Life',
-  subTitle:
-    "Welcome to WYN - What You Need, your gateway to holistic women's wellness. We're dedicated to redefining the approach to women's health, offering natural, effective, and natural solutions. In the year 2022, Dr. Shefali Tungare initiated a ground breaking venture that would come to be known as 'WYN.... READ MORE'",
-};
-
 export const testimonials = [
   {
     _id: '1',
@@ -544,3 +532,51 @@ export const dailyWellnessProduct = [
     price: '250.00',
   },
 ];
+
+export const birthOfWYN = {
+  title: 'The Birth of WYN',
+  subTitle:
+    "Dr. Shefali Tungare's groundbreaking initiative, 'WYN- What You Need,' has rapidly gained prominence since its inception in 2023. She embarked on this journey after identifying a significant gap in the intimate care market, where many products lacked transparency about their ingredients or failed to meet the safety standards that women rightfully deserve.... READ MORE",
+};
+
+export const empoweringWomen = {
+  title: 'Empowering Women at Every Stage of Life',
+  subTitle:
+    "Welcome to WYN - What You Need, your gateway to holistic women's wellness. We're dedicated to redefining the approach to women's health, offering natural, effective, and natural solutions. In the year 2022, Dr. Shefali Tungare initiated a ground breaking venture that would come to be known as 'WYN.... READ MORE'",
+};
+
+export const ayurveda = {
+  title: 'The Ayurveda Connection: Your Path to Holistic Wellness with WYN',
+  subTitle:
+    'In the heart of WYN lies the ancient wisdom of Ayurveda, a centuries-old approach to wellness from India. Our products are steeped in this rich tradition, combining it with modern science to create something special.... READ MORE',
+};
+
+export const menstrualWellness = {
+  title: 'Menstrual Wellness',
+  subTitle:
+    'Say goodbye to the challenges of PCOS and embrace pain-free menstrual cycles. WYN introduces a groundbreaking range of mints, meticulously curated to address specific menstrual issues. From White Discharge mints to Heavy Period mints and Menopause mints, find the relief you deserve.',
+};
+
+export const sensualWellness = {
+  title: 'Sensual Wellness',
+  subTitle:
+    'Embrace your sensuality with confidence through our intimate care products. Our Breast Cream, Intimate Depigmenting Cream, and Intimate Vaginal Cream empower you to feel your best and truly embrace your inner self.',
+};
+
+export const pregnancyPrepareAndCare = {
+  title: 'Pregnancy Prepare & Care',
+  subTitle:
+    "Ensuring a successful pregnancy and supporting optimal lactation after birth is crucial. WYN's specialized products are designed to assist you on your journey to motherhood.",
+};
+
+export const menopausalWellness = {
+  title: 'Menopausal Wellness',
+  subTitle:
+    "Transition into menopause gracefully with WYN's thoughtfully curated range. From Menopausal Vaginal Cream to Menopausal Mints, we prioritize your comfort and health during this phase of life.",
+};
+
+export const dailyWellness = {
+  title: 'Daily Wellness',
+  subTitle:
+    'We understand the importance of daily intimate hygiene. Our Intimate Hygiene Wipes and Intimate Hygiene Spray make it effortless to prioritize your well-being each day.',
+};

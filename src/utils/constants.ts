@@ -410,3 +410,23 @@ export const dailyWellness = {
   title: 'Daily Wellness',
   subTitle: "We understand the importance of daily intimate hygiene. Our Intimate Hygiene Wipes and Intimate Hygiene Spray make it effortless to prioritize your well-being each day."
 };
+
+export const meetTheTeam = {
+  title: 'Dr. Shefali Tungare, Founder',
+  description: "She has emerged as a visionary in women's health empowerment. In 2023, she founded 'WYN - What You Need,' a brand dedicated to transparency, safety, and natural well-being. Dr. Tungare observed significant gaps in the intimate care market, with many products concealing ingredients or failing to meet safety standards. Her innovative solution was natural phytoactive compound mints, providing women with natural alternatives with a long history of safety and efficacy offering wellness with pleasure. Her philosophy of 'Mints not Medicines' has reshaped the industry, emphasizing natural healing methods. Beyond products, 'WYN' has become a multifaceted wellness entity, offering menstrual care, sexual wellness, and pregnancy care products. Dr. Tungare's mission is clear: empower women globally to make informed decisions about their intimate health. With a blend of Ayurvedic wisdom and modern medicine, Dr. Shefali Tungare's commitment to enhancing women's well-being is transforming the approach to women's health. 'WYN - What You Need' stands as a beacon of empowerment, where passion meets purpose, leading to transformative change in women's lives worldwide."  
+}
+
+export const teamDetails = [
+  {
+    title: 'Mr. Snehal Gersappa CEO',
+    subTitle: "Mr. Snehal Gersappa's extensive experience and remarkable expertise in running the organizations define his crucial role the company. With an impressive track record spanning over 19 years of dedicated service, he brings a wealth of knowledge to the table. He plays a multifaceted role that significantly impacts our company's trajectory. His depth of experience in sales, marketing & financial modelling which enables him to identify and seize growth opportunities with precision. READ MORE"
+  },
+  {
+    title: 'Dr. Satish Vaidya, Mentor & Chief Research Officer',
+    subTitle: "Satish Vaidya, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement. READ MORE"
+  },
+  {
+    title: 'Mr. Sagar Tungare COO',
+    subTitle: "Sagar Tungare, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement. READ MORE"
+  } 
+]

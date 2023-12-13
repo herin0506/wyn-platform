@@ -9,4 +9,12 @@ export const StyledHomeBanner = styled(Box)(() => ({
   [theme.breakpoints.only('xs')]: {
     minHeight: 500,
   },
+  '& .__content__box': {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 }));

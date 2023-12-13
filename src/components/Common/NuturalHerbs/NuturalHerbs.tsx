@@ -19,16 +19,14 @@ const NuturalHerbsComponent = () => {
 
   return (
     <Fragment>
-      <Hidden only={['sm', 'md', 'lg', 'xl']}>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           {naturalHerbs.map((item, index) => (
-            <Grid item xs={6} key={index}>
+            <Grid item  md={3} xs={6} key={index}>
               <SliderCardComponent {...item} />
             </Grid>
           ))}
         </Grid>
-      </Hidden>
-      <Hidden only={['xs']}>
+      {/* <Hidden only={['xs']}>
         <StyedSwiperWrapper>
           <Container disableGutters maxWidth="lg">
             <ThumbnailSliderComponent
@@ -54,7 +52,7 @@ const NuturalHerbsComponent = () => {
             </IconButton>
           </StyledSwiperNavigation>
         </StyedSwiperWrapper>
-      </Hidden>
+      </Hidden> */}
     </Fragment>
   );
 };

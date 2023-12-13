@@ -20,7 +20,7 @@ const MenstrualWellness = () => {
         infoContent="Ayurvedic Medicine for Irregular Periods by WYN"
       />
       <Box mt={4}>
-        <Grid container spacing={5}>
+        <Grid container spacing={{xs:2,md:5}}>
           {menstrualWellnessProducts.map((product) => (
             <Grid key={product?._id} item md={3} xs={6} sm={4} lg={3}>
               <ProductCardComponent {...product} />

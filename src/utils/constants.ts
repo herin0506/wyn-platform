@@ -249,7 +249,7 @@ export const whatWeOfferContent = {
     "The story of What You Need - WYN products are of focused vision and in-depth understanding of scientific advances, combined with a strong foothold in Ayurveda. We've cultivated a diverse range of products that can be easily incorporated into your daily routine. Our product range includes Nutraceuticals, Cosmeceuticals, Nutra-Cosmeceutical Health Care & Wellness products.. READ MORE",
 };
 
-export const BenefitsData = [
+export const benefitsData = [
   {
     title: 'Steroid Hormone Free',
     subTitle:
@@ -287,6 +287,54 @@ export const BenefitsData = [
     src: '/icons/derived.svg',
   },
 ];
+
+export const guidingPrinciples = {
+  heading: 'Our Guiding Principles',
+  itemList: [
+    {
+      title: 'Nature Centric Approach',
+      subTitle:
+        'We draw inspiration from nature, crafting pure and safe products free from synthetic interference.',
+      src: '/icons/nature.png',
+    },
+    {
+      title: 'Holistic Healing',
+      subTitle:
+        'Rooted in Ayurveda, our products blend traditional wisdom with modern science, catering to women at every life stage.',
+      src: '/icons/holistic.png',
+    },
+    {
+      title: 'Accessibility and Empowerment',
+      subTitle:
+        'Our non-prescription nutraceuticals make holistic wellness accessible, fitting right in your pocket.',
+      src: '/icons/accessbility.png',
+    },
+    {
+      title: 'Integrity and Transparency',
+      subTitle:
+        'We guarantee the highest standards through tried, tested, and peer-reviewed procedures.',
+      src: '/icons/integrity.png',
+    },
+    {
+      title: 'Steroid Hormone Free',
+      subTitle:
+        'Our products prioritize purity and safety, free from hormones and steroids.',
+      src: '/icons/hormone.svg',
+    },
+    {
+      title: 'Cruelty-Free',
+      subTitle:
+        'We create with compassion, ensuring no harm to any living being.',
+      src: '/icons/cruelt.svg',
+    },
+    {
+      title: 'Botanical Excellence',
+      subTitle:
+        "Our solutions brim with botanical goodness, delivering nature's best in the form of delectable mints.",
+      src: '/icons/botanical.png',
+    },
+  ],
+};
 
 export const questionsAnswers = [
   {
@@ -580,3 +628,60 @@ export const dailyWellness = {
   subTitle:
     'We understand the importance of daily intimate hygiene. Our Intimate Hygiene Wipes and Intimate Hygiene Spray make it effortless to prioritize your well-being each day.',
 };
+
+export const blogData = [
+  {
+    _id: '1',
+    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_10.png?v=1696366832',
+    title: 'The WYN Way: Merging Nutrition & Ayurveda with Modern Wellness',
+    author:"Dr. Vaidya   | 19 September 2023",
+    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+    description:
+      "To truly appreciate WYN's approach, we must embark on a journey into the world of natural nutrients in Ayurveda—a venerable traditional Indian system of medicine that has thrived for",
+  },
+  {
+    _id: '2',
+    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Group.png?v=1696369238',
+    title: 'A Journey of Women Wellness through Time & Nature',
+    author:"Dr. Vaidya   | 19 September 2023",
+    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+ 
+    description:
+      'In the heartland of India, where ancient traditions and modernity coalesce, a captivating story of transformation and unwavering dedication unfolds. This narrative mirrors the very essence of What You Need (WYN) - a brand founded on the principles of holistic wellness in a world in constant flux.',
+  },
+  {
+    _id: '3',
+    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_8.png?v=1696369344',
+    title: 'Empowerment in Every Mint',
+    author:"Dr. Vaidya   | 19 September 2023",
+    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+ 
+    description: `Life as a woman is a tapestry of experiences woven with threads of sunshine and rainbows, quirks, and challenges that shape our journey. Yet, amidst this rich tapestry, some issues have remained hidden in the shadows, spoken of in hushed tones, or worse, not spoken of at all but saliently endured. It's as if there's an unspoken code – "Thou shall not discuss intimate wellness or menstrual & menopause issues,." But you know what? It's high time we shatter that code and let our stories, our experiences, and our wellness take center stage`,
+  },
+  {
+    _id: '4',
+    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_9.png?v=1696369408',
+    title: 'Embracing Holistic Wellness in a Rapid-Paced World',
+    author:"Dr. Vaidya   | 19 September 2023",
+    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+ 
+    description: `In today's fast-moving world, where life rushes by and the world never seems to stop, the importance of holistic wellness shines like a guiding star. Stress and imbalances sneak into our lives, unsettling our physical and mental well-being. It's in this challenging landscape that the wellness brand "What You Need" (WYN) steps in, ushering in a fresh era of self-care with its innovative nutraceutical mints.`,
+  },
+  {
+    _id: '5',
+    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_19.png?v=1700762283',
+    author:"Dr. Vaidya   | 19 September 2023",
+    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+ 
+    title: 'Embracing Nature: How WYN Elevates Women’s Wellness with Botanical Ingredients',
+    description: `In an era where synthetic solutions often eclipse the wisdom of nature, "What You Need" (WYN) emerges as a pioneering brand that harnesses the incredible healing potential of natural ingredients. These botanical treasures have been integral to human existence for centuries, not merely as sources of sustenance but as potent remedies that have stood the test of time. Today, we embark on a journey to explore the key ingredients that fuel WYN's holistic wellness approach and delve into the medicinal benefits they bestow.`,
+  },
+  {
+    _id: '6',
+    imgUrl: 'https://wynatlife.com/cdn/shop/articles/4-_1044_x_636.jpg?v=1702460082',
+    title: 'A Complete Guide on Choosing the Best Feminine Hygiene Products',
+    author:"Dr. Vaidya   | 19 September 2023",
+    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+    description: `Feminine hygiene is a crucial aspect of women's health and well-being. The market is flooded with a variety of feminine hygiene products, making it challenging to navigate and choose the best options. Selecting the right feminine products involves considering factors such as comfort, safety, environmental impact, and personal preferences. In this comprehensive guide, we will delve into the world of feminine hygiene products, discussing different types, their benefits, and providing tips on making informed choices for a healthier and more sustainable lifestyle.`,
+  },
+];

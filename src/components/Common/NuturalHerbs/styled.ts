@@ -15,16 +15,20 @@ export const StyledSwiperNavigation = styled(Box)(() => ({
   justifyContent: 'space-between',
 }));
 
-export const StyledImageWrapperBox = styled(Box)(() => ({
+export const StyledImageWrapperBox = styled(Box)(({theme}) => ({
   width: '100%',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
   '& .__image_wrapper': {
-    height: 167,
-    width: 167,
+    height: 200,
+    width: 200,
     position: 'relative',
+    [theme.breakpoints.down("sm")]:{
+      height: 150,
+      width: 150,
+    }
   },
   '& .__swipe_slider': {
     paddingLeft: 40,

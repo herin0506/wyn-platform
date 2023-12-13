@@ -69,7 +69,7 @@ const ProductCardComponent = ({
       </Box>
       <Grid mt={2} container alignItems="center" justifyContent="space-between">
         <Grid item>
-          <Button variant="contained" size="small">
+          <Button sx={{marginBottom:"10px"}} variant="contained" size="small">
             ADD TO CART
           </Button>
         </Grid>

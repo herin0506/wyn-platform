@@ -35,7 +35,7 @@ const WhyWynPage = () => {
           />
         </Container>
         <Container maxWidth="xl">
-          <ThumbnailDescriptionListComponent {...benefitsData} />
+          <ThumbnailDescriptionListComponent heading='' itemList={benefitsData} />
         </Container>
         <Container disableGutters maxWidth="xl">
           <NaturalHerbsContainer />

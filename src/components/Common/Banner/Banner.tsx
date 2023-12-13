@@ -1,18 +1,20 @@
 import React from 'react';
 import { StyledHomeBanner } from './styled';
 import Image from 'next/image';
-import { Hidden } from '@mui/material';
+import { Box, Hidden, Typography } from '@mui/material';
 
 interface BannerComponentProps {
   alt: string;
   mobileImgUrl: string;
   desktopImgUrl: string;
+  contentNode?: React.ReactNode;
 }
 
 const BannerComponent = ({
   mobileImgUrl,
   desktopImgUrl,
   alt,
+  contentNode,
 }: BannerComponentProps) => {
   return (
     <StyledHomeBanner>
@@ -36,6 +38,11 @@ const BannerComponent = ({
           src={mobileImgUrl}
         />
       </Hidden>
+      {contentNode && (
+        <Box component="div" className="__content__box">
+          {contentNode}
+        </Box>
+      )}
     </StyledHomeBanner>
   );
 };

@@ -34,7 +34,6 @@ const ThumbnailDescriptionListComponent = ({
               </Grid>
               <Grid item xs={10} md={11} p={1}>
                 <Typography variant="h5">{item.title}</Typography>
-
                 <Typography pb={3} variant="subtitle1">
                   {item.subTitle}
                 </Typography>

@@ -1,65 +1,104 @@
-import { Button, Rating, Typography } from '@mui/material';
-import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Grid';
-import { APP_COLORS } from '@wyn/styles/colors/colors';
+import { Box, Button, Grid, TextField, Typography } from '@mui/material';
 import { StyledRightDetails } from './styled';
+import ProductComponent from '../Product/Product';
+import { buyNowproductList } from '@wyn/utils/constants';
+import { useState } from 'react';
 
-interface RightDetailsComponentProps {
-  category: string;
-  rating: number;
-  title: string;
-  subTitle: string;
-  price: number;
-}
+// interface RightDetailsComponentProps {
 
-const RightDetailsComponent = ({
-  category,
-  rating,
-  title,
-  subTitle,
-  price,
-}: RightDetailsComponentProps) => {
+// }
+
+const RightDetailsComponent = () => {
+  const handleApply = () => {};
+  const [discountCouponValue, setDiscountCouponValue] = useState('');
+
+  const handleTextFieldChange = (event) => {
+    setDiscountCouponValue(event.target.value);
+  };
+  let total = 0;
+  const calculateSubTotal = () => {
+    return buyNowproductList.reduce(
+      (total, product) => total + product.price,
+      0,
+    );
+  };
+  const calculateShippingCharges = () => {
+    return 0;
+  };
+  const calculateTotal = () => {
+    return calculateSubTotal() + calculateShippingCharges();
+  };
+  const calculateOtherCharges = () => {
+    return 198.15;
+  };
+  const isAddressFilled = true;
   return (
-    <StyledRightDetails maxWidth="xl">
-      <Grid container justifyContent="space-between">
-        <Grid pt={2} item lg={6}>
-          <Typography variant="h6" sx={{ color: APP_COLORS.PINK }}>
-            {category}
-          </Typography>
+    <StyledRightDetails>
+      {buyNowproductList.map((product, index) => (
+        <ProductComponent {...product} />
+      ))}
+      <Grid container spacing={0}>
+        <Grid item xs={10} pr={1} py={2}>  
+          <TextField
+            fullWidth
+            id="discountcode"
+            label="Discount code"
+            variant="outlined"
+            margin="none"
+            onChange={handleTextFieldChange}
+          />
         </Grid>
-        <Grid item lg={6} sx={{ display: 'flex', alignItems: 'end' }}>
-          <Typography
-            variant="h6"
-            sx={{ display: 'flex', alignItems: 'center' }}
+        <Grid
+          item
+          xs={2}
+          justifyContent={'center'}
+          display={'flex'}
+          direction={'column'}
+        >
+          <Button
+            variant="outlined"
+            size="large"
+            color="primary"
+            onClick={handleApply}
+            disabled={discountCouponValue === ''}
+            className="mr-2"
+            sx={{ textTransform: 'none' }} 
           >
-            {rating}/5
-            <Rating size="medium" readOnly name="product-rating" value={4} />
-          </Typography>
+            Apply
+          </Button>
         </Grid>
       </Grid>
-      <Typography pt={3} variant="h3" mb={2}>
-        {title}
-      </Typography>
-      <Divider />
-      <Typography pt={3} variant="h6" mb={2}>
-        {subTitle}
-      </Typography>
+
+      <Box display={'flex'} justifyContent={'space-between'}>
+        <Typography variant="subtitle1">Subtotal</Typography>
+        <Typography variant="subtitle2">₹{calculateSubTotal()}</Typography>
+      </Box>
+      <Box display={'flex'} justifyContent={'space-between'}>
+        <Typography variant="subtitle1">Shipping</Typography>
+        <Typography variant="subtitle1">
+          {isAddressFilled
+            ? calculateShippingCharges() === 0
+              ? 'Free'
+              : `₹${calculateShippingCharges()}`
+            : 'Enter shipping address'}
+        </Typography>
+      </Box>
 
       <Grid container spacing={2}>
-        <Grid item md={12}>
-          <Typography variant="h5" mb={4}>
-            <b>Rs.{price}</b>
+        <Grid item xs={6}>
+          <Typography variant="body2">Total </Typography>
+          <Typography variant="caption">
+            Including ₹{calculateOtherCharges()} in taxes{' '}
           </Typography>
         </Grid>
-        <Grid item>
-          <Button variant="contained" size="small">
-            Buy now
-          </Button>
-        </Grid>
-        <Grid item>
-          <Button variant="contained" size="small">
-            Add to cart
-          </Button>
+        <Grid
+          item
+          xs={6}
+          display={'flex'}
+          justifyContent={'end'}
+          alignItems={'end'}
+        >
+          <Typography variant="subtitle2">INR ₹{calculateTotal()}</Typography>
         </Grid>
       </Grid>
     </StyledRightDetails>

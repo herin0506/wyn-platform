@@ -9,6 +9,7 @@ interface HorizontalSplitComponentProps {
   rightComponent: ReactNode;
   desktopBackgroundImage?: string;
   mobileBackgroundImage?: string;
+  inverseChildInMobileView: Boolean;
 }
 
 const HorizontalSplitComponent = ({
@@ -16,9 +17,12 @@ const HorizontalSplitComponent = ({
   rightComponent,
   desktopBackgroundImage,
   mobileBackgroundImage,
+  inverseChildInMobileView,
 }: HorizontalSplitComponentProps) => {
   const isDesktopView = useMediaQuery('(min-width:960px)');
   const isMobileTabletView = useMediaQuery('(max-width:959px)');
+  const direction =
+    inverseChildInMobileView && isMobileTabletView ? 'column-reverse' : 'row';
 
   return (
     <StyledHorizontalSplitComponent
@@ -36,6 +40,7 @@ const HorizontalSplitComponent = ({
           container
           rowSpacing={{ xs: 1 }}
           columnSpacing={{ xs: 0, md: 6 }}
+          direction={direction}
           pt={8}
           pb={8}
         >

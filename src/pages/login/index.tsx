@@ -1,9 +1,16 @@
-import React from 'react';
-import { Typography, TextField, Button } from '@mui/material';
+import {
+  Box,
+  Button,
+  Container,
+  Link,
+  TextField,
+  Typography,
+} from '@mui/material';
 import { useRouter } from 'next/router';
-import styles from '../../styles/authentication.module.css';
+import { Fragment } from 'react';
+import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
 
-export default function Login() {
+const WhyWynPage = () => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -17,21 +24,23 @@ export default function Login() {
   const handleLogin = () => {
     router.push('/home');
   };
-
   return (
-    <>
-      <section className={`row  justify-content-center`}>
-        <div className={'col-12 col-md-6 col-lg-4 text-center px-4'}>
-          <Typography variant="h4" className={`mt-4 text-center`}>
-            Login
+    <Fragment>
+      <Box mt={14}>
+        <Container maxWidth="xs" className="text-center">
+          <Typography variant="h4" mb={2}>
+            Log in to Access Women's Wellness Hub
           </Typography>
+          <Typography variant="body2" mb={2}>
+            Access WYN for Women's Wellness
+          </Typography>
+
           <TextField
             fullWidth
             id="outlined-basic"
             label="Email"
             variant="outlined"
             className="my-4"
-            InputProps={{ className: styles.inputFieldStyles }}
           />
           <TextField
             fullWidth
@@ -39,17 +48,13 @@ export default function Login() {
             label="Password"
             variant="outlined"
             className="mb-4"
-            InputProps={{ className: styles.inputFieldStyles }}
           />
-          <Typography
-            onClick={handleNaviagte}
-            className={`text-start mb-3`}
-            variant="subtitle2"
-          >
-            <u>Forgot your password?</u>
+          <Typography align="left" mb={3} variant="subtitle2">
+            <Link onClick={handleNaviagte} sx={{ cursor: 'pointer' }}>
+              Forgot your password?
+            </Link>
           </Typography>
           <Button
-            className={`text-center mb-3 ${styles.mainBoxButton}`}
             variant="contained"
             size="large"
             color="primary"
@@ -57,32 +62,17 @@ export default function Login() {
           >
             Sign In
           </Button>
-          <Typography
-            onClick={handleClick}
-            variant="subtitle2"
-            className={`mb-4`}
-          >
-            Create account?
+          <Typography my={3} variant="subtitle2">
+            <Link onClick={handleClick} mb={3} sx={{ cursor: 'pointer' }}>
+              Create account?
+            </Link>
           </Typography>
-        </div>
-      </section>
+        </Container>
+        <DiscoverCategoriesComponent />
 
-      <section className={`row justify-content-center ${styles.container}`}>
-        <div className={`col-8 text-center py-5 px-0`}>
-          <Typography className={`mb-4 ${styles.customTextSize}`}>
-            We are <b>dependable ally</b> in your hourney to better health &
-            wellness.
-          </Typography>
-          <Button
-            className={styles.mainRoundButton}
-            variant="contained"
-            size="large"
-            color="primary"
-          >
-            DISCOVER CATEGROIES
-          </Button>
-        </div>
-      </section>
-    </>
+      </Box>
+    </Fragment>
   );
-}
+};
+
+export default WhyWynPage;

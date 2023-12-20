@@ -1,8 +1,18 @@
-import React from 'react';
-import PlaceHolderComponent from '@wyn/components/Common/PlaceHolder/PlaceHolder';
+import { Container } from '@mui/material';
+import Cart from '@wyn/components/Cart/Cart';
+import DiscoverCategoriesContainer from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
+import { Fragment } from 'react';
 
 const CartPage = () => {
-  return <PlaceHolderComponent content="Cart Page - Coming Soon..." />;
+  return (
+    <Fragment>
+      <Container maxWidth="xl">
+        {/* old cart page
+        <Cart/> */}
+      </Container>
+      <DiscoverCategoriesContainer/>
+    </Fragment>
+  )
 };
 
 export default CartPage;

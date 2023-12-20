@@ -1,4 +1,13 @@
-import { Card, Checkbox, Link, TextField, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Card,
+  Checkbox,
+  Link,
+  TextField,
+  Typography,
+  Divider,
+} from '@mui/material';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Grid from '@mui/material/Grid';
 import MenuItem from '@mui/material/MenuItem';
@@ -9,32 +18,25 @@ import { StyledLeftDetails } from './styled';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AddressComponent from '@wyn/components/BuyNow/Address/Address';
+import AccordionComponent from '@wyn/components/Common/AccordionList/AccordionList';
+import { useRouter } from 'next/router';
 
-import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
-import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
-interface LeftDetailsComponentProps {
-  category: string;
-  rating: number;
-  title: string;
-  subTitle: string;
-  price: number;
-}
-const LeftDetailsComponent = ({
-  category,
-  rating,
-  title,
-  subTitle,
-  price,
-}: LeftDetailsComponentProps) => {
+const LeftDetailsComponent = () => {
+  const router = useRouter();
+
   const [isSaveInfoChecked, setSaveInfoChecked] = useState(false);
   const [isTextMeChecked, setTextMeChecked] = useState(false);
-  const [isAptSuiteChecked, setAptSuiteChecked] = useState(false);
-  const [selectedAccordion, setSelectedAccordion] = useState(null);
+  const [isEmailNewsOffersChecked, setEmailNewsOffersChecked] = useState(false);
 
   const saveInfolabel = {
     inputProps: { 'aria-label': 'Save Information Checkbox' },
   };
   const textMelabel = { inputProps: { 'aria-label': 'Text Me Checkbox' } };
+  const emailNewsOfferslabel = {
+    inputProps: { 'aria-label': 'Email News Offers Checkbox' },
+  };
 
   const handleSaveInformationCheckboxChange = (event) => {
     setSaveInfoChecked(event.target.checked);
@@ -42,142 +44,152 @@ const LeftDetailsComponent = ({
   const handleTextMeCheckboxChange = (event) => {
     setTextMeChecked(event.target.checked);
   };
-  const handleAptSuiteClick = () => {
-    setAptSuiteChecked(true);
+  const handleEmailNewsOffersCheckboxChange = (event) => {
+    setEmailNewsOffersChecked(event.target.checked);
   };
-  const handleAccordionChange = (accordion) => {
-    setSelectedAccordion(accordion === selectedAccordion ? null : accordion);
+  const handleNaviagte = () => {
+    router.push('/login');
   };
-  const isAccordionSelected = (accordion) => accordion === selectedAccordion;
 
+  const handlePayNow = () => {};
+
+  const paymentAccordionData = [
+    {
+      title: (
+        <Typography display={'flex'} alignItems={'center'}>
+          CCAvenue
+        </Typography>
+      ),
+      content: (
+        <Typography display={'flex'} alignItems={'center'}>
+          After clicking “Pay now”, you will be redirected to CCAvenue to
+          complete your purchase securely.
+        </Typography>
+      ),
+    },
+    {
+      title: (
+        <Typography display={'flex'} alignItems={'center'}>
+          Cash on Delivery(COD)
+        </Typography>
+      ),
+      content: null,
+    },
+    // Add more items as needed
+  ];
+  const addressAccordionData = [
+    {
+      title: (
+        <Typography display={'flex'} alignItems={'center'}>
+          Same as shipping address
+        </Typography>
+      ),
+      content: null,
+    },
+    {
+      title: (
+        <Typography display={'flex'} alignItems={'center'}>
+          Use a different billing address
+        </Typography>
+      ),
+      content: <AddressComponent />,
+    },
+    // Add more items as needed
+  ];
+
+  const isLoggedIn = false;
   return (
     <StyledLeftDetails>
-      <Typography variant="h6">Delivery</Typography>
-      <TextField
-        fullWidth
-        id="outlined-select-currency"
-        select
-        label="Country/Region"
-        defaultValue="ind"
-        margin="normal"
-      >
-        {countries.map((option) => (
-          <MenuItem key={option.value} value={option.value}>
-            {option.label}
-          </MenuItem>
-        ))}
-      </TextField>
-      <TextField
-        fullWidth
-        id="firstname"
-        label="First Name"
-        variant="outlined"
-        margin="normal"
-      />
-      <TextField
-        fullWidth
-        id="lastname"
-        label="Last Name"
-        variant="outlined"
-        margin="normal"
-      />
-      <TextField
-        fullWidth
-        id="outlined-basic"
-        label="Outlined"
-        variant="outlined"
-        margin="normal"
-      />
-      <TextField
-        fullWidth
-        id="company"
-        label="Company(Optional)"
-        variant="outlined"
-        margin="normal"
-      />
-      <TextField
-        fullWidth
-        id="address"
-        label="Address"
-        variant="outlined"
-        margin="normal"
-      />
-
-      {!isAptSuiteChecked && (
-        <Typography my={3} variant="subtitle2">
-          <Link
-            onClick={handleAptSuiteClick}
-            mb={3}
-            sx={{ cursor: 'pointer', color: APP_COLORS.LIGHTBLUE }}
-            underline="none"
+      {isLoggedIn ? (
+        <Accordion elevation={0} className="w-100">
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+            className="p-0"
           >
-            + Add apartment, suite, etc.
-          </Link>
-        </Typography>
+            <Box>
+              <Typography>Account</Typography>
+              <Typography>useremail@git.com</Typography>
+            </Box>
+          </AccordionSummary>
+          <AccordionDetails className="p-0">
+            <Typography variant="subtitle1">
+              <Link
+                onClick={handleNaviagte}
+                sx={{ cursor: 'pointer', color: APP_COLORS.LIGHTBLUE }}
+              >
+                Logout
+              </Link>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      ) : (
+        <>
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="end"
+            width="100%"
+          >
+            <Typography variant="h4" mb={1}>
+              Contact
+            </Typography>
+            <Typography variant="subtitle1" mt={3} mb={1}>
+              Have an account?
+              <Link
+                onClick={handleNaviagte}
+                sx={{ cursor: 'pointer', color: APP_COLORS.LIGHTBLUE }}
+              >
+                Login
+              </Link>
+            </Typography>
+          </Box>
+          <TextField
+            fullWidth
+            id="email-mobile"
+            label="Email or mobile phone number"
+            variant="outlined"
+            margin="none"
+            className="my-2"
+          />
+        </>
       )}
 
-      {isAptSuiteChecked && (
-        <TextField
-          fullWidth
-          id="apt-suite"
-          label="Apartment, suite, etc. (optional)"
-          variant="outlined"
-          margin="normal"
+      <Divider sx={{ borderBottom: '2px solid black', margin: '15px 0px' }} />
+      <Box display={'inline-flex'} alignItems={'center'} width="100%">
+        <Checkbox
+          {...emailNewsOfferslabel}
+          onChange={handleEmailNewsOffersCheckboxChange}
         />
-      )}
+        <Typography my={0} variant="subtitle1">
+          Email me with news and offers
+        </Typography>
+      </Box>
 
-      <Grid container spacing={1}>
-        <Grid item lg={4}>
-          <TextField
-            fullWidth
-            id="city"
-            label="City"
-            variant="outlined"
-            margin="normal"
-          />
-        </Grid>
-        <Grid item lg={4}>
-          <TextField
-            fullWidth
-            id="outlined-select-currency"
-            select
-            label="State"
-            defaultValue="ind"
-            margin="normal"
-          >
-            {states.map((option) => (
-              <MenuItem key={option.value} value={option.value}>
-                {option.label}
-              </MenuItem>
-            ))}
-          </TextField>
-        </Grid>
-        <Grid item lg={4}>
-          <TextField
-            fullWidth
-            id="pincode"
-            label="Pincode"
-            variant="outlined"
-            margin="normal"
-          />
-        </Grid>
-      </Grid>
+      <Typography variant="h4" mt={3} mb={1}>
+        Delivery
+      </Typography>
 
-      <FormControlLabel
-        label="Save this information for next time"
-        control={
-          <Checkbox
-            {...saveInfolabel}
-            onChange={handleSaveInformationCheckboxChange}
-          />
-        }
-      />
-      <FormControlLabel
-        label="Text me with news and offers"
-        control={
-          <Checkbox {...textMelabel} onChange={handleTextMeCheckboxChange} />
-        }
-      />
+      <AddressComponent />
+
+      <Box display={'inline-flex'} alignItems={'center'} width="100%">
+        <Checkbox
+          {...saveInfolabel}
+          onChange={handleSaveInformationCheckboxChange}
+        />
+        <Typography my={0} variant="subtitle1">
+          Save this information for next time
+        </Typography>
+      </Box>
+
+      <Box display={'inline-flex'} alignItems={'center'} width="100%">
+        <Checkbox {...textMelabel} onChange={handleTextMeCheckboxChange} />
+        <Typography my={0} variant="subtitle1">
+          Text me with news and offers
+        </Typography>
+      </Box>
+
       {isTextMeChecked && (
         <>
           <TextField
@@ -194,116 +206,38 @@ const LeftDetailsComponent = ({
         </>
       )}
 
-      <Typography variant="h6">Shipping method</Typography>
+      <Typography variant="h5" mt={3} mb={1}>
+        Shipping method
+      </Typography>
       <Card variant="outlined" className="p-3">
         Standard Free
       </Card>
 
-      <Typography variant="h6">Payment</Typography>
-      <Typography variant="subtitle1">
+      <Typography variant="h4" mt={3} mb={0}>
+        Payment
+      </Typography>
+      <Typography variant="subtitle1" mb={2}>
         All transactions are secure and encrypted.
       </Typography>
-      <Accordion
-        expanded={selectedAccordion === 'panel1'}
-        onChange={() => handleAccordionChange('panel1')}
-      >
-        <AccordionSummary
-          sx={{ flexDirection: 'row-reverse' }}
-          expandIcon={
-            <div>
-              {isAccordionSelected('panel1') ? (
-                <RadioButtonCheckedIcon style={{ color: 'blue' }} />
-              ) : (
-                <RadioButtonUncheckedIcon style={{ color: 'blue' }} />
-              )}
-            </div>
-          }
-        >
-          <Typography>CCAvenue</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            After clicking “Pay now”, you will be redirected to CCAvenue to
-            complete your purchase securely.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
 
-      <Accordion
-        expanded={selectedAccordion === 'panel2'}
-        onChange={() => handleAccordionChange('panel2')}
-      >
-        <AccordionSummary
-          sx={{ flexDirection: 'row-reverse' }}
-          expandIcon={
-            <div>
-              {isAccordionSelected('panel2') ? (
-                <RadioButtonCheckedIcon style={{ color: 'blue' }} />
-              ) : (
-                <RadioButtonUncheckedIcon style={{ color: 'blue' }} />
-              )}
-            </div>
-          }
-        >
-          <Typography>Cash on Delivery(COD)</Typography>
-        </AccordionSummary>
-        {/* <AccordionDetails>
-          <Typography>Accordion Content 2</Typography>
-        </AccordionDetails> */}
-      </Accordion>
+      <AccordionComponent data={paymentAccordionData} />
 
-      <Typography variant="subtitle1">
-        All transactions are secure and encrypted.
+      <Typography variant="h4" mt={3} mb={1}>
+        Billing Address
       </Typography>
-      <Typography variant="h6">Billing Address</Typography>
 
-      <Accordion
-        expanded={selectedAccordion === 'panel3'}
-        onChange={() => handleAccordionChange('panel3')}
-      >
-        <AccordionSummary
-          sx={{ flexDirection: 'row-reverse' }}
-          expandIcon={
-            <div>
-              {isAccordionSelected('panel3') ? (
-                <RadioButtonCheckedIcon style={{ color: 'blue' }} />
-              ) : (
-                <RadioButtonUncheckedIcon style={{ color: 'blue' }} />
-              )}
-            </div>
-          }
-        >
-          <Typography>Same as shipping address</Typography>
-        </AccordionSummary>
-        {/* <AccordionDetails>
-          <Typography>
-            
-          </Typography>
-        </AccordionDetails> */}
-      </Accordion>
+      <AccordionComponent data={addressAccordionData} />
 
-      <Accordion
-        expanded={selectedAccordion === 'panel4'}
-        onChange={() => handleAccordionChange('panel4')}
+      <Button
+        variant="contained"
+        size="large"
+        color="info"
+        onClick={handlePayNow}
+        fullWidth
+        className="mt-4"
       >
-        <AccordionSummary
-          sx={{ flexDirection: 'row-reverse' }}
-          expandIcon={
-            <div>
-              {isAccordionSelected('panel4') ? (
-                <RadioButtonCheckedIcon style={{ color: 'blue' }} />
-              ) : (
-                <RadioButtonUncheckedIcon style={{ color: 'blue' }} />
-              )}
-            </div>
-          }
-        >
-          <Typography>Use a different billing address</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>Accordion Content 2</Typography>
-        </AccordionDetails>
-      </Accordion>
+        Pay Now
+      </Button>
     </StyledLeftDetails>
   );
 };

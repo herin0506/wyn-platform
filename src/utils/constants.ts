@@ -212,14 +212,16 @@ export const products = [
 export const product = {
   category: 'Menstrual Wellness',
   rating: 4,
-  title:'Nutritional Mints for Heavy Periods.',
-  subTitle:'Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
+  title: 'Nutritional Mints for Heavy Periods.',
+  subTitle:
+    'Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
   price: 849,
 };
 
 export const infoContent = {
-  title:'How to balance female hormones for a healthy menstruation',
-  subTitle:'The menstrual cycle functions under the control of coordinated, synchronized and balanced release of female hormones such as FSH, LH, Estrogens & Progesterones in each menstrual cycle...',
+  title: 'How to balance female hormones for a healthy menstruation',
+  subTitle:
+    'The menstrual cycle functions under the control of coordinated, synchronized and balanced release of female hormones such as FSH, LH, Estrogens & Progesterones in each menstrual cycle...',
 };
 
 export const womenHealthIssues = [
@@ -243,11 +245,12 @@ export const whyWYNContent = {
 
 export const whatWeOfferContent = {
   title: 'What we offer',
-  subTitle: "The story of What You Need - WYN products are of focused vision and in-depth understanding of scientific advances, combined with a strong foothold in Ayurveda. We've cultivated a diverse range of products that can be easily incorporated into your daily routine. Our product range includes Nutraceuticals, Cosmeceuticals, Nutra-Cosmeceutical Health Care & Wellness products.. READ MORE"
+  subTitle:
+    "The story of What You Need - WYN products are of focused vision and in-depth understanding of scientific advances, combined with a strong foothold in Ayurveda. We've cultivated a diverse range of products that can be easily incorporated into your daily routine. Our product range includes Nutraceuticals, Cosmeceuticals, Nutra-Cosmeceutical Health Care & Wellness products.. READ MORE",
 };
 
-export const benefitsData ={
-  heading: "A Treasure Trove of Benefits",
+export const benefitsData = {
+  heading: 'A Treasure Trove of Benefits',
   itemList: [
     {
       title: 'Steroid Hormone Free',
@@ -264,13 +267,13 @@ export const benefitsData ={
     {
       title: 'Vegetarian',
       subTitle:
-      "We're proud to say that our mints are completely vegetarian, making them a consumable for ALL and sustainable choice.",
+        "We're proud to say that our mints are completely vegetarian, making them a consumable for ALL and sustainable choice.",
       src: '/icons/vegetarian.svg',
     },
     {
       title: 'Cruelty Free',
       subTitle:
-        "At WYN, we hold a strong stance against animal testing. Our products are developed with compassion and without causing harm to any living beings.",
+        'At WYN, we hold a strong stance against animal testing. Our products are developed with compassion and without causing harm to any living beings.',
       src: '/icons/cruelt.svg',
     },
     {
@@ -282,14 +285,14 @@ export const benefitsData ={
     {
       title: 'Plant Derived Compounds',
       subTitle:
-        "Harnessing the power of nature, our mints are enriched with plant-derived compounds, bringing you the best of botanical goodness.",
-      src:'/icons/derived.svg',
+        'Harnessing the power of nature, our mints are enriched with plant-derived compounds, bringing you the best of botanical goodness.',
+      src: '/icons/derived.svg',
     },
-  ]
-}
+  ],
+};
 
 export const guidingPrinciples = {
-  heading: "Our Guiding Principles",
+  heading: 'Our Guiding Principles',
   itemList: [
     {
       title: 'Nature Centric Approach',
@@ -306,13 +309,13 @@ export const guidingPrinciples = {
     {
       title: 'Accessibility and Empowerment',
       subTitle:
-      "Our non-prescription nutraceuticals make holistic wellness accessible, fitting right in your pocket.",
+        'Our non-prescription nutraceuticals make holistic wellness accessible, fitting right in your pocket.',
       src: '/icons/accessbility.png',
     },
     {
       title: 'Integrity and Transparency',
       subTitle:
-        "We guarantee the highest standards through tried, tested, and peer-reviewed procedures.",
+        'We guarantee the highest standards through tried, tested, and peer-reviewed procedures.',
       src: '/icons/integrity.png',
     },
     {
@@ -324,17 +327,17 @@ export const guidingPrinciples = {
     {
       title: 'Cruelty-Free',
       subTitle:
-        "We create with compassion, ensuring no harm to any living being.",
-      src:'/icons/cruelt.svg',
+        'We create with compassion, ensuring no harm to any living being.',
+      src: '/icons/cruelt.svg',
     },
     {
       title: 'Botanical Excellence',
       subTitle:
         "Our solutions brim with botanical goodness, delivering nature's best in the form of delectable mints.",
-      src:'/icons/botanical.png',
+      src: '/icons/botanical.png',
     },
-  ]
-}
+  ],
+};
 
 export const questionsAnswers = [
   {
@@ -373,111 +376,147 @@ export const questionsAnswers = [
 
 export const birthOfWYN = {
   title: 'The Birth of WYN',
-  subTitle: "Dr. Shefali Tungare's groundbreaking initiative, 'WYN- What You Need,' has rapidly gained prominence since its inception in 2023. She embarked on this journey after identifying a significant gap in the intimate care market, where many products lacked transparency about their ingredients or failed to meet the safety standards that women rightfully deserve.... READ MORE"
+  subTitle:
+    "Dr. Shefali Tungare's groundbreaking initiative, 'WYN- What You Need,' has rapidly gained prominence since its inception in 2023. She embarked on this journey after identifying a significant gap in the intimate care market, where many products lacked transparency about their ingredients or failed to meet the safety standards that women rightfully deserve.... READ MORE",
 };
 
 export const empoweringWomen = {
   title: 'Empowering Women at Every Stage of Life',
-  subTitle: "Welcome to WYN - What You Need, your gateway to holistic women's wellness. We're dedicated to redefining the approach to women's health, offering natural, effective, and natural solutions. In the year 2022, Dr. Shefali Tungare initiated a ground breaking venture that would come to be known as 'WYN.... READ MORE'"
+  subTitle:
+    "Welcome to WYN - What You Need, your gateway to holistic women's wellness. We're dedicated to redefining the approach to women's health, offering natural, effective, and natural solutions. In the year 2022, Dr. Shefali Tungare initiated a ground breaking venture that would come to be known as 'WYN.... READ MORE'",
 };
 
 export const ayurveda = {
   title: 'The Ayurveda Connection: Your Path to Holistic Wellness with WYN',
-  subTitle: "In the heart of WYN lies the ancient wisdom of Ayurveda, a centuries-old approach to wellness from India. Our products are steeped in this rich tradition, combining it with modern science to create something special.... READ MORE"
+  subTitle:
+    'In the heart of WYN lies the ancient wisdom of Ayurveda, a centuries-old approach to wellness from India. Our products are steeped in this rich tradition, combining it with modern science to create something special.... READ MORE',
 };
 
 export const menstrualWellness = {
   title: 'Menstrual Wellness',
-  subTitle: "Say goodbye to the challenges of PCOS and embrace pain-free menstrual cycles. WYN introduces a groundbreaking range of mints, meticulously curated to address specific menstrual issues. From White Discharge mints to Heavy Period mints and Menopause mints, find the relief you deserve."
+  subTitle:
+    'Say goodbye to the challenges of PCOS and embrace pain-free menstrual cycles. WYN introduces a groundbreaking range of mints, meticulously curated to address specific menstrual issues. From White Discharge mints to Heavy Period mints and Menopause mints, find the relief you deserve.',
 };
 
 export const sensualWellness = {
   title: 'Sensual Wellness',
-  subTitle: "Embrace your sensuality with confidence through our intimate care products. Our Breast Cream, Intimate Depigmenting Cream, and Intimate Vaginal Cream empower you to feel your best and truly embrace your inner self."
+  subTitle:
+    'Embrace your sensuality with confidence through our intimate care products. Our Breast Cream, Intimate Depigmenting Cream, and Intimate Vaginal Cream empower you to feel your best and truly embrace your inner self.',
 };
 
 export const pregnancyPrepareAndCare = {
   title: 'Pregnancy Prepare & Care',
-  subTitle: "Ensuring a successful pregnancy and supporting optimal lactation after birth is crucial. WYN's specialized products are designed to assist you on your journey to motherhood."
+  subTitle:
+    "Ensuring a successful pregnancy and supporting optimal lactation after birth is crucial. WYN's specialized products are designed to assist you on your journey to motherhood.",
 };
 
 export const menopausalWellness = {
   title: 'Menopausal Wellness',
-  subTitle: "Transition into menopause gracefully with WYN's thoughtfully curated range. From Menopausal Vaginal Cream to Menopausal Mints, we prioritize your comfort and health during this phase of life."
+  subTitle:
+    "Transition into menopause gracefully with WYN's thoughtfully curated range. From Menopausal Vaginal Cream to Menopausal Mints, we prioritize your comfort and health during this phase of life.",
 };
 
 export const dailyWellness = {
   title: 'Daily Wellness',
-  subTitle: "We understand the importance of daily intimate hygiene. Our Intimate Hygiene Wipes and Intimate Hygiene Spray make it effortless to prioritize your well-being each day."
+  subTitle:
+    'We understand the importance of daily intimate hygiene. Our Intimate Hygiene Wipes and Intimate Hygiene Spray make it effortless to prioritize your well-being each day.',
 };
 
 export const meetTheTeam = {
   title: 'Dr. Shefali Tungare, Founder',
-  description: "She has emerged as a visionary in women's health empowerment. In 2023, she founded 'WYN - What You Need,' a brand dedicated to transparency, safety, and natural well-being. Dr. Tungare observed significant gaps in the intimate care market, with many products concealing ingredients or failing to meet safety standards. Her innovative solution was natural phytoactive compound mints, providing women with natural alternatives with a long history of safety and efficacy offering wellness with pleasure. Her philosophy of 'Mints not Medicines' has reshaped the industry, emphasizing natural healing methods. Beyond products, 'WYN' has become a multifaceted wellness entity, offering menstrual care, sexual wellness, and pregnancy care products. Dr. Tungare's mission is clear: empower women globally to make informed decisions about their intimate health. With a blend of Ayurvedic wisdom and modern medicine, Dr. Shefali Tungare's commitment to enhancing women's well-being is transforming the approach to women's health. 'WYN - What You Need' stands as a beacon of empowerment, where passion meets purpose, leading to transformative change in women's lives worldwide."  
-}
+  description:
+    "She has emerged as a visionary in women's health empowerment. In 2023, she founded 'WYN - What You Need,' a brand dedicated to transparency, safety, and natural well-being. Dr. Tungare observed significant gaps in the intimate care market, with many products concealing ingredients or failing to meet safety standards. Her innovative solution was natural phytoactive compound mints, providing women with natural alternatives with a long history of safety and efficacy offering wellness with pleasure. Her philosophy of 'Mints not Medicines' has reshaped the industry, emphasizing natural healing methods. Beyond products, 'WYN' has become a multifaceted wellness entity, offering menstrual care, sexual wellness, and pregnancy care products. Dr. Tungare's mission is clear: empower women globally to make informed decisions about their intimate health. With a blend of Ayurvedic wisdom and modern medicine, Dr. Shefali Tungare's commitment to enhancing women's well-being is transforming the approach to women's health. 'WYN - What You Need' stands as a beacon of empowerment, where passion meets purpose, leading to transformative change in women's lives worldwide.",
+};
 
 export const teamDetails = [
   {
     title: 'Mr. Snehal Gersappa CEO',
-    subTitle: "Mr. Snehal Gersappa's extensive experience and remarkable expertise in running the organizations define his crucial role the company. With an impressive track record spanning over 19 years of dedicated service, he brings a wealth of knowledge to the table. He plays a multifaceted role that significantly impacts our company's trajectory. His depth of experience in sales, marketing & financial modelling which enables him to identify and seize growth opportunities with precision. READ MORE"
+    subTitle:
+      "Mr. Snehal Gersappa's extensive experience and remarkable expertise in running the organizations define his crucial role the company. With an impressive track record spanning over 19 years of dedicated service, he brings a wealth of knowledge to the table. He plays a multifaceted role that significantly impacts our company's trajectory. His depth of experience in sales, marketing & financial modelling which enables him to identify and seize growth opportunities with precision. READ MORE",
   },
   {
     title: 'Dr. Satish Vaidya, Mentor & Chief Research Officer',
-    subTitle: "Satish Vaidya, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement. READ MORE"
+    subTitle:
+      'Satish Vaidya, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement. READ MORE',
   },
   {
     title: 'Mr. Sagar Tungare COO',
-    subTitle: "Sagar Tungare, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement. READ MORE"
-  } 
-]
+    subTitle:
+      'Sagar Tungare, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement. READ MORE',
+  },
+];
 
 export const countries = [
   {
     value: 'ind',
-    label: 'India'
+    label: 'India',
   },
   {
     value: 'usa',
-    label: 'USA'
-  }
-]
+    label: 'USA',
+  },
+];
 
 export const states = [
-  {"value": "AN", "label": "Andaman and Nicobar Islands"},
-  {"value": "AP", "label": "Andhra Pradesh"},
-  {"value": "AR", "label": "Arunachal Pradesh"},
-  {"value": "AS", "label": "Assam"},
-  {"value": "BR", "label": "Bihar"},
-  {"value": "CH", "label": "Chandigarh"},
-  {"value": "CT", "label": "Chhattisgarh"},
-  {"value": "DN", "label": "Dadra and Nagar Haveli and Daman and Diu"},
-  {"value": "DL", "label": "Delhi"},
-  {"value": "GA", "label": "Goa"},
-  {"value": "GJ", "label": "Gujarat"},
-  {"value": "HR", "label": "Haryana"},
-  {"value": "HP", "label": "Himachal Pradesh"},
-  {"value": "JK", "label": "Jammu and Kashmir"},
-  {"value": "JH", "label": "Jharkhand"},
-  {"value": "KA", "label": "Karnataka"},
-  {"value": "KL", "label": "Kerala"},
-  {"value": "LD", "label": "Lakshadweep"},
-  {"value": "MP", "label": "Madhya Pradesh"},
-  {"value": "MH", "label": "Maharashtra"},
-  {"value": "MN", "label": "Manipur"},
-  {"value": "ML", "label": "Meghalaya"},
-  {"value": "MZ", "label": "Mizoram"},
-  {"value": "NL", "label": "Nagaland"},
-  {"value": "OD", "label": "Odisha"},
-  {"value": "PY", "label": "Puducherry"},
-  {"value": "PB", "label": "Punjab"},
-  {"value": "RJ", "label": "Rajasthan"},
-  {"value": "SK", "label": "Sikkim"},
-  {"value": "TN", "label": "Tamil Nadu"},
-  {"value": "TS", "label": "Telangana"},
-  {"value": "TR", "label": "Tripura"},
-  {"value": "UP", "label": "Uttar Pradesh"},
-  {"value": "UK", "label": "Uttarakhand"},
-  {"value": "WB", "label": "West Bengal"}
-]
+  { value: 'AN', label: 'Andaman and Nicobar Islands' },
+  { value: 'AP', label: 'Andhra Pradesh' },
+  { value: 'AR', label: 'Arunachal Pradesh' },
+  { value: 'AS', label: 'Assam' },
+  { value: 'BR', label: 'Bihar' },
+  { value: 'CH', label: 'Chandigarh' },
+  { value: 'CT', label: 'Chhattisgarh' },
+  { value: 'DN', label: 'Dadra and Nagar Haveli and Daman and Diu' },
+  { value: 'DL', label: 'Delhi' },
+  { value: 'GA', label: 'Goa' },
+  { value: 'GJ', label: 'Gujarat' },
+  { value: 'HR', label: 'Haryana' },
+  { value: 'HP', label: 'Himachal Pradesh' },
+  { value: 'JK', label: 'Jammu and Kashmir' },
+  { value: 'JH', label: 'Jharkhand' },
+  { value: 'KA', label: 'Karnataka' },
+  { value: 'KL', label: 'Kerala' },
+  { value: 'LD', label: 'Lakshadweep' },
+  { value: 'MP', label: 'Madhya Pradesh' },
+  { value: 'MH', label: 'Maharashtra' },
+  { value: 'MN', label: 'Manipur' },
+  { value: 'ML', label: 'Meghalaya' },
+  { value: 'MZ', label: 'Mizoram' },
+  { value: 'NL', label: 'Nagaland' },
+  { value: 'OD', label: 'Odisha' },
+  { value: 'PY', label: 'Puducherry' },
+  { value: 'PB', label: 'Punjab' },
+  { value: 'RJ', label: 'Rajasthan' },
+  { value: 'SK', label: 'Sikkim' },
+  { value: 'TN', label: 'Tamil Nadu' },
+  { value: 'TS', label: 'Telangana' },
+  { value: 'TR', label: 'Tripura' },
+  { value: 'UP', label: 'Uttar Pradesh' },
+  { value: 'UK', label: 'Uttarakhand' },
+  { value: 'WB', label: 'West Bengal' },
+];
 
-export const termsAndCondition = "By signing up via text, you agree to receive recurring automated marketing messages, including cart reminders, at the phone number provided. Consent is not a condition of purchase. Reply STOP to unsubscribe. Reply HELP for help. Message frequency varies. Msg & data rates may apply. View our Privacy Policy and Terms of Service.";
+export const termsAndCondition =
+  'By signing up via text, you agree to receive recurring automated marketing messages, including cart reminders, at the phone number provided. Consent is not a condition of purchase. Reply STOP to unsubscribe. Reply HELP for help. Message frequency varies. Msg & data rates may apply. View our Privacy Policy and Terms of Service.';
+
+export const buyNowproduct = {
+  title: 'White Discharge Mints',
+  subTitle: '1 month care pack 120 mints',
+  price: 1299,
+  image: '/images/small-product.webp',
+};
+
+
+export const buyNowproductList = [
+  {
+    title: 'White Discharge Mints',
+    subTitle: '1 month care pack 120 mints',
+    price: 1299,
+    image: '/images/small-product.webp',
+  },
+  {
+    title: 'Secong Test Product',
+    subTitle: '1 month care pack 120 mints',
+    price: 1429,
+    image: '/images/small-product.webp',
+  },
+];

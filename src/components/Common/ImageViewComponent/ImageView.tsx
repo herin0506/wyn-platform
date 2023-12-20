@@ -5,9 +5,10 @@ interface ImageViewProps {
   alt: string;
   width?: string;
   height?: string;
+  className?: string;
 }
 
-const ImageView = ({ src, alt, width, height }: ImageViewProps) => {
+const ImageView = ({ src, alt, width, height, className }: ImageViewProps) => {
   return (
     <div style={{ width: 'auto', height: 'auto', overflow: 'hidden' }}>
       <img
@@ -19,6 +20,7 @@ const ImageView = ({ src, alt, width, height }: ImageViewProps) => {
           display: 'block',
           margin: 'auto',
         }}
+        class={className}
       />
     </div>
   );

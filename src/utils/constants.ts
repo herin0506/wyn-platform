@@ -180,6 +180,7 @@ export const productCategories = [
 
 export const products = [
   {
+    productId: 1,
     imgUrl: '/images/product_1.svg',
     title: 'Nutritional Mints for Heavy Periods',
     brand: 'Tried & Trusted',
@@ -187,6 +188,7 @@ export const products = [
     price: '849',
   },
   {
+    productId: 2,
     imgUrl: '/images/product_2.svg',
     title: 'Nutritional Mints for Lactation',
     brand: 'Tried & Trusted',
@@ -194,6 +196,7 @@ export const products = [
     price: '849',
   },
   {
+    productId: 3,
     imgUrl: '/images/product_3.svg',
     title: 'Nutritional Mints for Menopause',
     brand: 'Tried & Trusted',
@@ -201,6 +204,7 @@ export const products = [
     price: '849',
   },
   {
+    productId: 4,
     imgUrl: '/images/product_4.svg',
     title: 'Soothing Vaginal cream for Menopause',
     brand: 'Tried & Trusted',
@@ -216,6 +220,45 @@ export const product = {
   subTitle:'Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
   price: 849,
 };
+
+export const CartItems = [
+  {
+    productId: 3,
+    imgUrl: '/images/product_3.svg',
+    title: 'Soothing Vaginal cream for Menopause',
+    subTitle:'Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
+    brand: 'Tried & Trusted',
+    rating: 5,
+    price: '849',
+  },
+  {
+    productId: 4,
+    imgUrl: '/images/product_4.svg',
+    title: 'Soothing Vaginal cream for Menopause',
+    subTitle:'Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
+    brand: 'Tried & Trusted',
+    rating: 5,
+    price: '849',
+  },
+  {
+    productId: 3,
+    imgUrl: '/images/product_3.svg',
+    title: 'Soothing Vaginal cream for Menopause',
+    subTitle:'Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
+    brand: 'Tried & Trusted',
+    rating: 5,
+    price: '849',
+  },
+  {
+    productId: 4,
+    imgUrl: '/images/product_4.svg',
+    title: 'Soothing Vaginal cream for Menopause',
+    subTitle:'Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
+    brand: 'Tried & Trusted',
+    rating: 5,
+    price: '849',
+  },
+];
 
 export const infoContent = {
   title:'How to balance female hormones for a healthy menstruation',
@@ -454,6 +497,6 @@ export const teamMembers = [
       src:'/images/sagar-tungare.png',
       alt:'Mr. Sagar Tungare'
     }
-  }
+  },
   // add other team members here
 ];

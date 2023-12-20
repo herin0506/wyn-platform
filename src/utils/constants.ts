@@ -433,151 +433,151 @@ export const coFounders = [
 
 export const sensualWellnessProducts = [
   {
-    _id: '1',
+    _id: 'SWP_1',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/BreastCream_OuterBoxMockup_01copy.jpg?v=1696319487&width=720',
     title: 'Breast Cream',
     brand: null,
     rating: 0,
-    price: '799.00',
+    price: 799.0,
   },
   {
-    _id: '2',
+    _id: 'SWP_2',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/IntimateDepigmintation_PumpMockup.jpg?v=1696319600',
     title: 'Intimate Depigmenting Cream',
     brand: null,
     rating: 0,
-    price: '899.00',
+    price: 899.0,
   },
   {
-    _id: '3',
+    _id: 'SWP_3',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/26thJune_Updated_IntimateVaginalCream30gms_InnertubeMockup_01copy.jpg?v=1694424028',
     title: 'Intimate Vaginal Cream',
     brand: null,
     rating: 0,
-    price: '2,049.00',
+    price: 2049.0,
   },
 ];
 
 export const pregnancyProducts = [
   {
-    _id: '1',
+    _id: 'PP_1',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/1_9a559de9-7002-44c0-979a-2dd2d58d5300.png?v=1696318910&width=720',
     title: 'Lactation Mints',
     brand: null,
     rating: 0,
-    price: '2,099.00',
+    price: 2099.0,
   },
   {
-    _id: '2',
+    _id: 'PP_2',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/Pregnancy_AnchoringFOP_01.jpg?v=1696319261&width=720',
     title: 'Pregnancy & Anchoring Mints',
     brand: null,
     rating: 0,
-    price: '2,599.00',
+    price: 2599.0,
   },
 ];
 
 export const menstrualWellnessProducts = [
   {
-    _id: '1',
+    _id: 'MWP_1',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/1.2.png?v=1696319165&width=720',
     title: 'PCOS Mints',
     brand: null,
     rating: 0,
-    price: '1,499.00',
+    price: 1499.00,
   },
   {
-    _id: '2',
+    _id: 'MWP_2',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/1_17673464-2a56-4eb6-8daf-04a8eda64aea.png?v=1696318593&width=720',
     title: 'Irregular Periods Mints',
     brand: null,
     rating: 0,
-    price: '1,299.00',
+    price: 1299.00,
   },
   {
-    _id: '3',
+    _id: 'MWP_3',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/1_17673464-2a56-4eb6-8daf-04a8eda64aea.png?v=1696318593&width=720',
     title: 'Heavy Periods Mints',
     brand: null,
     rating: 0,
-    price: '1,249.00',
+    price: 1249.00,
   },
   {
-    _id: '4',
+    _id: 'MWP_4',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/1_d665f323-06d0-4675-bf5b-3a9ccf7bbf4f.png?v=1696319058&width=720',
     title: 'Pain Free PeriodsMints',
     brand: null,
     rating: 0,
-    price: '999.00',
+    price: 999.00,
   },
   {
-    _id: '5',
+    _id: 'MWP_5',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/1_8bb773a7-0261-457b-80c2-c06a9e1fa905.png?v=1696319353&width=720',
     title: 'White Discharge Mints',
     brand: null,
     rating: 0,
-    price: '1.299.00',
+    price: 1299.00,
   },
   {
-    _id: '6',
+    _id: 'MWP_6',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/1_65102fd4-e0af-4acc-b0d3-21a7bbec9871.png?v=1696319302&width=720',
     title: 'Scanty Periods Mints',
     brand: null,
     rating: 0,
-    price: '1,149.00',
+    price: 1149.00,
   },
 ];
 
 export const menopausalProducts = [
   {
-    _id: '1',
+    _id: 'MP_1',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/26thJune_Updated_menopauseRevitalisngCream30gms_InnertubeMockup_01copy.jpg?v=1694424086&width=720',
     title: 'Soothing Vaginal Cream',
     brand: null,
     rating: 0,
-    price: '1,199.00',
+    price: 1199.00,
   },
   {
-    _id: '2',
+    _id: 'MP_2',
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/1_e7deed95-5662-4c21-ab19-642c080bb5ed.png?v=1696318990&width=720',
     title: 'Menopausal Mints',
     brand: null,
     rating: 0,
-    price: '1,899.00',
+    price: 1899.00,
   },
 ];
 
 export const dailyWellnessProduct = [
   {
-    _id: '1',
+    _id: `DW_1`,
     imgUrl:
       'https://wynatlife.com/cdn/shop/products/IntimateHygineWipes_OuterPack_244e7f23-a346-44a9-a758-42deb278f8e7.jpg?v=1681715242&width=720',
     title: 'Intimate Hygiene Wipes',
     brand: null,
     rating: 0,
-    price: '159.00',
+    price: 159.0,
   },
   {
-    _id: '2',
+    _id: `DW_2`,
     imgUrl:
       'https://wynatlife.com/cdn/shop/files/IntimateSprayBottleMockup1.jpg?v=1696319712&width=720',
     title: 'Intimate Hygiene Spray',
     brand: null,
     rating: 0,
-    price: '250.00',
+    price: 250.0,
   },
 ];
 
@@ -634,8 +634,9 @@ export const blogData = [
     _id: '1',
     imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_10.png?v=1696366832',
     title: 'The WYN Way: Merging Nutrition & Ayurveda with Modern Wellness',
-    author:"Dr. Vaidya   | 19 September 2023",
-    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+    author: 'Dr. Vaidya   | 19 September 2023',
+    authorImage:
+      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
     description:
       "To truly appreciate WYN's approach, we must embark on a journey into the world of natural nutrients in Ayurveda—a venerable traditional Indian system of medicine that has thrived for",
   },
@@ -643,9 +644,10 @@ export const blogData = [
     _id: '2',
     imgUrl: 'https://wynatlife.com/cdn/shop/articles/Group.png?v=1696369238',
     title: 'A Journey of Women Wellness through Time & Nature',
-    author:"Dr. Vaidya   | 19 September 2023",
-    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
- 
+    author: 'Dr. Vaidya   | 19 September 2023',
+    authorImage:
+      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
+
     description:
       'In the heartland of India, where ancient traditions and modernity coalesce, a captivating story of transformation and unwavering dedication unfolds. This narrative mirrors the very essence of What You Need (WYN) - a brand founded on the principles of holistic wellness in a world in constant flux.',
   },
@@ -653,35 +655,79 @@ export const blogData = [
     _id: '3',
     imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_8.png?v=1696369344',
     title: 'Empowerment in Every Mint',
-    author:"Dr. Vaidya   | 19 September 2023",
-    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
- 
+    author: 'Dr. Vaidya   | 19 September 2023',
+    authorImage:
+      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
+
     description: `Life as a woman is a tapestry of experiences woven with threads of sunshine and rainbows, quirks, and challenges that shape our journey. Yet, amidst this rich tapestry, some issues have remained hidden in the shadows, spoken of in hushed tones, or worse, not spoken of at all but saliently endured. It's as if there's an unspoken code – "Thou shall not discuss intimate wellness or menstrual & menopause issues,." But you know what? It's high time we shatter that code and let our stories, our experiences, and our wellness take center stage`,
   },
   {
     _id: '4',
     imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_9.png?v=1696369408',
     title: 'Embracing Holistic Wellness in a Rapid-Paced World',
-    author:"Dr. Vaidya   | 19 September 2023",
-    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
- 
+    author: 'Dr. Vaidya   | 19 September 2023',
+    authorImage:
+      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
+
     description: `In today's fast-moving world, where life rushes by and the world never seems to stop, the importance of holistic wellness shines like a guiding star. Stress and imbalances sneak into our lives, unsettling our physical and mental well-being. It's in this challenging landscape that the wellness brand "What You Need" (WYN) steps in, ushering in a fresh era of self-care with its innovative nutraceutical mints.`,
   },
   {
     _id: '5',
     imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_19.png?v=1700762283',
-    author:"Dr. Vaidya   | 19 September 2023",
-    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
- 
-    title: 'Embracing Nature: How WYN Elevates Women’s Wellness with Botanical Ingredients',
+    author: 'Dr. Vaidya   | 19 September 2023',
+    authorImage:
+      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
+
+    title:
+      'Embracing Nature: How WYN Elevates Women’s Wellness with Botanical Ingredients',
     description: `In an era where synthetic solutions often eclipse the wisdom of nature, "What You Need" (WYN) emerges as a pioneering brand that harnesses the incredible healing potential of natural ingredients. These botanical treasures have been integral to human existence for centuries, not merely as sources of sustenance but as potent remedies that have stood the test of time. Today, we embark on a journey to explore the key ingredients that fuel WYN's holistic wellness approach and delve into the medicinal benefits they bestow.`,
   },
   {
     _id: '6',
-    imgUrl: 'https://wynatlife.com/cdn/shop/articles/4-_1044_x_636.jpg?v=1702460082',
+    imgUrl:
+      'https://wynatlife.com/cdn/shop/articles/4-_1044_x_636.jpg?v=1702460082',
     title: 'A Complete Guide on Choosing the Best Feminine Hygiene Products',
-    author:"Dr. Vaidya   | 19 September 2023",
-    authorImage:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+    author: 'Dr. Vaidya   | 19 September 2023',
+    authorImage:
+      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
     description: `Feminine hygiene is a crucial aspect of women's health and well-being. The market is flooded with a variety of feminine hygiene products, making it challenging to navigate and choose the best options. Selecting the right feminine products involves considering factors such as comfort, safety, environmental impact, and personal preferences. In this comprehensive guide, we will delve into the world of feminine hygiene products, discussing different types, their benefits, and providing tips on making informed choices for a healthier and more sustainable lifestyle.`,
+  },
+];
+
+export const ourProducts = [
+  {
+    title: 'Everyday Wellness',
+    subTitle: "We ensure affordability: WYN's Menstrual Hygiene Products",
+    description: "Empowering Women's Health: Menstrual Hygiene Products",
+    label: 'daily-wellness',
+    products: dailyWellnessProduct,
+  },
+  {
+    title: 'Pregnancy Care',
+    subTitle: "WYN ' s Pregnancy Care Products for Expecting Moms",
+    description: 'Explore Our Range of Pregnancy Care Products',
+    label: 'pregnancy-prepare',
+    products: pregnancyProducts,
+  },
+  {
+    title: 'Menopausal wellness',
+    subTitle: "Unveiling WYN's Ayurvedic Menopause Treatment",
+    description: `WYN's Specialty: Ayurvedic Menopause Treatment`,
+    label: 'menopausal-wellness',
+    products: menopausalProducts,
+  },
+  {
+    title: 'Menstrual wellness',
+    subTitle: "Discover WYN's Ayurvedic Medicine for Irregular Periods",
+    description: `Ayurvedic Medicine for Irregular Periods by WYN`,
+    label: 'menstrual-wellness',
+    products: menstrualWellnessProducts,
+  },
+  {
+    title: 'Sensual Wellness',
+    subTitle: "Intimate Hygiene For Women: WYN &apos;s Care Essentials",
+    description: `Intimate Hygiene For Women - WYN Brand`,
+    label: 'sensual-wellness',
+    products: sensualWellnessProducts,
   },
 ];

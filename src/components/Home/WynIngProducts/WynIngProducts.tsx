@@ -10,28 +10,26 @@ import { Container } from '@mui/material';
 
 const WynIngProductsContainer = () => {
   return (
-    <Fragment>
-      <StyledHomeWyningProducts>
-        <SectionHeadingComponent textAlign="center">
-          WYN-ing Products
-        </SectionHeadingComponent>
-        <Container disableGutters maxWidth="lg">
-          <ThumbnailSliderComponent
-            sliderProps={{
-              ...thumbnailSliderConfig,
-              navigation: true,
-              spaceBetween: 50,
-            }}
-          >
-            {products.map((product, index) => (
-              <SwiperSlide key={index}>
-                <ProductCardComponent {...product} />
-              </SwiperSlide>
-            ))}
-          </ThumbnailSliderComponent>
-        </Container>
-      </StyledHomeWyningProducts>
-    </Fragment>
+    <StyledHomeWyningProducts>
+      <SectionHeadingComponent textAlign="center">
+        WYN-ing Products
+      </SectionHeadingComponent>
+      <Container disableGutters maxWidth="lg">
+        <ThumbnailSliderComponent
+          sliderProps={{
+            ...thumbnailSliderConfig,
+            navigation: true,
+            spaceBetween: 50,
+          }}
+        >
+          {products.map((product, index) => (
+            <SwiperSlide key={index}>
+              <ProductCardComponent product={product} />
+            </SwiperSlide>
+          ))}
+        </ThumbnailSliderComponent>
+      </Container>
+    </StyledHomeWyningProducts>
   );
 };
 

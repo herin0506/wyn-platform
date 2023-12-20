@@ -8,44 +8,37 @@ import Rating from '@mui/material/Rating';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Link from 'next/link';
+import { useDispatch } from 'react-redux';
+import { addCartItem } from '../../../../redux/reducers/cartSlice';
 
 interface ProductCardComponentProps {
-  title: string;
-  price: string;
-  rating: number;
-  imgUrl: string;
-  brand: string | null;
+  product: any;
 }
 
-const StyledProductTitle = styled(Link)(({theme})=>({
-  color:theme.palette.text.primary,
-  textDecoration:"none",
-  "&:hover":{
-    textDecoration:"underline",
-  }
+const StyledProductTitle = styled(Link)(({ theme }) => ({
+  color: theme.palette.text.primary,
+  textDecoration: 'none',
+  '&:hover': {
+    textDecoration: 'underline',
+  },
 }));
 
-const ProductCardComponent = ({
-  title,
-  price,
-  rating,
-  imgUrl,
-  brand,
-}: ProductCardComponentProps) => {
+const ProductCardComponent = ({ product }: ProductCardComponentProps) => {
+  const dispatch = useDispatch();
   return (
     <StyledProductCard>
       <Box component="div" className="__image__wrapper">
-        <Image alt={title} src={imgUrl} fill />
+        <Image alt={product.title} src={product.imgUrl} fill />
       </Box>
       <StyledProductTitle href="#">
-        <Typography variant="body2">{title}</Typography>
+        <Typography variant="body2">{product.title}</Typography>
       </StyledProductTitle>
 
       <Grid container alignItems="center">
-        {brand && (
+        {product.brand && (
           <Fragment>
             <Grid pb={1} item xs={6}>
-              <Typography variant="caption">{brand}</Typography>
+              <Typography variant="caption">{product.brand}</Typography>
             </Grid>
             <Grid item pb={1} xs={1}>
               <Typography variant="caption">|</Typography>
@@ -53,23 +46,35 @@ const ProductCardComponent = ({
           </Fragment>
         )}
 
-        {rating !== 0 && (
+        {product.rating !== 0 && (
           <Grid item xs={4}>
             <Rating
               size="small"
               readOnly
               name="product-rating"
-              value={rating}
+              value={product.rating}
             />
           </Grid>
         )}
       </Grid>
       <Box>
-        <Typography variant="body2">Rs. {price}</Typography>
+        <Typography variant="body2">Rs. {product.price}</Typography>
       </Box>
       <Grid mt={2} container alignItems="center" justifyContent="space-between">
         <Grid item>
-          <Button sx={{marginBottom:"10px"}} variant="contained" size="small">
+          <Button
+            sx={{ marginBottom: '10px' }}
+            variant="contained"
+            size="small"
+            onClick={() => {
+              dispatch(
+                addCartItem({
+                  ...product,
+                  qty: 1,
+                }),
+              );
+            }}
+          >
             ADD TO CART
           </Button>
         </Grid>

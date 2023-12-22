@@ -1,26 +1,14 @@
 import {
   Box,
   Container,
-  Divider,
-  Typography,
-  useMediaQuery,
+  useMediaQuery
 } from '@mui/material';
-import BannerComponent from '@wyn/components/Common/Banner/Banner';
-import HorizontalContentSectionComponent from '@wyn/components/Common/HorizontalContentSection/HorizontalContentSection';
-import HorizontalImageSectionComponent from '@wyn/components/Common/HorizontalImageSection/HorizontalImageSection';
-import HorizontalSplitComponent from '@wyn/components/Common/HorizontalSplit/HorizontalSplit';
-import {
-  meetTheTeam,
-  whatWeOfferContent,
-  teamDetails,
-} from '@wyn/utils/constants';
-import { Fragment } from 'react';
-import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
 import LeftDetailsComponent from '@wyn/components/BuyNow/LeftDetails/LeftDetails';
 import RightDetailsComponent from '@wyn/components/BuyNow/RightDetails/RightDetails';
-import { APP_COLORS } from '@wyn/styles/colors/colors';
+import HorizontalSplitComponent from '@wyn/components/Common/HorizontalSplit/HorizontalSplit';
+import { Fragment } from 'react';
 
-const WhyWynPage = () => {
+const BuyNow = () => {
   const isDesktopView = useMediaQuery('(min-width:960px)');
   const isMobileTabletView = useMediaQuery('(max-width:959px)');
   return (
@@ -35,7 +23,7 @@ const WhyWynPage = () => {
             rightWidth={30}
             enableDivider={true}
             leftBackgroundColor=""
-            rightBackgroundColor={APP_COLORS.GREY}
+            rightBackgroundColor=""
           />
         </Container>
       </Box>
@@ -43,4 +31,4 @@ const WhyWynPage = () => {
   );
 };
 
-export default WhyWynPage;
+export default BuyNow;

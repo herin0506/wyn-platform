@@ -1,9 +1,8 @@
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { ReactNode } from 'react';
 import { StyledHorizontalSplitComponent } from './styled';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { Divider } from '@mui/material';
 
 interface HorizontalSplitComponentProps {
   leftComponent: ReactNode;

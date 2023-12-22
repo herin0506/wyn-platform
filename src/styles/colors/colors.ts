@@ -9,5 +9,8 @@ export const APP_COLORS = {
   VIOLET: '#912A89',
   UBE: '#8F89C2',
   BLACK: '#000000',
-  PINK: '#DD2155'
+  PINK: '#DD2155',
+  LIGHTBLUE: '#1773b0',
+  GREY: '#f5f5f5',
+  WHITE: '#ffffff'
 };

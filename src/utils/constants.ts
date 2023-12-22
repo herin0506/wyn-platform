@@ -180,6 +180,7 @@ export const productCategories = [
 
 export const products = [
   {
+    id: 1,
     imgUrl: '/images/product_1.svg',
     title: 'Nutritional Mints for Heavy Periods',
     brand: 'Tried & Trusted',
@@ -187,6 +188,7 @@ export const products = [
     price: '849',
   },
   {
+    id: 2,
     imgUrl: '/images/product_2.svg',
     title: 'Nutritional Mints for Lactation',
     brand: 'Tried & Trusted',
@@ -194,6 +196,7 @@ export const products = [
     price: '849',
   },
   {
+    id: 3,
     imgUrl: '/images/product_3.svg',
     title: 'Nutritional Mints for Menopause',
     brand: 'Tried & Trusted',
@@ -201,12 +204,13 @@ export const products = [
     price: '849',
   },
   {
+    id: 4,
     imgUrl: '/images/product_4.svg',
     title: 'Soothing Vaginal cream for Menopause',
     brand: 'Tried & Trusted',
     rating: 5,
     price: '849',
-  },
+  }
 ];
 
 export const product = {
@@ -249,44 +253,47 @@ export const whatWeOfferContent = {
     "The story of What You Need - WYN products are of focused vision and in-depth understanding of scientific advances, combined with a strong foothold in Ayurveda. We've cultivated a diverse range of products that can be easily incorporated into your daily routine. Our product range includes Nutraceuticals, Cosmeceuticals, Nutra-Cosmeceutical Health Care & Wellness products.. READ MORE",
 };
 
-export const benefitsData = [
-  {
-    title: 'Steroid Hormone Free',
-    subTitle:
-      'Rest easy knowing that our mints are entirely free from hormones and steroids, ensuring your well-being is our top priority.',
-    src: '/icons/hormone.svg',
-  },
-  {
-    title: 'Science Backed',
-    subTitle:
-      'Each mint is meticulously crafted based on scientific research and designed to effectively address specific feminine concerns.',
-    src: '/icons/science.svg',
-  },
-  {
-    title: 'Vegetarian',
-    subTitle:
-      "We're proud to say that our mints are completely vegetarian, making them a consumable for ALL and sustainable choice.",
-    src: '/icons/vegetarian.svg',
-  },
-  {
-    title: 'Cruelty Free',
-    subTitle:
-      'At WYN, we hold a strong stance against animal testing. Our products are developed with compassion and without causing harm to any living beings.',
-    src: '/icons/cruelt.svg',
-  },
-  {
-    title: 'Sugar Free',
-    subTitle:
-      'Our mints are sugar-free, promoting a healthier approach to wellness without unnecessary additives.',
-    src: '/icons/sugar.svg',
-  },
-  {
-    title: 'Plant Derived Compounds',
-    subTitle:
-      'Harnessing the power of nature, our mints are enriched with plant-derived compounds, bringing you the best of botanical goodness.',
-    src: '/icons/derived.svg',
-  },
-];
+export const benefitsData = {
+  heading: 'A Treasure Trove of Benefits',
+  itemList: [
+    {
+      title: 'Steroid Hormone Free',
+      subTitle:
+        'Rest easy knowing that our mints are entirely free from hormones and steroids, ensuring your well-being is our top priority.',
+      src: '/icons/hormone.svg',
+    },
+    {
+      title: 'Science Backed',
+      subTitle:
+        'Each mint is meticulously crafted based on scientific research and designed to effectively address specific feminine concerns.',
+      src: '/icons/science.svg',
+    },
+    {
+      title: 'Vegetarian',
+      subTitle:
+        "We're proud to say that our mints are completely vegetarian, making them a consumable for ALL and sustainable choice.",
+      src: '/icons/vegetarian.svg',
+    },
+    {
+      title: 'Cruelty Free',
+      subTitle:
+        'At WYN, we hold a strong stance against animal testing. Our products are developed with compassion and without causing harm to any living beings.',
+      src: '/icons/cruelt.svg',
+    },
+    {
+      title: 'Sugar Free',
+      subTitle:
+        'Our mints are sugar-free, promoting a healthier approach to wellness without unnecessary additives.',
+      src: '/icons/sugar.svg',
+    },
+    {
+      title: 'Plant Derived Compounds',
+      subTitle:
+        'Harnessing the power of nature, our mints are enriched with plant-derived compounds, bringing you the best of botanical goodness.',
+      src: '/icons/derived.svg',
+    },
+  ],
+};
 
 export const guidingPrinciples = {
   heading: 'Our Guiding Principles',
@@ -629,105 +636,101 @@ export const dailyWellness = {
     'We understand the importance of daily intimate hygiene. Our Intimate Hygiene Wipes and Intimate Hygiene Spray make it effortless to prioritize your well-being each day.',
 };
 
-export const blogData = [
-  {
-    _id: '1',
-    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_10.png?v=1696366832',
-    title: 'The WYN Way: Merging Nutrition & Ayurveda with Modern Wellness',
-    author: 'Dr. Vaidya   | 19 September 2023',
-    authorImage:
-      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
-    description:
-      "To truly appreciate WYN's approach, we must embark on a journey into the world of natural nutrients in Ayurveda—a venerable traditional Indian system of medicine that has thrived for",
-  },
-  {
-    _id: '2',
-    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Group.png?v=1696369238',
-    title: 'A Journey of Women Wellness through Time & Nature',
-    author: 'Dr. Vaidya   | 19 September 2023',
-    authorImage:
-      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
+export const meetTheTeam = {
+  title: 'Dr. Shefali Tungare, Founder',
+  description:
+    "She has emerged as a visionary in women's health empowerment. In 2023, she founded 'WYN - What You Need,' a brand dedicated to transparency, safety, and natural well-being. Dr. Tungare observed significant gaps in the intimate care market, with many products concealing ingredients or failing to meet safety standards. Her innovative solution was natural phytoactive compound mints, providing women with natural alternatives with a long history of safety and efficacy offering wellness with pleasure. Her philosophy of 'Mints not Medicines' has reshaped the industry, emphasizing natural healing methods. Beyond products, 'WYN' has become a multifaceted wellness entity, offering menstrual care, sexual wellness, and pregnancy care products. Dr. Tungare's mission is clear: empower women globally to make informed decisions about their intimate health. With a blend of Ayurvedic wisdom and modern medicine, Dr. Shefali Tungare's commitment to enhancing women's well-being is transforming the approach to women's health. 'WYN - What You Need' stands as a beacon of empowerment, where passion meets purpose, leading to transformative change in women's lives worldwide.",
+};
 
-    description:
-      'In the heartland of India, where ancient traditions and modernity coalesce, a captivating story of transformation and unwavering dedication unfolds. This narrative mirrors the very essence of What You Need (WYN) - a brand founded on the principles of holistic wellness in a world in constant flux.',
+export const teamDetails = [
+  {
+    title: 'Mr. Snehal Gersappa CEO',
+    subTitle:
+      "Mr. Snehal Gersappa's extensive experience and remarkable expertise in running the organizations define his crucial role the company. With an impressive track record spanning over 19 years of dedicated service, he brings a wealth of knowledge to the table. He plays a multifaceted role that significantly impacts our company's trajectory. His depth of experience in sales, marketing & financial modelling which enables him to identify and seize growth opportunities with precision. READ MORE",
   },
   {
-    _id: '3',
-    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_8.png?v=1696369344',
-    title: 'Empowerment in Every Mint',
-    author: 'Dr. Vaidya   | 19 September 2023',
-    authorImage:
-      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
-
-    description: `Life as a woman is a tapestry of experiences woven with threads of sunshine and rainbows, quirks, and challenges that shape our journey. Yet, amidst this rich tapestry, some issues have remained hidden in the shadows, spoken of in hushed tones, or worse, not spoken of at all but saliently endured. It's as if there's an unspoken code – "Thou shall not discuss intimate wellness or menstrual & menopause issues,." But you know what? It's high time we shatter that code and let our stories, our experiences, and our wellness take center stage`,
+    title: 'Dr. Satish Vaidya, Mentor & Chief Research Officer',
+    subTitle:
+      'Satish Vaidya, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement. READ MORE',
   },
   {
-    _id: '4',
-    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_9.png?v=1696369408',
-    title: 'Embracing Holistic Wellness in a Rapid-Paced World',
-    author: 'Dr. Vaidya   | 19 September 2023',
-    authorImage:
-      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
-
-    description: `In today's fast-moving world, where life rushes by and the world never seems to stop, the importance of holistic wellness shines like a guiding star. Stress and imbalances sneak into our lives, unsettling our physical and mental well-being. It's in this challenging landscape that the wellness brand "What You Need" (WYN) steps in, ushering in a fresh era of self-care with its innovative nutraceutical mints.`,
-  },
-  {
-    _id: '5',
-    imgUrl: 'https://wynatlife.com/cdn/shop/articles/Frame_19.png?v=1700762283',
-    author: 'Dr. Vaidya   | 19 September 2023',
-    authorImage:
-      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
-
-    title:
-      'Embracing Nature: How WYN Elevates Women’s Wellness with Botanical Ingredients',
-    description: `In an era where synthetic solutions often eclipse the wisdom of nature, "What You Need" (WYN) emerges as a pioneering brand that harnesses the incredible healing potential of natural ingredients. These botanical treasures have been integral to human existence for centuries, not merely as sources of sustenance but as potent remedies that have stood the test of time. Today, we embark on a journey to explore the key ingredients that fuel WYN's holistic wellness approach and delve into the medicinal benefits they bestow.`,
-  },
-  {
-    _id: '6',
-    imgUrl:
-      'https://wynatlife.com/cdn/shop/articles/4-_1044_x_636.jpg?v=1702460082',
-    title: 'A Complete Guide on Choosing the Best Feminine Hygiene Products',
-    author: 'Dr. Vaidya   | 19 September 2023',
-    authorImage:
-      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg',
-    description: `Feminine hygiene is a crucial aspect of women's health and well-being. The market is flooded with a variety of feminine hygiene products, making it challenging to navigate and choose the best options. Selecting the right feminine products involves considering factors such as comfort, safety, environmental impact, and personal preferences. In this comprehensive guide, we will delve into the world of feminine hygiene products, discussing different types, their benefits, and providing tips on making informed choices for a healthier and more sustainable lifestyle.`,
+    title: 'Mr. Sagar Tungare COO',
+    subTitle:
+      'Sagar Tungare, our Chief Operating Officer, possesses a deep understanding that the foundation of a thriving company lies in smooth operations, much like the harmony of a well-conducted orchestra. His role extends beyond operational management; he actively contributes to shaping our work culture, promoting values like creativity, accountability, and a relentless drive for improvement. READ MORE',
   },
 ];
 
-export const ourProducts = [
+export const countries = [
   {
-    title: 'Everyday Wellness',
-    subTitle: "We ensure affordability: WYN's Menstrual Hygiene Products",
-    description: "Empowering Women's Health: Menstrual Hygiene Products",
-    label: 'daily-wellness',
-    products: dailyWellnessProduct,
+    value: 'ind',
+    label: 'India',
   },
   {
-    title: 'Pregnancy Care',
-    subTitle: "WYN ' s Pregnancy Care Products for Expecting Moms",
-    description: 'Explore Our Range of Pregnancy Care Products',
-    label: 'pregnancy-prepare',
-    products: pregnancyProducts,
+    value: 'usa',
+    label: 'USA',
+  },
+];
+
+export const states = [
+  { value: 'AN', label: 'Andaman and Nicobar Islands' },
+  { value: 'AP', label: 'Andhra Pradesh' },
+  { value: 'AR', label: 'Arunachal Pradesh' },
+  { value: 'AS', label: 'Assam' },
+  { value: 'BR', label: 'Bihar' },
+  { value: 'CH', label: 'Chandigarh' },
+  { value: 'CT', label: 'Chhattisgarh' },
+  { value: 'DN', label: 'Dadra and Nagar Haveli and Daman and Diu' },
+  { value: 'DL', label: 'Delhi' },
+  { value: 'GA', label: 'Goa' },
+  { value: 'GJ', label: 'Gujarat' },
+  { value: 'HR', label: 'Haryana' },
+  { value: 'HP', label: 'Himachal Pradesh' },
+  { value: 'JK', label: 'Jammu and Kashmir' },
+  { value: 'JH', label: 'Jharkhand' },
+  { value: 'KA', label: 'Karnataka' },
+  { value: 'KL', label: 'Kerala' },
+  { value: 'LD', label: 'Lakshadweep' },
+  { value: 'MP', label: 'Madhya Pradesh' },
+  { value: 'MH', label: 'Maharashtra' },
+  { value: 'MN', label: 'Manipur' },
+  { value: 'ML', label: 'Meghalaya' },
+  { value: 'MZ', label: 'Mizoram' },
+  { value: 'NL', label: 'Nagaland' },
+  { value: 'OD', label: 'Odisha' },
+  { value: 'PY', label: 'Puducherry' },
+  { value: 'PB', label: 'Punjab' },
+  { value: 'RJ', label: 'Rajasthan' },
+  { value: 'SK', label: 'Sikkim' },
+  { value: 'TN', label: 'Tamil Nadu' },
+  { value: 'TS', label: 'Telangana' },
+  { value: 'TR', label: 'Tripura' },
+  { value: 'UP', label: 'Uttar Pradesh' },
+  { value: 'UK', label: 'Uttarakhand' },
+  { value: 'WB', label: 'West Bengal' },
+];
+
+export const termsAndCondition =
+  'By signing up via text, you agree to receive recurring automated marketing messages, including cart reminders, at the phone number provided. Consent is not a condition of purchase. Reply STOP to unsubscribe. Reply HELP for help. Message frequency varies. Msg & data rates may apply. View our Privacy Policy and Terms of Service.';
+
+export const buyNowproduct = {
+  title: 'White Discharge Mints',
+  subTitle: '1 month care pack 120 mints',
+  price: 1299,
+  image: '/images/small-product.webp',
+};
+
+
+export const buyNowproductList = [
+  {
+    title: 'White Discharge Mints',
+    subTitle: '1 month care pack 120 mints',
+    price: 1299,
+    image: '/images/small-product.webp',
   },
   {
-    title: 'Menopausal wellness',
-    subTitle: "Unveiling WYN's Ayurvedic Menopause Treatment",
-    description: `WYN's Specialty: Ayurvedic Menopause Treatment`,
-    label: 'menopausal-wellness',
-    products: menopausalProducts,
-  },
-  {
-    title: 'Menstrual wellness',
-    subTitle: "Discover WYN's Ayurvedic Medicine for Irregular Periods",
-    description: `Ayurvedic Medicine for Irregular Periods by WYN`,
-    label: 'menstrual-wellness',
-    products: menstrualWellnessProducts,
-  },
-  {
-    title: 'Sensual Wellness',
-    subTitle: "Intimate Hygiene For Women: WYN &apos;s Care Essentials",
-    description: `Intimate Hygiene For Women - WYN Brand`,
-    label: 'sensual-wellness',
-    products: sensualWellnessProducts,
+    title: 'Secong Test Product',
+    subTitle: '1 month care pack 120 mints',
+    price: 1429,
+    image: '/images/small-product.webp',
   },
 ];

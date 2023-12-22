@@ -1,21 +1,28 @@
-import React from 'react';
-import { Typography, TextField, Button } from '@mui/material';
+import {
+  Box,
+  Button,
+  Container,
+  Link,
+  TextField,
+  Typography,
+} from '@mui/material';
 import { useRouter } from 'next/router';
-import styles from '../../styles/authentication.module.css';
+import { Fragment } from 'react';
+import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
 
-export default function SignUp() {
+const WhyWynPage = () => {
   const router = useRouter();
-  const handleNaviagte = () => {
+  const goToLogin = () => {
     router.push('/login');
   };
   const handleCreate = () => {
     router.push('/');
   };
   return (
-    <>
-      <section className={`row justify-content-center`}>
-        <div className={'col-12 col-md-6 col-lg-4 text-center px-4'}>
-          <Typography variant="h4" className={`my-4 text-center`}>
+    <Fragment>
+      <Box mt={14}>
+        <Container maxWidth="xs" className="text-center">
+          <Typography variant="h4" mb={4}>
             Create account
           </Typography>
           <TextField
@@ -24,7 +31,6 @@ export default function SignUp() {
             label="First name"
             variant="outlined"
             className="mb-3"
-            InputProps={{ className: styles.inputFieldStyles }}
           />
           <TextField
             fullWidth
@@ -32,7 +38,6 @@ export default function SignUp() {
             label="Last name"
             variant="outlined"
             className="mb-3"
-            InputProps={{ className: styles.inputFieldStyles }}
           />
           <TextField
             fullWidth
@@ -40,45 +45,33 @@ export default function SignUp() {
             label="Email"
             variant="outlined"
             className="mb-3"
-            InputProps={{ className: styles.inputFieldStyles }}
           />
           <TextField
             fullWidth
             id="outlined-basic"
             label="Password"
             variant="outlined"
-            className=""
-            InputProps={{ className: styles.inputFieldStyles }}
+            className="mb-3"
           />
-
           <Button
-            className={`text-center my-5 ${styles.mainBoxButton}`}
             variant="contained"
             size="large"
             color="primary"
             onClick={handleCreate}
+            className="mb-3"
           >
             Create
           </Button>
-        </div>
-      </section>
-
-      <section className={`row justify-content-center ${styles.container}`}>
-        <div className={`col-8 text-center py-5 px-0`}>
-          <Typography className={`mb-4 ${styles.customTextSize}`}>
-            We are <b>dependable ally</b> in your hourney to better health &
-            wellness.
+          <Typography mb={3} variant="subtitle2">
+            <Link onClick={goToLogin} mb={3} sx={{ cursor: 'pointer' }}>
+              Already registered? Login!
+            </Link>
           </Typography>
-          <Button
-            className={styles.mainRoundButton}
-            variant="contained"
-            size="large"
-            color="primary"
-          >
-            DISCOVER CATEGROIES
-          </Button>
-        </div>
-      </section>
-    </>
+        </Container>
+        <DiscoverCategoriesComponent />
+      </Box>
+    </Fragment>
   );
-}
+};
+
+export default WhyWynPage;

@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 interface ImageViewProps {
   src: string;
   alt: string;
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
+  className?: string;
 }
 
-const ImageView = ({ src, alt, width, height }: ImageViewProps) => {
+const ImageView = ({ src, alt, width, height, className }: ImageViewProps) => {
   return (
     <div style={{ width: 'auto', height: 'auto', overflow: 'hidden' }}>
       <img
@@ -19,16 +20,10 @@ const ImageView = ({ src, alt, width, height }: ImageViewProps) => {
           display: 'block',
           margin: 'auto',
         }}
+        class={className}
       />
     </div>
   );
-};
-
-ImageView.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  width: PropTypes.number,
-  height: PropTypes.number,
 };
 
 export default ImageView;

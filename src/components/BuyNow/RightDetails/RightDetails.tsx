@@ -3,12 +3,12 @@ import { StyledRightDetails } from './styled';
 import ProductComponent from '../Product/Product';
 import { buyNowproductList } from '@wyn/utils/constants';
 import { useState } from 'react';
-
-// interface RightDetailsComponentProps {
-
-// }
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const RightDetailsComponent = () => {
+  const isDesktopView = useMediaQuery('(min-width:960px)');
+  const isMobileTabletView = useMediaQuery('(max-width:959px)');
+
   const handleApply = () => {};
   const [discountCouponValue, setDiscountCouponValue] = useState('');
 
@@ -31,6 +31,8 @@ const RightDetailsComponent = () => {
   const calculateOtherCharges = () => {
     return 198.15;
   };
+  const handlePayNow = () => {};
+
   const isAddressFilled = true;
   return (
     <StyledRightDetails>
@@ -38,7 +40,7 @@ const RightDetailsComponent = () => {
         <ProductComponent {...product} />
       ))}
       <Grid container spacing={0}>
-        <Grid item xs={10} pr={1} py={2}>  
+        <Grid item xs={10} pr={1} py={2}>
           <TextField
             fullWidth
             id="discountcode"
@@ -62,7 +64,7 @@ const RightDetailsComponent = () => {
             onClick={handleApply}
             disabled={discountCouponValue === ''}
             className="mr-2"
-            sx={{ textTransform: 'none' }} 
+            sx={{ textTransform: 'none' }}
           >
             Apply
           </Button>
@@ -101,6 +103,19 @@ const RightDetailsComponent = () => {
           <Typography variant="subtitle2">INR ₹{calculateTotal()}</Typography>
         </Grid>
       </Grid>
+
+      {isMobileTabletView && (
+        <Button
+          variant="contained"
+          size="large"
+          color="info"
+          onClick={handlePayNow}
+          fullWidth
+          className="mt-4"
+        >
+          Pay Now
+        </Button>
+      )}
     </StyledRightDetails>
   );
 };

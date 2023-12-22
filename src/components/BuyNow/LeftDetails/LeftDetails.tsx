@@ -22,8 +22,12 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddressComponent from '@wyn/components/BuyNow/Address/Address';
 import AccordionComponent from '@wyn/components/Common/AccordionList/AccordionList';
 import { useRouter } from 'next/router';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const LeftDetailsComponent = () => {
+  const isDesktopView = useMediaQuery('(min-width:960px)');
+  const isMobileTabletView = useMediaQuery('(max-width:959px)');
+
   const router = useRouter();
 
   const [isSaveInfoChecked, setSaveInfoChecked] = useState(false);
@@ -228,16 +232,18 @@ const LeftDetailsComponent = () => {
 
       <AccordionComponent data={addressAccordionData} />
 
-      <Button
-        variant="contained"
-        size="large"
-        color="info"
-        onClick={handlePayNow}
-        fullWidth
-        className="mt-4"
-      >
-        Pay Now
-      </Button>
+      {isDesktopView && (
+        <Button
+          variant="contained"
+          size="large"
+          color="info"
+          onClick={handlePayNow}
+          fullWidth
+          className="mt-4"
+        >
+          Pay Now
+        </Button>
+      )}
     </StyledLeftDetails>
   );
 };

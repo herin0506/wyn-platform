@@ -1,24 +1,15 @@
-import React, { useState } from 'react';
-import {
-  Box,
-  Button,
-  Card,
-  Checkbox,
-  Link,
-  TextField,
-  Typography,
-  Radio,
-  RadioGroup,
-  FormControlLabel,
-} from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
+import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
+import {
+  FormControlLabel,
+  Radio
+} from '@mui/material';
 import Accordion from '@mui/material/Accordion';
-import { StyledAccordionList } from './styled';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
 import { APP_COLORS } from '@wyn/styles/colors/colors';
+import { useState } from 'react';
+import { StyledAccordionList } from './styled';
 
 interface AccordionListComponentProps {
   data: any;

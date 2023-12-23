@@ -10,6 +10,7 @@ import { styled } from '@mui/material/styles';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 import { addCartItem } from '../../../../redux/reducers/cartSlice';
+import { useRouter } from 'next/router';
 
 interface ProductCardComponentProps {
   product: any;
@@ -25,6 +26,12 @@ const StyledProductTitle = styled(Link)(({ theme }) => ({
 
 const ProductCardComponent = ({ product }: ProductCardComponentProps) => {
   const dispatch = useDispatch();
+  const router = useRouter();
+
+  const redirectToBuyNow = () => {
+    router.push('/buyNow');
+  };
+
   return (
     <StyledProductCard>
       <Box component="div" className="__image__wrapper">
@@ -79,7 +86,7 @@ const ProductCardComponent = ({ product }: ProductCardComponentProps) => {
           </Button>
         </Grid>
         <Grid item>
-          <Button variant="contained" size="small">
+          <Button variant="contained" size="small" onClick={redirectToBuyNow}>
             BUY NOW
           </Button>
         </Grid>

@@ -734,3 +734,141 @@ export const buyNowproductList = [
     image: '/images/small-product.webp',
   },
 ];
+
+export const ourProducts = [
+  {
+    label: 'menstrual-wellness',
+    heading: 'Menstrual wellness',
+    title: 'Discover WYNs Ayurvedic Medicine for Irregular Periods',
+    subTitle: 'Ayurvedic Medicine for Irregular Periods by WYN',
+    description:
+      'Welcome to an innovative breakthrough in menstrual care - What You Need, proudly introducing Indias first womens wellness mints! We recognise the importance of prioritising your well-being during those specific days, and our novel mints are here to reinvent your menstrual experience.Discover a holistic approach to menstrual wellness with What You Needs Ayurvedic medicine for irregular periods! Tailored to address specific concerns, our range is crafted with natural ingredients to ensure you experience comfort and balance during every menstrual cycle phase.',
+    products: [
+      {
+        _id: '1',
+        name: 'White Discharge Mints',
+        price: 1299,
+        imgUrl: '/images/product_1.svg',
+      },
+      {
+        _id: '2',
+        name: 'Scanty Periods',
+        price: 1149,
+        imgUrl: '/images/product_2.svg',
+      },
+    ],
+  },
+  {
+    label: 'sensual-wellness',
+    heading: 'Sensual Wellness',
+    title: 'Intimate Hygiene For Women: WYNs Care Essentials',
+    subTitle: 'Intimate Hygiene For Women - WYN Brand',
+    description:
+      'Welcome to an innovative breakthrough in menstrual care - What You Need, proudly introducing Indias first womens wellness mints! We recognise the importance of prioritising your well-being during those specific days, and our novel mints are here to reinvent your menstrual experience.Discover a holistic approach to menstrual wellness with What You Needs Ayurvedic medicine for irregular periods! Tailored to address specific concerns, our range is crafted with natural ingredients to ensure you experience comfort and balance during every menstrual cycle phase.',
+    products: [
+      {
+        _id: '3',
+        name: 'Breast Cream',
+        price: 799,
+        imgUrl: '/images/product_3.svg',
+      },
+      {
+        _id: '4',
+        name: 'Intimate Depingmenting',
+        price: 899,
+        imgUrl: '/images/product_4.svg',
+
+      },
+    ],
+  },
+  {
+    label: 'pregnancy-prepare',
+    heading: 'Pregnancy Care',
+    title: 'WYNs Pregnancy Care Products for Expecting Moms',
+    subTitle: 'Explore Our Range of Pregnancy Care Products',
+    description:
+      'Welcome to an innovative breakthrough in menstrual care - What You Need, proudly introducing Indias first womens wellness mints! We recognise the importance of prioritising your well-being during those specific days, and our novel mints are here to reinvent your menstrual experience.Discover a holistic approach to menstrual wellness with What You Needs Ayurvedic medicine for irregular periods! Tailored to address specific concerns, our range is crafted with natural ingredients to ensure you experience comfort and balance during every menstrual cycle phase.',
+    products: [
+      {
+        _id: '3',
+        name: 'Lactation Mints',
+        price: 2099,
+        imgUrl: '/images/product_1.svg',
+      },
+      {
+        _id: '4',
+        name: 'Pregnancy & mint',
+        price: 2599,
+        imgUrl: '/images/product_2.svg',
+      },
+    ],
+  },
+  {
+    label: 'menopausal-wellness',
+    heading: 'Menopausal wellness',
+    title: 'Unveiling WYNs Ayurvedic Menopause Treatment',
+    subTitle: 'WYNs Specialty: Ayurvedic Menopause Treatment',
+    description:
+      'Welcome to an innovative breakthrough in menstrual care - What You Need, proudly introducing Indias first womens wellness mints! We recognise the importance of prioritising your well-being during those specific days, and our novel mints are here to reinvent your menstrual experience.Discover a holistic approach to menstrual wellness with What You Needs Ayurvedic medicine for irregular periods! Tailored to address specific concerns, our range is crafted with natural ingredients to ensure you experience comfort and balance during every menstrual cycle phase.',
+    products: [
+      {
+        _id: '3',
+        name: 'Smooth vaginal cream',
+        price: 2499,
+        imgUrl: '/images/product_3.svg',
+      },
+      {
+        _id: '4',
+        name: 'menipasual mins',
+        price: 1499,
+        imgUrl: '/images/product_4.svg',
+      },
+    ],
+  },
+  {
+    label: 'daily-wellness',
+    heading: 'Everyday Wellness',
+    title: 'We ensure affordability: WYNs Menstrual Hygiene Products',
+    subTitle: 'Empowering Womens Health: Menstrual Hygiene Products',
+    description:
+      'Welcome to an innovative breakthrough in menstrual care - What You Need, proudly introducing Indias first womens wellness mints! We recognise the importance of prioritising your well-being during those specific days, and our novel mints are here to reinvent your menstrual experience.Discover a holistic approach to menstrual wellness with What You Needs Ayurvedic medicine for irregular periods! Tailored to address specific concerns, our range is crafted with natural ingredients to ensure you experience comfort and balance during every menstrual cycle phase.',
+    products: [
+      {
+        _id: '3',
+        name: 'intimate hygieene wipes',
+        price: 1399,
+        imgUrl: '/images/product_1.svg',
+      },
+      {
+        _id: '4',
+        name: 'spray',
+        price: 1499,
+        imgUrl: '/images/product_2.svg',
+      },
+    ],
+  },
+];
+
+export const blogData =[
+  {
+    imgUrl: '/images/blog_1.webp',
+    title:"Why Urban and Rural India Differ",
+    description:"This is the reason Why Urban and Rural India Differ in Intimate Hygiene Practices and How to Bridge the Gap",
+    author:'',
+    authorImage:''
+  },
+  {
+    imgUrl: '/images/blog_2.webp',
+    title:"Why Intimate Depigmenting Happens in Women: Causes and Remedies",
+    description:"Introduction Intimate depigmentation, a phenomenon that has gained attention in recent years, refers to the lightening or discoloration of the skin in intimate areas such as the genitalia, anal",
+    author:'',
+    authorImage:''
+  },
+  {
+    imgUrl: '/images/blog_3.webp',
+    title:"Why Ayurvedic Medicine for Irregular Menstruation is Your Best Choice in 2024",
+    description:"In the fast-paced world of modern medicine, where new treatments and therapies are constantly emerging, it's essential to revisit ancient wisdom that has stood the test of time.",
+    author:'',
+    authorImage:''
+  }
+];

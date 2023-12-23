@@ -7,6 +7,7 @@ import CartListItemComponent from './CartListItem';
 import { useSelector } from 'react-redux';
 import _ from 'lodash';
 import Button from '@mui/material/Button';
+import { useRouter } from 'next/router';
 
 const StyledCartListComponent = styled(Grid)(({ theme }) => ({
   '& .__divider': {
@@ -21,6 +22,11 @@ const CartListComponent = () => {
   );
 
   console.log(cartTotal);
+  const router = useRouter();
+
+  const handleCheckout= () => {
+    router.push('/buyNow');
+  };
 
   return (
     <StyledCartListComponent container alignItems="center">
@@ -63,10 +69,15 @@ const CartListComponent = () => {
                 <Typography mb={3} textAlign="right">
                   SubTotal : ₹{cartTotal}.00
                 </Typography>
-                <Typography  mb={3} textAlign="right" variant="body2">
+                <Typography mb={3} textAlign="right" variant="body2">
                   Tax included and shipping calculated at checkout
                 </Typography>
-                <Button fullWidth={true} size="large" variant="contained">
+                <Button
+                  fullWidth={true}
+                  size="large"
+                  variant="contained"
+                  onClick={handleCheckout}
+                >
                   Check Out
                 </Button>
               </Box>

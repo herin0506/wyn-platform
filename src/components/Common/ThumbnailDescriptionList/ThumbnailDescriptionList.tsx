@@ -40,7 +40,6 @@ const ThumbnailDescriptionListComponent = ({
               </Grid>
             </Grid>
           ))}
-          ;
         </Box>
       </Container>
     </StyledThumbnailDescriptionList>

@@ -1,11 +1,20 @@
-import { Divider, Grid, Hidden, Typography } from '@mui/material';
-import React from 'react';
-import Cart from './Cart';
-import { CartItems } from '@wyn/utils/constants';
+import { Grid, Hidden, Typography,TextField, Button } from '@mui/material';
+import React,{useState} from 'react';
+import { CartItems as InitialCartItems} from '@wyn/utils/constants';
 import AkCartItem from './AkCartItem';
 import Link from 'next/link';
 
 const AkCart = () => {
+    const [totalPrice, setTotalPrice] = useState(0);
+    const [CartItems, setCartItems] = useState(InitialCartItems);
+
+    const handleItemTotalPriceChange = (itemTotalPrice: number) => {
+        setTotalPrice((prevTotalPrice) => prevTotalPrice + itemTotalPrice);
+    };
+   
+    const handleRemoveItem =(productId: number) => {
+        setCartItems((prevCartItems) => prevCartItems.filter((item) => item.productId !== productId));
+    };
   return (
     <Grid container mt={12}>
         <Grid container  xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -22,34 +31,53 @@ const AkCart = () => {
                 </Typography>
             </Grid>
         </Grid>
-        <Grid container  sx={{borderBottom:'1px solid black'}} xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Grid container   xs={12} sm={12} md={12} lg={12} xl={12}>
             <Grid item xs={10} sm={10} md={7} lg={7} xl={7} >
                 <Typography variant="caption" textAlign={"center"} m={0} pb={1} >
                     PRODUCT
                 </Typography>
             </Grid>
             <Hidden mdDown>
-                <Grid item md={4} lg={3} xl={3} >
-                    <Typography variant="caption" textAlign={"center"} m={0} pb={1} >
+                <Grid item  md={4} lg={3} xl={3} >
+                    <Typography variant="caption"  m={0} pl={2} pb={1} >
                         QUANTITY
                     </Typography>
                 </Grid>
            </Hidden>
-            <Grid item justifyContent={'center'} alignContent={'center'} xs={2} sm={2} md={1} lg={2} xl={2}>
+            <Grid item textAlign={'center'} xs={2} sm={2} md={1} lg={2} xl={2}>
                 <Typography variant="caption" textAlign={"center"} m={0} pb={1} >
                     TOTAL
                 </Typography>
             </Grid>
-            
         </Grid>
-        <Grid container  xs={12} sm={12} md={12} lg={12} xl={12}>
-                {CartItems.map((product) => (     
-                            <AkCartItem {...product } /> 
-                    ))
-                }
+        <Grid container borderTop={1} borderBottom={1}  borderColor={'divider'} xs={12} sm={12} md={12} lg={12} xl={12}>
+            {CartItems.map((product) => (     
+                    <AkCartItem {...product } onRemove={handleRemoveItem} onTotalPriceChange={handleItemTotalPriceChange}  /> 
+                ))
+            }
+        </Grid>
+        <Grid container mt={2} mb={2} spacing={1}>
+            <Grid item  xs={12} sm={12} md={12} lg={12} xl={12}>
+                <Typography variant='body2'>
+                    Order Special Instructions
+                </Typography>
             </Grid>
+            <Grid item mt={1} xs={12} sm={6} md={6} lg={6} xl={6}>
+                <TextField fullWidth />
+            </Grid>
+            <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+                <Typography variant="h6" textAlign={'center'} m={0} pb={1} >
+                    Subtotal ₹ {totalPrice.toFixed(2)}
+                </Typography>
+                <Typography variant="subtitle1" textAlign={'center'} m={0} pb={1} >
+                    Tax included and shipping calculated at checkout
+                </Typography>
+                <Button variant="contained" fullWidth>
+                    Check Out
+                </Button>
+            </Grid>
+        </Grid>
     </Grid>
-  )
-};
+  )};
 
 export default AkCart;

@@ -9,8 +9,7 @@ import { Add, Remove } from '@mui/icons-material';
 interface CartItemProps {
     productId: number;
     title: string;
-    subTitle: string;
-    price: string;
+    price: number;
     rating: number;
     imgUrl: string;
     brand: string;
@@ -19,7 +18,6 @@ interface CartItemProps {
 const CartItem = ({
         productId,
         title,
-        subTitle ='Our bestseller nutritive mints balance disturbed hormones thereby regulating the cycle flow back to normal. These mints contain essential nutrients that help balance female hormones.',
         price,
         rating,
         imgUrl,
@@ -41,7 +39,6 @@ const CartItem = ({
                 </Box>
             </Grid>            
             <Typography variant="h4" style={{borderBottom:"1px solid black"}}>{title}</Typography>
-            <Typography variant="subtitle1">{subTitle}</Typography>
             <Grid container >                
                 <Grid  item xs={5} sm={4}>
                     <Typography variant='subtitle1' align='center' >{brand}</Typography>

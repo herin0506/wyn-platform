@@ -1,9 +1,9 @@
 import { Box, Button, Grid, TextField, Typography } from '@mui/material';
-import { StyledRightDetails } from './styled';
-import ProductComponent from '../Product/Product';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { buyNowproductList } from '@wyn/utils/constants';
 import { useState } from 'react';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import ProductComponent from '../Product/Product';
+import { StyledRightDetails } from './styled';
 
 const RightDetailsComponent = () => {
   const isDesktopView = useMediaQuery('(min-width:960px)');
@@ -37,9 +37,9 @@ const RightDetailsComponent = () => {
   return (
     <StyledRightDetails>
       {buyNowproductList.map((product, index) => (
-        <ProductComponent {...product} />
+        <ProductComponent  {...product} key={index} />
       ))}
-      <Grid container spacing={0}>
+      <Grid container spacing={0} >
         <Grid item xs={10} pr={1} py={2}>
           <TextField
             fullWidth

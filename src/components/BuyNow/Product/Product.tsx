@@ -1,11 +1,7 @@
-import { Link, TextField, Typography, Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import MenuItem from '@mui/material/MenuItem';
-import { APP_COLORS } from '@wyn/styles/colors/colors';
-import { countries, states } from '@wyn/utils/constants';
-import { useState } from 'react';
-import { StyledProduct } from './styled';
 import ImageView from '@wyn/components/Common/ImageViewComponent/ImageView';
+import { StyledProduct } from './styled';
 interface ProductComponentProps {
   title: string;
   subTitle: string;

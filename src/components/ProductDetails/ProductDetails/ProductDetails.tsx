@@ -47,8 +47,8 @@ const ProductDetailsComponent = ({
 
       <Grid container spacing={2}>
         <Grid item md={12}>
-          <Typography variant="h5" mb={4}>
-            <b>Rs.{price}</b>
+          <Typography variant="h5" mb={4} sx={{ fontWeight: 'bold' }}>
+            Rs.{price}
           </Typography>
         </Grid>
         <Grid item>

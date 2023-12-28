@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
 
-const WhyWynPage = () => {
+const SignUpComponent = () => {
   const router = useRouter();
   const goToLogin = () => {
     router.push('/login');
@@ -74,4 +74,4 @@ const WhyWynPage = () => {
   );
 };
 
-export default WhyWynPage;
+export default SignUpComponent;

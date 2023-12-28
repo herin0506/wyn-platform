@@ -1,24 +1,24 @@
 import { Box, Container, Divider, Typography } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import BannerComponent from '@wyn/components/Common/Banner/Banner';
 import HorizontalContentSectionComponent from '@wyn/components/Common/HorizontalContentSection/HorizontalContentSection';
 import HorizontalImageSectionComponent from '@wyn/components/Common/HorizontalImageSection/HorizontalImageSection';
 import HorizontalSplitComponent from '@wyn/components/Common/HorizontalSplit/HorizontalSplit';
-import ThumbnailDescriptionListComponent from './../../components/Common/ThumbnailDescriptionList/ThumbnailDescriptionList';
+import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
 import {
-  birthOfWYN,
-  whatWeOfferContent,
-  empoweringWomen,
   ayurveda,
-  menstrualWellness,
-  sensualWellness,
-  pregnancyPrepareAndCare,
-  menopausalWellness,
+  birthOfWYN,
   dailyWellness,
+  empoweringWomen,
   guidingPrinciples,
+  menopausalWellness,
+  menstrualWellness,
+  pregnancyPrepareAndCare,
+  sensualWellness,
+  whatWeOfferContent,
 } from '@wyn/utils/constants';
 import { Fragment } from 'react';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
+import ThumbnailDescriptionListComponent from './../../components/Common/ThumbnailDescriptionList/ThumbnailDescriptionList';
 
 const AboutUsPage = () => {
   const isMobileTabletView = useMediaQuery('(max-width:959px)');
@@ -41,6 +41,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={false}
           />
         </Container>
         <Container maxWidth="xl" disableGutters={!isMobileTabletView}>
@@ -56,6 +57,7 @@ const AboutUsPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...empoweringWomen} />
             }
+            inverseChildInMobileView={false}
             desktopBackgroundImage="/images/background_light.png"
             //mobileBackgroundImage="/images/background_light.png"
           />
@@ -68,6 +70,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={false}
             rightComponent={
               <HorizontalContentSectionComponent {...whatWeOfferContent} />
             }
@@ -82,6 +85,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={false}
           />
           <Typography pb={3} variant="h4" className="text-center">
             {'Discover Your Personal Wellness Journey with WYN'}
@@ -94,6 +98,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={false}
             rightComponent={
               <HorizontalContentSectionComponent {...menstrualWellness} />
             }
@@ -108,6 +113,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={false}
           />
           <HorizontalSplitComponent
             leftComponent={
@@ -119,6 +125,7 @@ const AboutUsPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...pregnancyPrepareAndCare} />
             }
+            inverseChildInMobileView={false}
           />
           <HorizontalSplitComponent
             leftComponent={
@@ -130,6 +137,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={false}
           />
           <HorizontalSplitComponent
             leftComponent={
@@ -141,6 +149,7 @@ const AboutUsPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...dailyWellness} />
             }
+            inverseChildInMobileView={false}
           />
         </Container>
         <DiscoverCategoriesComponent />

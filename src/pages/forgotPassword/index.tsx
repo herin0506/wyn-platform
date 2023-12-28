@@ -10,7 +10,7 @@ import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories
 import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 
-const WhyWynPage = () => {
+const ForgotPasswordComponent = () => {
   const router = useRouter();
 
   const handleSubmit = () => {
@@ -57,4 +57,4 @@ const WhyWynPage = () => {
   );
 };
 
-export default WhyWynPage;
+export default ForgotPasswordComponent;

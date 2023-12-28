@@ -18,6 +18,7 @@ export default function Home() {
           <HorizontalSplitComponent
             leftComponent={<ProductImage />}
             rightComponent={<ProductDetails {...product} />}
+            inverseChildInMobileView={false}
           />
         </Container>
         <Container disableGutters maxWidth="xl">
@@ -34,6 +35,7 @@ export default function Home() {
             rightComponent={
               <HorizontalContentSectionComponent {...infoContent} />
             }
+            inverseChildInMobileView={false}
           />
         </Container>
         <QuestionAnswer />

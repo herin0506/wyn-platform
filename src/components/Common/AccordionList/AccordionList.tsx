@@ -1,14 +1,10 @@
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
-import {
-  FormControlLabel,
-  Radio
-} from '@mui/material';
+import { FormControlLabel, Radio } from '@mui/material';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import { APP_COLORS } from '@wyn/styles/colors/colors';
-import { useState } from 'react';
 import { StyledAccordionList } from './styled';
 
 interface AccordionListComponentProps {
@@ -65,7 +61,11 @@ const AccordionList = ({ data }: AccordionListComponentProps) => {
             />
             {item.title}
           </AccordionSummary>
-          {item.content && <AccordionDetails sx={{background:APP_COLORS.GREY}} >{item.content}</AccordionDetails>}
+          {item.content && (
+            <AccordionDetails sx={{ background: APP_COLORS.GREY }}>
+              {item.content}
+            </AccordionDetails>
+          )}
         </Accordion>
       ))}
     </StyledAccordionList>
@@ -73,3 +73,7 @@ const AccordionList = ({ data }: AccordionListComponentProps) => {
 };
 
 export default AccordionList;
+function useState(arg0: number): [any, any] {
+  throw new Error('Function not implemented.');
+}
+

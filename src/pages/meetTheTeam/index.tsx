@@ -9,15 +9,11 @@ import BannerComponent from '@wyn/components/Common/Banner/Banner';
 import HorizontalContentSectionComponent from '@wyn/components/Common/HorizontalContentSection/HorizontalContentSection';
 import HorizontalImageSectionComponent from '@wyn/components/Common/HorizontalImageSection/HorizontalImageSection';
 import HorizontalSplitComponent from '@wyn/components/Common/HorizontalSplit/HorizontalSplit';
-import {
-  meetTheTeam,
-  whatWeOfferContent,
-  teamDetails,
-} from '@wyn/utils/constants';
-import { Fragment } from 'react';
 import DiscoverCategoriesComponent from '@wyn/components/Home/DiscoverCategories/DiscoverCategories';
+import { meetTheTeam, teamDetails } from '@wyn/utils/constants';
+import { Fragment } from 'react';
 
-const WhyWynPage = () => {
+const MeetTheTeamComponent = () => {
   const isDesktopView = useMediaQuery('(min-width:960px)');
   const isMobileTabletView = useMediaQuery('(max-width:959px)');
   return (
@@ -90,4 +86,4 @@ const WhyWynPage = () => {
   );
 };
 
-export default WhyWynPage;
+export default MeetTheTeamComponent;

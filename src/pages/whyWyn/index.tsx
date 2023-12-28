@@ -32,6 +32,7 @@ const WhyWynPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...whyWYNContent} />
             }
+            inverseChildInMobileView={false}
           />
         </Container>
         <Container maxWidth="xl">
@@ -51,6 +52,7 @@ const WhyWynPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...whatWeOfferContent} />
             }
+            inverseChildInMobileView={false}
           />
         </Container>
       </Box>

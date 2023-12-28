@@ -6,13 +6,14 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import { APP_COLORS } from '@wyn/styles/colors/colors';
 import { StyledAccordionList } from './styled';
+import React, { useState } from 'react';
 
 interface AccordionListComponentProps {
   data: any;
 }
 
 const AccordionList = ({ data }: AccordionListComponentProps) => {
-  const [selectedAccordion, setSelectedAccordion] = useState(0);
+  const [selectedAccordion, setSelectedAccordion] = useState();
 
   const handleChange = (index: any) => {
     setSelectedAccordion(index === selectedAccordion ? null : index);
@@ -73,7 +74,3 @@ const AccordionList = ({ data }: AccordionListComponentProps) => {
 };
 
 export default AccordionList;
-function useState(arg0: number): [any, any] {
-  throw new Error('Function not implemented.');
-}
-

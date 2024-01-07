@@ -103,7 +103,7 @@ const LeftDetailsComponent = () => {
 
   const isLoggedIn = false;
   return (
-    <StyledLeftDetails>
+    <StyledLeftDetails className="col-md-10" >
       {isLoggedIn ? (
         <Accordion elevation={0} className="w-100">
           <AccordionSummary

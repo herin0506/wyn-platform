@@ -41,6 +41,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={true}
           />
         </Container>
         <Container maxWidth="xl" disableGutters={!isMobileTabletView}>
@@ -58,6 +59,7 @@ const AboutUsPage = () => {
             }
             desktopBackgroundImage="/images/background_light.png"
             //mobileBackgroundImage="/images/background_light.png"
+            inverseChildInMobileView={false}
           />
         </Container>
         <Container maxWidth="xl">
@@ -71,6 +73,7 @@ const AboutUsPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...whatWeOfferContent} />
             }
+            inverseChildInMobileView={false}
           />
           <ThumbnailDescriptionListComponent {...guidingPrinciples} />
 
@@ -82,6 +85,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={true}
           />
           <Typography pb={3} variant="h4" className="text-center">
             {'Discover Your Personal Wellness Journey with WYN'}
@@ -97,6 +101,7 @@ const AboutUsPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...menstrualWellness} />
             }
+            inverseChildInMobileView={false}
           />
           <HorizontalSplitComponent
             leftComponent={
@@ -108,6 +113,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={true}
           />
           <HorizontalSplitComponent
             leftComponent={
@@ -119,6 +125,7 @@ const AboutUsPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...pregnancyPrepareAndCare} />
             }
+            inverseChildInMobileView={false}
           />
           <HorizontalSplitComponent
             leftComponent={
@@ -130,6 +137,7 @@ const AboutUsPage = () => {
                 alt="Your Image"
               />
             }
+            inverseChildInMobileView={true}
           />
           <HorizontalSplitComponent
             leftComponent={
@@ -141,6 +149,7 @@ const AboutUsPage = () => {
             rightComponent={
               <HorizontalContentSectionComponent {...dailyWellness} />
             }
+            inverseChildInMobileView={false}
           />
         </Container>
         <DiscoverCategoriesComponent />

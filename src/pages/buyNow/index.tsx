@@ -14,18 +14,16 @@ const BuyNow = () => {
   return (
     <Fragment>
       <Box mt={10}>
-        <Container maxWidth="xl" >
           <HorizontalSplitComponent
             leftComponent={<LeftDetailsComponent />}
             rightComponent={<RightDetailsComponent />}
             inverseChildInMobileView={false}
-            leftWidth={50}
-            rightWidth={30}
+            leftWidth={55}
+            rightWidth={45}
             enableDivider={true}
             leftBackgroundColor=""
-            rightBackgroundColor=""
+            rightBackgroundColor="#f5f5f5"
           />
-        </Container>
       </Box>
     </Fragment>
   );

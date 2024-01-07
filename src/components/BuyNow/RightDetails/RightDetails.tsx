@@ -35,7 +35,7 @@ const RightDetailsComponent = () => {
 
   const isAddressFilled = true;
   return (
-    <StyledRightDetails>
+    <StyledRightDetails className='col-md-10'>
       {buyNowproductList.map((product, index) => (
         <ProductComponent {...product} />
       ))}

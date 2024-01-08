@@ -1,20 +1,13 @@
 import { Grid, Hidden, Typography,TextField, Button } from '@mui/material';
-import React,{useState} from 'react';
-import { CartItems as InitialCartItems} from '@wyn/utils/constants';
 import AkCartItem from './AkCartItem';
 import Link from 'next/link';
+import { useSelector} from 'react-redux';
 
 const AkCart = () => {
-    const [totalPrice, setTotalPrice] = useState(0);
-    const [CartItems, setCartItems] = useState(InitialCartItems);
+    const {cartItems, cartTotal}  = useSelector( 
+        (state:any) => state?.cartSlice,
+    );
 
-    const handleItemTotalPriceChange = (itemTotalPrice: number) => {
-        setTotalPrice((prevTotalPrice) => prevTotalPrice + itemTotalPrice);
-    };
-   
-    const handleRemoveItem =(productId: number) => {
-        setCartItems((prevCartItems) => prevCartItems.filter((item) => item.productId !== productId));
-    };
   return (
     <Grid container mt={12}>
         <Grid container  xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -51,8 +44,8 @@ const AkCart = () => {
             </Grid>
         </Grid>
         <Grid container borderTop={1} borderBottom={1}  borderColor={'divider'} xs={12} sm={12} md={12} lg={12} xl={12}>
-            {CartItems.map((product) => (     
-                    <AkCartItem {...product } onRemove={handleRemoveItem} onTotalPriceChange={handleItemTotalPriceChange}  /> 
+            {cartItems.map((cartItem:any) => (     
+                    <AkCartItem cartItem={cartItem}/> 
                 ))
             }
         </Grid>
@@ -67,7 +60,7 @@ const AkCart = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                 <Typography variant="h6" textAlign={'center'} m={0} pb={1} >
-                    Subtotal ₹ {totalPrice.toFixed(2)}
+                    Subtotal ₹ {cartTotal}.00
                 </Typography>
                 <Typography variant="subtitle1" textAlign={'center'} m={0} pb={1} >
                     Tax included and shipping calculated at checkout

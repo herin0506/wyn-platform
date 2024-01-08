@@ -6,20 +6,21 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Rating from '@mui/material/Rating';
 import Button from '@mui/material/Button';
-import { CartItems } from '@wyn/utils/constants';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '@wyn/app/Redux/reducer/CartSlice';
 
 interface ProductCardComponentProps {
-  productId: number; 
+  id: number; 
   title: string;
   subTitle?: string;
-  price: string;
+  price: number;
   rating: number;
   imgUrl: string;
   brand: string;
 }
 
 const ProductCardComponent = ({
-  productId,
+  id,
   title,
   subTitle,
   price,
@@ -27,17 +28,8 @@ const ProductCardComponent = ({
   imgUrl,
   brand,
 }: ProductCardComponentProps) => {
-  const addToCart = (product: any) => {
-    CartItems.push({
-      productId: product.productId,
-      title: product.title,
-      subTitle: product.subTitle,
-      price: product.price,
-      rating: product.rating,
-      imgUrl: product.imgUrl,
-      brand: product.brand
-    });
-  }
+  const dispatch = useDispatch();
+  
   return (
     <StyledProductCard>
       <Box component="div" className="__image__wrapper">
@@ -60,7 +52,9 @@ const ProductCardComponent = ({
       </Box>
       <Grid mt={2} container alignItems="center" justifyContent="space-between">
         <Grid item>
-          <Button variant="contained" size="small" onClick={() => addToCart({productId, title,subTitle, price, rating, imgUrl, brand})}>
+          <Button variant="contained" size="small" onClick={() => {
+            dispatch(addToCart({id, title, subTitle, price, rating, imgUrl, brand,quantity:1}));
+          }}>
             ADD TO CART
           </Button>
         </Grid>

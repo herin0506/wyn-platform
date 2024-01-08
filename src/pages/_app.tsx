@@ -9,6 +9,8 @@ import '../styles/globals.scss';
 import createEmotionCache from '../styles/createEmotionCache';
 import 'bootstrap/dist/css/bootstrap.css';
 import DefaultLayoutComponent from '@wyn/components/Layouts/Default/DefaultLayout';
+import { Provider } from 'react-redux';
+import { store } from '@wyn/app/Redux/Store/Store';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -27,9 +29,11 @@ export default function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <DefaultLayoutComponent>
-          <Component {...pageProps} />
-        </DefaultLayoutComponent>
+        <Provider store={store}>
+          <DefaultLayoutComponent>
+            <Component {...pageProps} />
+          </DefaultLayoutComponent>
+        </Provider>
       </ThemeProvider>
     </CacheProvider>
   );

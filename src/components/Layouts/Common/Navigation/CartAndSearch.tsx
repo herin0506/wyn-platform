@@ -8,13 +8,16 @@ import Image from 'next/image';
 import Hidden from '@mui/material/Hidden';
 import { useRouter } from 'next/navigation';
 import { APP_ROUTES } from '@wyn/utils/routes';
+import { useSelector } from 'react-redux';
+import { Badge } from '@mui/material';
 
 const NavigationCartAndSearchComponent = () => {
   const router = useRouter();
   const handleNavigation = (route: string) => {
     router.push(route);
   };
-
+  const totalItemsInCart  = useSelector((state: any) => state?.cartSlice.totalItems);
+  
   return (
     <Grid
       container
@@ -57,14 +60,16 @@ const NavigationCartAndSearchComponent = () => {
         </Grid>
       </Hidden>
       <Grid item>
-        <IconButton onClick={()=>handleNavigation(APP_ROUTES.CART)}>
-          <Image
-            src="/icons/cartIcon.svg"
-            width={25}
-            height={24}
-            alt="cart_icon"
-          />
-        </IconButton>
+        <Badge badgeContent={totalItemsInCart} color='primary'>
+          <IconButton onClick={()=>handleNavigation(APP_ROUTES.CART)}>
+            <Image
+              src="/icons/cartIcon.svg"
+              width={25}
+              height={24}
+              alt="cart_icon"
+            />
+          </IconButton>
+        </Badge>
       </Grid>
     </Grid>
   );

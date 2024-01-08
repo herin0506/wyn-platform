@@ -180,36 +180,36 @@ export const productCategories = [
 
 export const products = [
   {
-    productId: 1,
+    id: 1,
     imgUrl: '/images/product_1.svg',
     title: 'Nutritional Mints for Heavy Periods',
     brand: 'Tried & Trusted',
     rating: 5,
-    price: '849',
+    price: 849,
   },
   {
-    productId: 2,
+    id: 2,
     imgUrl: '/images/product_2.svg',
     title: 'Nutritional Mints for Lactation',
     brand: 'Tried & Trusted',
     rating: 5,
-    price: '849',
+    price: 849,
   },
   {
-    productId: 3,
+    id: 3,
     imgUrl: '/images/product_3.svg',
     title: 'Nutritional Mints for Menopause',
     brand: 'Tried & Trusted',
     rating: 5,
-    price: '849',
+    price: 849,
   },
   {
-    productId: 4,
+    id: 4,
     imgUrl: '/images/product_4.svg',
     title: 'Soothing Vaginal cream for Menopause',
     brand: 'Tried & Trusted',
     rating: 5,
-    price: '849',
+    price: 849,
   },
 ];
 
@@ -223,7 +223,7 @@ export const product = {
 
 export const CartItems = [
   {
-    productId: 3,
+    id: 3,
     imgUrl: '/images/product_3.svg',
     title: 'Soothing Vaginal cream for Menopause',
     brand: 'Tried & Trusted',
@@ -231,7 +231,7 @@ export const CartItems = [
     price: 849,
   },
   {
-    productId: 4,
+    id: 4,
     imgUrl: '/images/product_4.svg',
     title: 'Soothing Vaginal cream for Menopause',
     brand: 'Tried & Trusted',
@@ -239,7 +239,7 @@ export const CartItems = [
     price: 849,
   },
   {
-    productId: 3,
+    id: 3,
     imgUrl: '/images/product_3.svg',
     title: 'Soothing Vaginal cream for Menopause',
     brand: 'Tried & Trusted',
@@ -247,7 +247,7 @@ export const CartItems = [
     price: 849,
   },
   {
-    productId: 4,
+    id: 4,
     imgUrl: '/images/product_4.svg',
     title: 'Soothing Vaginal cream for Menopause',
     brand: 'Tried & Trusted',

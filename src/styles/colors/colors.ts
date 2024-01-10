@@ -10,5 +10,7 @@ export const APP_COLORS = {
   UBE: '#8F89C2',
   BLACK: '#000000',
   PINK: '#DD2155',
-  LIGHTBLUE: '#1773b0'
+  LIGHTBLUE: '#1773b0',
+  GREY: '#f5f5f5',
+  WHITE: '#ffffff'
 };

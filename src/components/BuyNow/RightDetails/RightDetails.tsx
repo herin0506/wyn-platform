@@ -12,7 +12,7 @@ const RightDetailsComponent = () => {
   const handleApply = () => {};
   const [discountCouponValue, setDiscountCouponValue] = useState('');
 
-  const handleTextFieldChange = (event) => {
+  const handleTextFieldChange = (event:any) => {
     setDiscountCouponValue(event.target.value);
   };
   let total = 0;
@@ -37,7 +37,7 @@ const RightDetailsComponent = () => {
   return (
     <StyledRightDetails className='col-md-10'>
       {buyNowproductList.map((product, index) => (
-        <ProductComponent {...product} />
+        <ProductComponent key={index} {...product} />
       ))}
       <Grid container spacing={0}>
         <Grid item xs={10} pr={1} py={2}>

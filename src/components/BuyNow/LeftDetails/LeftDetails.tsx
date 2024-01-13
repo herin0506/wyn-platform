@@ -42,13 +42,13 @@ const LeftDetailsComponent = () => {
     inputProps: { 'aria-label': 'Email News Offers Checkbox' },
   };
 
-  const handleSaveInformationCheckboxChange = (event) => {
+  const handleSaveInformationCheckboxChange = (event:any) => {
     setSaveInfoChecked(event.target.checked);
   };
-  const handleTextMeCheckboxChange = (event) => {
+  const handleTextMeCheckboxChange = (event:any) => {
     setTextMeChecked(event.target.checked);
   };
-  const handleEmailNewsOffersCheckboxChange = (event) => {
+  const handleEmailNewsOffersCheckboxChange = (event:any) => {
     setEmailNewsOffersChecked(event.target.checked);
   };
   const handleNaviagte = () => {

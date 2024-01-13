@@ -19,6 +19,11 @@ const ThumbnailDescriptionListComponent = ({
   heading,
   itemList,
 }: ThumbnailDescriptionListComponentProps) => {
+
+
+  console.log(itemList);
+
+
   return (
     <StyledThumbnailDescriptionList>
       <Container disableGutters maxWidth="lg">
@@ -40,7 +45,6 @@ const ThumbnailDescriptionListComponent = ({
               </Grid>
             </Grid>
           ))}
-          ;
         </Box>
       </Container>
     </StyledThumbnailDescriptionList>

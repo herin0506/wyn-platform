@@ -10,51 +10,52 @@ import {
   whyWYNContent,
   benefitsData,
 } from '@wyn/utils/constants';
-import { Fragment } from 'react';
-
 const WhyWynPage = () => {
   return (
-    <Fragment>
-      <Box mt={0}>
-        <BannerComponent
-          alt="main-banner"
-          desktopImgUrl="/images/Vector.png"
-          mobileImgUrl="/images/Vector_mobile.png"
+    <Box mt={0}>
+      <BannerComponent
+        alt="main-banner"
+        desktopImgUrl="/images/Vector.png"
+        mobileImgUrl="/images/Vector_mobile.png"
+      />
+      <Container maxWidth="xl">
+        <HorizontalSplitComponent
+          inverseChildInMobileView={true}
+          leftComponent={
+            <HorizontalImageSectionComponent
+              src="/images/frame.png"
+              alt="Nutrients Details Image"
+            />
+          }
+          rightComponent={
+            <HorizontalContentSectionComponent {...whyWYNContent} />
+          }
         />
-        <Container maxWidth="xl">
-          <HorizontalSplitComponent
-            leftComponent={
-              <HorizontalImageSectionComponent
-                src="/images/frame.png"
-                alt="Nutrients Details Image"
-              />
-            }
-            rightComponent={
-              <HorizontalContentSectionComponent {...whyWYNContent} />
-            }
-          />
-        </Container>
-        <Container maxWidth="xl">
-          <ThumbnailDescriptionListComponent heading='' itemList={benefitsData} />
-        </Container>
-        <Container disableGutters maxWidth="xl">
-          <NaturalHerbsContainer />
-        </Container>
-        <Container maxWidth="xl">
-          <HorizontalSplitComponent
-            leftComponent={
-              <HorizontalImageSectionComponent
-                src="/images/image7.png"
-                alt="what we offer details"
-              />
-            }
-            rightComponent={
-              <HorizontalContentSectionComponent {...whatWeOfferContent} />
-            }
-          />
-        </Container>
-      </Box>
-    </Fragment>
+      </Container>
+      <Container maxWidth="xl">
+        <ThumbnailDescriptionListComponent
+          heading={benefitsData?.heading}
+          itemList={benefitsData?.itemList}
+        />
+      </Container>
+      <Container disableGutters maxWidth="xl">
+        <NaturalHerbsContainer />
+      </Container>
+      <Container maxWidth="xl">
+        <HorizontalSplitComponent
+          inverseChildInMobileView={true}
+          leftComponent={
+            <HorizontalImageSectionComponent
+              src="/images/image7.png"
+              alt="what we offer details"
+            />
+          }
+          rightComponent={
+            <HorizontalContentSectionComponent {...whatWeOfferContent} />
+          }
+        />
+      </Container>
+    </Box>
   );
 };
 

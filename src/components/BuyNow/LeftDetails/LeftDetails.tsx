@@ -42,13 +42,13 @@ const LeftDetailsComponent = () => {
     inputProps: { 'aria-label': 'Email News Offers Checkbox' },
   };
 
-  const handleSaveInformationCheckboxChange = (event) => {
+  const handleSaveInformationCheckboxChange = (event:any) => {
     setSaveInfoChecked(event.target.checked);
   };
-  const handleTextMeCheckboxChange = (event) => {
+  const handleTextMeCheckboxChange = (event:any) => {
     setTextMeChecked(event.target.checked);
   };
-  const handleEmailNewsOffersCheckboxChange = (event) => {
+  const handleEmailNewsOffersCheckboxChange = (event:any) => {
     setEmailNewsOffersChecked(event.target.checked);
   };
   const handleNaviagte = () => {
@@ -103,7 +103,7 @@ const LeftDetailsComponent = () => {
 
   const isLoggedIn = false;
   return (
-    <StyledLeftDetails>
+    <StyledLeftDetails className="col-md-10" >
       {isLoggedIn ? (
         <Accordion elevation={0} className="w-100">
           <AccordionSummary

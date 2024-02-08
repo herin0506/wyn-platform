@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 export const StyledTestimonialImageBox = styled(Box)(({ theme }) => ({
-  width: 500,
+  width: 'responsive',
   minHeight: 320,
   height: '100%',
   backgroundRepeat: 'no-repeat',

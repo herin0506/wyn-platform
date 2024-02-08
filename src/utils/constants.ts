@@ -51,15 +51,15 @@ export const footerMenuList = [
     categories: [
       {
         title: 'Know the Science',
-        url: '/',
+        url: APP_ROUTES.KNOW_THE_SCIENCE,
       },
       {
         title: 'About the team',
-        url: '/',
+        url: APP_ROUTES.MEET_THE_TEAM,
       },
       {
         title: 'Sign Up',
-        url: '/',
+        url: APP_ROUTES.SIGN_UP,
       },
     ],
   },
@@ -69,7 +69,7 @@ export const footerMenuList = [
     categories: [
       {
         title: '2023 What You Need',
-        url: '/',
+        url: APP_ROUTES.WHY_WYN,
       },
       {
         title: 'Terms of Use',

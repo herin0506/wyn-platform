@@ -10,5 +10,7 @@ export const APP_ROUTES = {
   MENSTRUAL_WELNESS: '/collections/menstrual-wellness',
   PREGNANCY_WELNESS: '/collections/pregnancy-prepare',
   SENSUAL_WELNESS: '/collections/sensual-wellness',
-  KNOW_THE_SCIENCE:'/knowTheScience'
+  KNOW_THE_SCIENCE:'/knowTheScience',
+  MEET_THE_TEAM: '/meetTheTeam',
+  BUY_NOW: '/buyNow',
 };

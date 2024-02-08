@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import ImageWithTextComponent from '@wyn/components/Common/ImageWithText/ImageWithText';
 import ThumbnailSliderComponent from '@wyn/components/Common/ThumbnailSlider/ThumbnailSlider';
@@ -18,7 +18,9 @@ const WomenGeneralHealthIssuesComponent = () => {
               alt={item?.content}
               content={
                 <Box mt={1}>
-                  <Typography variant="body1">{item?.content}</Typography>
+                  <Typography variant="body1" >
+                    <Link href= '/blog' underline='hover'>{item?.content}</Link>
+                  </Typography>
                 </Box>
               }
             />
